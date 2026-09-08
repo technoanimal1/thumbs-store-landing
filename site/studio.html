@@ -689,12 +689,45 @@
       }
 
       /* ================== business benefits ================== */
+      /* benefits carousel */
+      .bcarousel { position: relative; margin-top: 48px; }
       .bgrid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
         gap: 16px;
-        margin-top: 48px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 10px 2px;
+        margin: -10px -2px;
+        cursor: grab;
       }
+      .bgrid::-webkit-scrollbar { display: none; }
+      .bgrid.dragging { cursor: grabbing; scroll-snap-type: none; scroll-behavior: auto; }
+      .bgrid.dragging .bcard { pointer-events: none; }
+      .bgrid > .bcard {
+        flex: 0 0 clamp(258px, 30%, 320px);
+        scroll-snap-align: start;
+      }
+      .bnav {
+        position: absolute; top: 50%; transform: translateY(-50%);
+        width: 44px; height: 44px; border-radius: 999px;
+        display: grid; place-items: center;
+        background: var(--panel); border: 1px solid var(--ring); color: #fff;
+        font-size: 20px; line-height: 1; cursor: pointer; z-index: 3;
+        transition: opacity 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+      }
+      .bnav:hover { border-color: rgb(255 255 255 / 0.4); }
+      .bnav.prev { left: -14px; }
+      .bnav.next { right: -14px; }
+      .bnav[disabled] { opacity: 0.3; cursor: default; }
+      .bdots { display: flex; justify-content: center; gap: 8px; margin-top: 24px; }
+      .bdots button {
+        width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px;
+        background: var(--ring); cursor: pointer; transition: width 0.25s ease, background 0.25s ease;
+      }
+      .bdots button[aria-current='true'] { width: 24px; background: #fff; }
+      @media (max-width: 809.98px) { .bnav { display: none; } }
       .bcard {
         border: 1px solid var(--ring);
         border-radius: 24px;
@@ -851,7 +884,7 @@
         .nav-links { display: none; }
         .cols4 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
         .anatomy-grid { flex-direction: column; }
-        .bgrid { grid-template-columns: 1fr 1fr; }
+        .bgrid > .bcard { flex-basis: clamp(258px, 44%, 300px); }
         .pstep, .pstep-card:nth-of-type(even) .pstep { flex-direction: column; }
         .pcopy { align-items: center; text-align: center; }
         .pcopy .step-tag { justify-content: center; }
@@ -874,7 +907,8 @@
         .anatomy-stage .tilebox { width: 200px; }
         .ltag { display: none; }
         .marquee span { font-size: 12px; }
-        .bgrid { grid-template-columns: 1fr; gap: 12px; }
+        .bgrid { gap: 12px; }
+        .bgrid > .bcard { flex-basis: min(82%, 320px); }
         .pstage { min-height: 300px; padding: 22px 14px; }
         .codebox { font-size: 12px; padding: 16px; }
         .wl-tiles { grid-template-columns: repeat(4, 1fr); }
@@ -1925,7 +1959,9 @@
             themselves, and a lobby your team can run without a designer in the loop.
           </p>
         </div>
-        <div class="bgrid">
+        <div class="bcarousel" data-bcarousel>
+          <button class="bnav prev" type="button" aria-label="Previous benefits" data-bprev>&#8249;</button>
+          <div class="bgrid" role="group" aria-label="Business benefits" tabindex="0">
           <div class="bcard">
             <div class="bviz" aria-hidden="true">
               <div class="bz-cat">
@@ -1968,6 +2004,9 @@
             <h3>Customize your UI</h3>
             <p>Corner radius, stroke, band, badge shape — tuned to your lobby per brand. One template change restyles every tile you serve, everywhere.</p>
           </div>
+          </div>
+          <button class="bnav next" type="button" aria-label="Next benefits" data-bnext>&#8250;</button>
+          <div class="bdots" role="tablist" aria-label="Benefit slides" data-bdots></div>
         </div>
       </section>
 
@@ -3115,6 +3154,97 @@
       }
 
       document.getElementById('year').textContent = String(new Date().getFullYear())
+
+      /* ================== benefits carousel ================== */
+      ;(function () {
+        var root = document.querySelector('[data-bcarousel]');
+        if (!root) return;
+        var track = root.querySelector('.bgrid');
+        var prev = root.querySelector('[data-bprev]');
+        var next = root.querySelector('[data-bnext]');
+        var dotsWrap = root.querySelector('[data-bdots]');
+        var cards = Array.prototype.slice.call(track.querySelectorAll('.bcard'));
+        if (!cards.length) return;
+
+        // one dot per card
+        var dots = cards.map(function (card, i) {
+          var b = document.createElement('button');
+          b.type = 'button';
+          b.setAttribute('role', 'tab');
+          b.setAttribute('aria-label', 'Go to benefit ' + (i + 1));
+          b.addEventListener('click', function () { scrollToCard(i); });
+          dotsWrap.appendChild(b);
+          return b;
+        });
+
+        function step() {
+          // distance between card starts (card width + gap)
+          if (cards.length < 2) return cards[0].offsetWidth;
+          return cards[1].offsetLeft - cards[0].offsetLeft;
+        }
+        function activeIndex() {
+          var s = step() || 1;
+          return Math.round(track.scrollLeft / s);
+        }
+        function scrollToCard(i) {
+          i = Math.max(0, Math.min(cards.length - 1, i));
+          track.scrollTo({ left: i * step(), behavior: prefersReduced() ? 'auto' : 'smooth' });
+        }
+        function prefersReduced() {
+          return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        }
+        function sync() {
+          var i = activeIndex();
+          dots.forEach(function (d, di) {
+            d.setAttribute('aria-current', di === i ? 'true' : 'false');
+          });
+          var maxScroll = track.scrollWidth - track.clientWidth - 1;
+          if (prev) prev.disabled = track.scrollLeft <= 1;
+          if (next) next.disabled = track.scrollLeft >= maxScroll;
+        }
+
+        if (prev) prev.addEventListener('click', function () { scrollToCard(activeIndex() - 1); });
+        if (next) next.addEventListener('click', function () { scrollToCard(activeIndex() + 1); });
+
+        // keyboard on the track
+        track.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowRight') { e.preventDefault(); scrollToCard(activeIndex() + 1); }
+          else if (e.key === 'ArrowLeft') { e.preventDefault(); scrollToCard(activeIndex() - 1); }
+        });
+
+        // pointer drag-to-scroll (desktop mouse)
+        var down = false, startX = 0, startLeft = 0, moved = false;
+        track.addEventListener('pointerdown', function (e) {
+          if (e.pointerType === 'touch') return; // native touch scroll handles it
+          down = true; moved = false;
+          startX = e.clientX; startLeft = track.scrollLeft;
+          track.classList.add('dragging');
+        });
+        window.addEventListener('pointermove', function (e) {
+          if (!down) return;
+          var dx = e.clientX - startX;
+          if (Math.abs(dx) > 3) moved = true;
+          track.scrollLeft = startLeft - dx;
+        });
+        window.addEventListener('pointerup', function () {
+          if (!down) return;
+          down = false;
+          track.classList.remove('dragging');
+          if (moved) scrollToCard(activeIndex()); // snap to nearest
+        });
+        // swallow the click that follows a drag
+        track.addEventListener('click', function (e) {
+          if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+        }, true);
+
+        var raf;
+        track.addEventListener('scroll', function () {
+          if (raf) cancelAnimationFrame(raf);
+          raf = requestAnimationFrame(sync);
+        }, { passive: true });
+        window.addEventListener('resize', sync);
+        sync();
+      })();
     </script>
   </body>
 </html>

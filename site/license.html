@@ -47,6 +47,11 @@
       .btn-o { color: #fff; background: rgb(255 255 255 / 0.06); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.16); }
       .btn-o:hover { background: rgb(255 255 255 / 0.12); }
       .nav-cta { display: flex; gap: 10px; }
+      /* Telegram contact in the nav — icon always, handle from 810px up. */
+      .nav-tg { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.16); color: rgb(255 255 255 / 0.72); font-size: 13px; font-weight: 500; text-decoration: none; white-space: nowrap; transition: color 0.15s ease, border-color 0.15s ease; }
+      .nav-tg:hover { color: #fff; border-color: rgb(255 255 255 / 0.34); }
+      .nav-tg svg { width: 15px; height: 15px; flex: none; }
+      @media (max-width: 809.98px) { .nav-tg span { display: none; } .nav-tg { padding: 7px 9px; } }
 
       .doc-head { display: flex; flex-direction: column; gap: 16px; }
       .doc-head .kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); }
@@ -118,6 +123,10 @@
           <a class="nav-link" href="/roadmap">Roadmap</a>
         </div>
         <div class="nav-cta">
+          <a class="nav-tg" href="https://t.me/cubicledesign" target="_blank" rel="noopener" aria-label="Telegram @cubicledesign">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.2c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.33-4.78 8.7-7.86c.38-.34-.08-.53-.59-.19l-10.75 6.77-4.63-1.45c-1-.32-1.03-1 .21-1.49l18.1-6.98c.84-.3 1.57.2 1.28 1.41Z"/></svg>
+            <span>@cubicledesign</span>
+          </a>
           <a class="btn btn-o" href="https://app.thumbs.store/login">Log in</a>
           <a class="btn btn-y" href="https://app.thumbs.store/signup">Sign up</a>
         </div>
@@ -330,7 +339,7 @@
               <tr><th>Auth Header</th><td>x-api-key: {key}</td></tr>
               <tr><th>Endpoint</th><td>/v1/thumbnails/{provider}/{slug}</td></tr>
               <tr><th>Rate Limits · Docs</th><td>thumbs.store/docs · /docs/rate-limits</td></tr>
-              <tr><th>Registration</th><td>www.thumbs.store/apply</td></tr>
+              <tr><th>Registration</th><td>cal.com/cubicle</td></tr>
               <tr class="g"><th colspan="2">Governing Law</th></tr>
               <tr><th>Governing Law</th><td>Estonia</td></tr>
               <tr><th>Dispute Resolution</th><td>Harju County Court, Tallinn, or Estonian Chamber of Commerce arbitration by mutual agreement</td></tr>
@@ -341,7 +350,7 @@
 
       <div class="contact">
         <p>Questions about this Agreement: <a class="mail" href="mailto:legal@thumbs.store">legal@thumbs.store</a></p>
-        <a class="btn btn-y" href="https://www.thumbs.store/apply" target="_blank" rel="noopener">Request an Order Form</a>
+        <a class="btn btn-y" href="https://cal.com/cubicle" target="_blank" rel="noopener">Request an Order Form</a>
       </div>
 
       <footer>

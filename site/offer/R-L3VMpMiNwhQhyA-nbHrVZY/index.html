@@ -138,6 +138,11 @@
       .brand-sub i { font-family: var(--sans); font-style: italic; font-weight: 600; font-size: 10px; color: rgb(255 240 80); }
       .brand-sub b { font-family: var(--sans); font-weight: 600; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(255 255 255 / 0.75); }
       .nav-cta { display: flex; align-items: center; gap: 10px; }
+      /* Telegram contact in the nav — icon always, handle from 810px up. */
+      .nav-tg { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.16); color: rgb(255 255 255 / 0.72); font-size: 13px; font-weight: 500; text-decoration: none; white-space: nowrap; transition: color 0.15s ease, border-color 0.15s ease; }
+      .nav-tg:hover { color: #fff; border-color: rgb(255 255 255 / 0.34); }
+      .nav-tg svg { width: 15px; height: 15px; flex: none; }
+      @media (max-width: 809.98px) { .nav-tg span { display: none; } .nav-tg { padding: 7px 9px; } }
       .nav-cta .btn { padding: 9px 18px; font-size: 13px; }
       .nav-links { display: flex; align-items: center; gap: 4px; margin-right: auto; margin-left: 28px; }
       .nav-link { font-size: 13px; font-weight: 600; color: var(--muted); padding: 9px 12px; border-radius: 999px; }
@@ -621,6 +626,10 @@
           <a class="nav-link" href="/roadmap">Roadmap</a>
         </div>
         <div class="nav-cta">
+          <a class="nav-tg" href="https://t.me/cubicledesign" target="_blank" rel="noopener" aria-label="Telegram @cubicledesign">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.2c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.33-4.78 8.7-7.86c.38-.34-.08-.53-.59-.19l-10.75 6.77-4.63-1.45c-1-.32-1.03-1 .21-1.49l18.1-6.98c.84-.3 1.57.2 1.28 1.41Z"/></svg>
+            <span>@cubicledesign</span>
+          </a>
           <a class="btn btn-o" href="https://app.thumbs.store/login">Log in</a>
           <a class="btn btn-y" href="https://app.thumbs.store/signup">Sign up</a>
         </div>
@@ -630,7 +639,7 @@
     <main>
       <!-- ============================== HERO ============================== -->
       <section class="card hero">
-        <span class="draft-pill">Draft pricing · internal</span>
+        <span class="draft-pill" id="preparedFor">Private preview</span>
         <p class="eyebrow">Pricing</p>
         <h1>One thumbnail, one credit. Every size costs the same.</h1>
         <p class="lede">
@@ -672,7 +681,7 @@
               <li>API + CDN delivery</li>
               <li class="mut">Email support</li>
             </ul>
-            <a class="btn btn-o" href="https://www.thumbs.store/apply" target="_blank" rel="noopener">Start with Studio</a>
+            <a class="btn btn-o" href="https://app.thumbs.store/signup" target="_blank" rel="noopener">Start with Studio</a>
             <p class="plan-note">No commitment · cancel monthly</p>
           </div>
           <div class="plan pop">
@@ -691,7 +700,7 @@
               <li>Priority render queue</li>
               <li class="mut">Slack + email support</li>
             </ul>
-            <a class="btn btn-y" href="https://www.thumbs.store/apply" target="_blank" rel="noopener">Start with Growth</a>
+            <a class="btn btn-y" href="https://app.thumbs.store/signup" target="_blank" rel="noopener">Start with Growth</a>
             <p class="plan-note">Credits roll over for 3 months</p>
           </div>
           <div class="plan">
@@ -726,7 +735,7 @@
             <div class="plan-price"><b data-monthly="999" data-annual="799">$999</b><span>/mo base + credit pool · custom</span></div>
             <div class="ctas">
               <a class="btn btn-y" href="https://cal.com/cubicle" target="_blank" rel="noopener">Book a demo</a>
-              <a class="btn btn-o" href="https://www.thumbs.store/apply" target="_blank" rel="noopener">Get started</a>
+              <a class="btn btn-o" href="https://app.thumbs.store/signup" target="_blank" rel="noopener">Get started</a>
             </div>
           </div>
           <div class="right">
@@ -988,7 +997,7 @@
           <h2 class="h2">Get instant access to 10,000+ compliant casino thumbnails</h2>
           <p class="lede">Start on any plan today — or bring your catalogue and we'll price it with you.</p>
           <div class="cta-row">
-            <a class="btn btn-y" href="https://www.thumbs.store/apply" target="_blank" rel="noopener">Get started</a>
+            <a class="btn btn-y" href="https://app.thumbs.store/signup" target="_blank" rel="noopener">Get started</a>
             <a class="btn btn-o" href="https://cal.com/cubicle" target="_blank" rel="noopener">Book a demo</a>
           </div>
         </div>
@@ -1166,6 +1175,20 @@
         }
 
         document.getElementById('year').textContent = String(new Date().getFullYear())
+      })()
+    </script>
+    <script>
+      // Personalise from ?for=Acme%20Casino — the link is the secret, this only
+      // changes how the page reads. Text is set with textContent, never HTML,
+      // so a crafted query string cannot inject markup.
+      ;(() => {
+        const who = new URLSearchParams(location.search).get('for')
+        const el = document.getElementById('preparedFor')
+        if (el && who) el.textContent = 'Prepared for ' + who.slice(0, 60)
+        if (who) {
+          const t = document.querySelector('title')
+          if (t) t.textContent = who.slice(0, 60) + ' — thumbs.store pricing'
+        }
       })()
     </script>
   </body>

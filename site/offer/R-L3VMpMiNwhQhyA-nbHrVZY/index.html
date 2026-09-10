@@ -854,6 +854,11 @@
               <label for="c-ai">AI-animated games / month <output id="o-ai">0 games</output></label>
               <input id="c-ai" type="range" min="0" max="200" step="5" value="0" />
             </div>
+            <div class="cfield">
+              <label for="c-unit">Price per thumbnail <output id="o-unit">$0.16</output></label>
+              <input id="c-unit" type="range" min="0.02" max="0.4" step="0.005" value="0.16" />
+              <label class="chk"><input type="checkbox" id="c-unitauto" checked /> Use volume tiers</label>
+            </div>
             <label class="chk"><input type="checkbox" id="c-annual" /> Annual billing (−20% on the plan)</label>
             <p class="calc-note">
               The comparison uses per-game pricing published by other solutions: $99/mo with 30 games ×
@@ -867,6 +872,7 @@
             <div class="co-big"><b id="r-monthly">$199</b><span>/month</span></div>
             <div class="co-line"><span id="r-credline">160 credits used of 1,500</span><b id="r-topup"></b></div>
             <div class="co-line"><span>One-time catalogue render</span><b id="r-once">$1,600</b></div>
+            <div class="co-line"><span>Effective per thumbnail · year one</span><b id="r-unit">$0.11</b></div>
             <hr class="co-sep" />
             <div class="versus">
               <div class="vrow us">
@@ -1043,7 +1049,11 @@
         const fmt = (n) => '$' + Math.round(n).toLocaleString('en-US')
         const fnum = (n) => n.toLocaleString('en-US')
 
-        const state = { cat: 2000, sizes: 4, newpm: 40, aipm: 0, annual: false }
+        // unit = $/credit when set by hand; null follows the volume tiers. One
+        // credit is one thumbnail, so this is the per-thumbnail price.
+        const state = { cat: 2000, sizes: 4, newpm: 40, aipm: 0, annual: false, unit: null }
+        const batchRate = (credits) => (state.unit != null ? state.unit : CFG.packRate(credits))
+        const topupRate = () => (state.unit != null ? state.unit : CFG.topup)
 
         function setFill(input) {
           const v = Number(input.value), lo = Number(input.min), hi = Number(input.max)
@@ -1055,13 +1065,17 @@
           let plan = CFG.plans.find((p) => p.credits >= monthlyCredits) || CFG.plans[CFG.plans.length - 1]
           const topupCredits = Math.max(0, monthlyCredits - plan.credits)
           const planCost = plan.monthly * (state.annual ? 1 - CFG.annualOff : 1)
-          const topupCost = topupCredits * CFG.topup
+          const topupCost = topupCredits * topupRate()
           const onceCredits = state.cat * state.sizes
-          const once = onceCredits * CFG.packRate(onceCredits)
+          const once = onceCredits * batchRate(onceCredits)
+          const year1 = once + (planCost + topupCost) * 12
+          // What a thumbnail actually costs once the plan fee is spread over
+          // everything rendered in the year — the number a client asks for.
+          const totalCredits = onceCredits + monthlyCredits * 12
           return {
             plan, monthlyCredits, topupCredits,
             monthly: planCost + topupCost, planCost, topupCost, once, onceCredits,
-            year1: once + (planCost + topupCost) * 12,
+            year1, totalCredits, effective: totalCredits > 0 ? year1 / totalCredits : 0,
           }
         }
 
@@ -1092,6 +1106,11 @@
           $('r-credline').textContent = fnum(u.monthlyCredits) + ' credits used of ' + fnum(u.plan.credits)
           $('r-topup').textContent = u.topupCredits > 0 ? '+' + fnum(u.topupCredits) + ' cr top-up ' + fmt(u.topupCost) + '/mo' : 'fits your plan'
           $('r-once').textContent = u.onceCredits > 0 ? fmt(u.once) + ' · ' + fnum(u.onceCredits) + ' cr batch' : '$0'
+          $('r-unit').textContent = u.totalCredits > 0 ? '$' + u.effective.toFixed(3) : '—'
+          const auto = state.unit == null
+          $('o-unit').textContent = '$' + batchRate(u.onceCredits).toFixed(3) + (auto ? ' · tier' : ' · set')
+          if (auto) $('c-unit').value = String(batchRate(u.onceCredits))
+          setFill($('c-unit'))
 
           $('v-us').textContent = fmt(u.year1)
           $('v-them').textContent = fmt(t.year1)
@@ -1109,9 +1128,10 @@
 
           $('r-detail').innerHTML = [
             '<b style="color:#fff">thumbs.store</b>',
-            'catalogue: ' + fnum(u.onceCredits) + ' cr × $' + CFG.packRate(u.onceCredits).toFixed(2) + ' = ' + fmt(u.once),
+            'catalogue: ' + fnum(u.onceCredits) + ' cr × $' + batchRate(u.onceCredits).toFixed(3) + (state.unit != null ? ' (set)' : ' (tier)') + ' = ' + fmt(u.once),
             'plan ' + u.plan.key + ': ' + fmt(u.planCost) + '/mo' + (u.topupCredits ? ' + top-up ' + fmt(u.topupCost) + '/mo' : ''),
             'year one: ' + fmt(u.once) + ' + 12 × ' + fmt(u.monthly) + ' = ' + fmt(u.year1),
+            'effective: ' + fmt(u.year1) + ' ÷ ' + fnum(u.totalCredits) + ' thumbnails = $' + u.effective.toFixed(3) + ' each',
             '&nbsp;',
             '<b style="color:#fff">Other solutions (published per-game rates)</b>',
             'catalogue: ' + fnum(state.cat) + ' games × $' + t.bulkRate.toFixed(2) + ' = ' + fmt(t.onceGames) + (t.onceSizes ? ' + extra sizes ' + fmt(t.onceSizes) : ''),
@@ -1146,6 +1166,15 @@
             document.querySelectorAll('#c-sizes .seg').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
             render()
           })
+        })
+        $('c-unit').addEventListener('input', () => {
+          $('c-unitauto').checked = false
+          state.unit = Number($('c-unit').value)
+          render()
+        })
+        $('c-unitauto').addEventListener('change', () => {
+          state.unit = $('c-unitauto').checked ? null : Number($('c-unit').value)
+          render()
         })
         $('c-annual').addEventListener('change', () => {
           state.annual = $('c-annual').checked

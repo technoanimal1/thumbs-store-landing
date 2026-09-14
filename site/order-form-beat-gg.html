@@ -102,6 +102,42 @@
       .contact p { font-size: 14px; color: var(--muted); }
       .contact a.mail { color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 
+      /* ---- editable client-info form ---- */
+      .form-grid { display: grid; grid-template-columns: 42% 1fr; }
+      .form-row { display: contents; }
+      .form-row label { display: flex; align-items: center; padding: 8px 16px; border-bottom: 1px solid rgb(255 255 255 / 0.06); color: var(--dim); font-size: 13.5px; }
+      .form-row .fld { border-bottom: 1px solid rgb(255 255 255 / 0.06); padding: 4px 8px; display: flex; align-items: center; }
+      .form-row:last-child label, .form-row:last-child .fld { border-bottom: 0; }
+      .form-grid input, .form-grid select {
+        width: 100%; background: transparent; border: 1px solid transparent; border-radius: 8px;
+        color: #fff; font: 600 12.5px var(--mono); padding: 8px 8px; transition: border-color 0.15s ease, background 0.15s ease;
+      }
+      .form-grid input:hover, .form-grid select:hover { background: rgb(255 255 255 / 0.04); }
+      .form-grid input:focus-visible, .form-grid select:focus-visible { border-color: var(--yellow); background: rgb(255 255 255 / 0.06); outline: none; }
+      .form-grid input:disabled, .form-grid select:disabled { color: rgb(255 255 255 / 0.85); background: none; opacity: 1; }
+      .form-grid select { appearance: none; cursor: pointer; }
+      .form-grid select:disabled { cursor: default; }
+
+      /* ---- signature / acceptance flow ---- */
+      .accept.done { border-color: rgb(126 231 135 / 0.4); background: rgb(126 231 135 / 0.06); }
+      .accept input:disabled { opacity: 0.6; cursor: default; }
+      .accept-fields { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+      .accept-fields input { flex: 1; min-width: 180px; background: rgb(255 255 255 / 0.04); border: 1px solid var(--ring); border-radius: 10px; color: #fff; font: 500 13px var(--sans); padding: 10px 14px; }
+      .accept-fields input::placeholder { color: var(--dim); }
+      .accept-fields input:focus-visible { border-color: var(--yellow); outline: none; }
+      .accept-fields input:disabled { opacity: 1; color: #fff; background: rgb(255 255 255 / 0.03); }
+      #sign-btn { margin-top: 14px; width: 100%; padding: 13px; border-radius: 999px; border: 0; background: var(--yellow); color: #000; font: 700 14px var(--sans); cursor: pointer; transition: transform 0.12s ease, opacity 0.12s ease; }
+      #sign-btn:hover:not(:disabled) { transform: translateY(-1px); }
+      #sign-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+      #sign-btn.signed { background: var(--good); }
+
+      .sign-box.signed { border-color: rgb(126 231 135 / 0.35); background: rgb(126 231 135 / 0.05); }
+      .sign-box .status { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--good); }
+      .sign-box .status.pending { color: var(--dim); }
+      .sign-line.stamped { color: rgb(255 255 255 / 0.7); font-style: normal; }
+      .post-sign { display: none; margin-top: 8px; }
+      .post-sign.show { display: flex; gap: 10px; flex-wrap: wrap; }
+
       footer { border-top: 1px solid rgb(255 255 255 / 0.08); padding: 32px 0 52px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--dim); }
       footer .links { display: flex; gap: 20px; }
       footer a:hover { color: #fff; }
@@ -151,19 +187,20 @@
       <article>
         <section class="c" id="s1">
           <h2><span>1.</span>Client Information</h2>
+          <p class="note">Confirm or correct your details below before signing — the accepted values are locked in at the moment of signature.</p>
           <div class="ex-wrap">
-            <table>
-              <tr><th>Company Name</th><td>3-102-952292 SRL</td></tr>
-              <tr><th>Doing Business As</th><td>beat.gg</td></tr>
-              <tr><th>Authorised Domain(s)</th><td>beat.gg</td></tr>
-              <tr><th>Contact Email</th><td>mh3534161@gmail.com</td></tr>
-              <tr><th>Contact Phone</th><td>+506.CR.1318155149</td></tr>
-              <tr><th>Country</th><td>Costa Rica</td></tr>
-              <tr><th>Gaming Licence Number</th><td>ALSI-202603039-FI2</td></tr>
-              <tr><th>Licence Type</th><td>B2C — <span class="status-valid" style="font-family:inherit">Valid</span></td></tr>
-              <tr><th>Licence Issued</th><td>31 March 2026</td></tr>
-              <tr><th>Licence Expires</th><td>30 March 2027</td></tr>
-            </table>
+            <div class="form-grid" id="client-form">
+              <div class="form-row"><label for="f-company">Company Name</label><div class="fld"><input id="f-company" value="3-102-952292 SRL" autocomplete="off" /></div></div>
+              <div class="form-row"><label for="f-dba">Doing Business As</label><div class="fld"><input id="f-dba" value="beat.gg" autocomplete="off" /></div></div>
+              <div class="form-row"><label for="f-domain">Authorised Domain(s)</label><div class="fld"><input id="f-domain" value="beat.gg" autocomplete="off" /></div></div>
+              <div class="form-row"><label for="f-email">Contact Email</label><div class="fld"><input id="f-email" type="email" value="mh3534161@gmail.com" autocomplete="off" /></div></div>
+              <div class="form-row"><label for="f-phone">Contact Phone</label><div class="fld"><input id="f-phone" value="+506.CR.1318155149" autocomplete="off" /></div></div>
+              <div class="form-row"><label for="f-country">Country</label><div class="fld"><input id="f-country" value="Costa Rica" autocomplete="off" /></div></div>
+              <div class="form-row"><label for="f-licno">Gaming Licence Number</label><div class="fld"><input id="f-licno" value="ALSI-202603039-FI2" autocomplete="off" /></div></div>
+              <div class="form-row"><label for="f-lictype">Licence Type</label><div class="fld"><input id="f-lictype" value="B2C — Valid" autocomplete="off" /></div></div>
+              <div class="form-row"><label for="f-licissued">Licence Issued</label><div class="fld"><input id="f-licissued" type="date" value="2026-03-31" /></div></div>
+              <div class="form-row"><label for="f-licexpires">Licence Expires</label><div class="fld"><input id="f-licexpires" type="date" value="2027-03-30" /></div></div>
+            </div>
           </div>
           <p><b class="n">1.1</b>Customer represents and warrants that the information above is accurate and that beat.gg is operated under the gaming licence stated above, valid for the duration of this Order Form, per clause 6.2 of the License Agreement.</p>
         </section>
@@ -190,8 +227,8 @@
 
         <section class="c" id="s3">
           <h2><span>3.</span>Term</h2>
-          <p><b class="n">3.1</b><b style="color:#fff">Effective Date:</b> 14 September 2026</p>
-          <p><b class="n">3.2</b><b style="color:#fff">Term:</b> One (1) year, expiring 13 September 2027, unless renewed or terminated earlier under the License Agreement.</p>
+          <p><b class="n">3.1</b><b style="color:#fff">Effective Date:</b> <span id="term-start">the date beat.gg signs below</span></p>
+          <p><b class="n">3.2</b><b style="color:#fff">Term:</b> One (1) year from the Effective Date — <span id="term-end">through the same date next year</span> — unless renewed or terminated earlier under the License Agreement.</p>
           <p><b class="n">3.3</b>Per clause 15.5 of the License Agreement, this Order Form renews automatically for successive one-year terms unless either party gives written notice of non-renewal at least 30 calendar days before the end of the current term.</p>
         </section>
 
@@ -210,30 +247,45 @@
 
         <section class="c" id="s6">
           <h2><span>6.</span>Acceptance</h2>
-          <div class="accept">
+
+          <div class="accept" id="accept-box">
             <input type="checkbox" id="accept-cb" aria-describedby="accept-label" />
-            <label id="accept-label" for="accept-cb">
-              I confirm that I am duly authorised to bind <b>3-102-952292 SRL (DBA beat.gg)</b> and
-              that beat.gg has read and accepts this Order Form, the
-              <b>API License Agreement (General Form, v1.3)</b>, and the Terms of Service of
-              THUMBS.STORE OÜ.
-            </label>
+            <div style="flex:1">
+              <label id="accept-label" for="accept-cb">
+                I confirm that I am duly authorised to bind <b id="accept-company">3-102-952292 SRL (DBA beat.gg)</b> and
+                that beat.gg has read and accepts this Order Form, the
+                <b>API License Agreement (General Form, v1.3)</b>, and the Terms of Service of
+                THUMBS.STORE OÜ.
+              </label>
+              <div class="accept-fields">
+                <input id="signer-name" placeholder="Your full name" autocomplete="off" />
+                <input id="signer-title" placeholder="Your title (e.g. CEO, Director)" autocomplete="off" />
+              </div>
+              <button type="button" id="sign-btn" disabled>Sign &amp; Accept on behalf of beat.gg</button>
+              <div class="post-sign" id="post-sign">
+                <a class="btn btn-o" href="#" id="print-btn">Download / print signed copy</a>
+              </div>
+            </div>
           </div>
+
           <div class="sign-grid">
-            <div class="sign-box">
+            <div class="sign-box signed">
               <b class="who">For THUMBS.STORE OÜ</b>
-              <div class="sign-field">Name: <b>_______________________</b></div>
-              <div class="sign-field">Title: <b>_______________________</b></div>
-              <div class="sign-line">Signature &amp; date</div>
+              <span class="status">✓ Signed electronically</span>
+              <div class="sign-field">Name: <b>Authorised Signatory</b></div>
+              <div class="sign-field">Title: <b>Duly Authorised Representative, THUMBS.STORE OÜ</b></div>
+              <div class="sign-line stamped" id="ts-stamp">Signed electronically on —</div>
             </div>
-            <div class="sign-box">
+            <div class="sign-box" id="client-sign-box">
               <b class="who">For 3-102-952292 SRL (beat.gg)</b>
-              <div class="sign-field">Name: <b>_______________________</b></div>
-              <div class="sign-field">Title: <b>_______________________</b></div>
-              <div class="sign-line">Signature &amp; date</div>
+              <span class="status pending" id="client-status">Awaiting signature</span>
+              <div class="sign-field">Name: <b id="client-name-out">—</b></div>
+              <div class="sign-field">Title: <b id="client-title-out">—</b></div>
+              <div class="sign-line" id="client-stamp">Not yet signed</div>
             </div>
           </div>
-          <p class="note">Note: this page is a client-specific Order Form generated for record and signature purposes. Retain a signed/countersigned or timestamped-acceptance copy per clause 17 (Confidentiality) of the License Agreement.</p>
+
+          <p class="note">This page records acceptance electronically: checking the box above, entering your name and title, and clicking "Sign &amp; Accept" constitutes your electronic signature and binds beat.gg to this Order Form and the incorporated License Agreement, per clause 19.6 (Notices) and clause 17 (Confidentiality) of the License Agreement. Your device stores a signed copy locally so this page shows "Signed" the next time you open it; use "Download / print signed copy" to keep an independent record, and email a copy to <a href="mailto:legal@thumbs.store" style="text-decoration:underline">legal@thumbs.store</a> for Thumbs Store's file.</p>
         </section>
       </article>
 
@@ -252,5 +304,130 @@
       </footer>
     </main>
     <script>document.getElementById('year').textContent = String(new Date().getFullYear())</script>
+    <script>
+      ;(function () {
+        var STORE_KEY = 'ts-order-beatgg-signature'
+        var FIELD_IDS = ['f-company', 'f-dba', 'f-domain', 'f-email', 'f-phone', 'f-country', 'f-licno', 'f-lictype', 'f-licissued', 'f-licexpires']
+
+        var fmt = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+        var fmtStamp = function (d) {
+          return fmt.format(d) + ' at ' + d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })
+        }
+
+        var tsSignedOn = new Date() // Thumbs Store's side is pre-executed as of page load ("today")
+        document.getElementById('ts-stamp').textContent = 'Signed electronically on ' + fmt.format(tsSignedOn)
+
+        var checkbox = document.getElementById('accept-cb')
+        var nameInput = document.getElementById('signer-name')
+        var titleInput = document.getElementById('signer-title')
+        var signBtn = document.getElementById('sign-btn')
+        var acceptBox = document.getElementById('accept-box')
+        var postSign = document.getElementById('post-sign')
+        var printBtn = document.getElementById('print-btn')
+        var clientBox = document.getElementById('client-sign-box')
+        var clientStatus = document.getElementById('client-status')
+        var clientNameOut = document.getElementById('client-name-out')
+        var clientTitleOut = document.getElementById('client-title-out')
+        var clientStamp = document.getElementById('client-stamp')
+        var termStart = document.getElementById('term-start')
+        var termEnd = document.getElementById('term-end')
+        var acceptCompany = document.getElementById('accept-company')
+
+        function fieldValues() {
+          var out = {}
+          FIELD_IDS.forEach(function (id) {
+            var el = document.getElementById(id)
+            if (el) out[id] = el.value
+          })
+          return out
+        }
+
+        function updateAcceptCompanyLabel() {
+          var dba = document.getElementById('f-dba').value.trim() || 'beat.gg'
+          var company = document.getElementById('f-company').value.trim() || '3-102-952292 SRL'
+          acceptCompany.textContent = company + ' (DBA ' + dba + ')'
+        }
+        FIELD_IDS.forEach(function (id) {
+          var el = document.getElementById(id)
+          if (el) el.addEventListener('input', updateAcceptCompanyLabel)
+        })
+
+        function refreshSignButton() {
+          signBtn.disabled = !(checkbox.checked && nameInput.value.trim() && titleInput.value.trim())
+        }
+        checkbox.addEventListener('change', refreshSignButton)
+        nameInput.addEventListener('input', refreshSignButton)
+        titleInput.addEventListener('input', refreshSignButton)
+
+        function lockForm(disabled) {
+          FIELD_IDS.forEach(function (id) {
+            var el = document.getElementById(id)
+            if (el) el.disabled = disabled
+          })
+          nameInput.disabled = disabled
+          titleInput.disabled = disabled
+          checkbox.disabled = disabled
+        }
+
+        function renderSigned(record) {
+          var signedAt = new Date(record.signedAt)
+          lockForm(true)
+          signBtn.textContent = '✓ Signed & Accepted'
+          signBtn.classList.add('signed')
+          signBtn.disabled = true
+          acceptBox.classList.add('done')
+          postSign.classList.add('show')
+
+          clientBox.classList.add('signed')
+          clientStatus.textContent = '✓ Signed electronically'
+          clientStatus.classList.remove('pending')
+          clientNameOut.textContent = record.name
+          clientTitleOut.textContent = record.title
+          clientStamp.textContent = 'Signed electronically on ' + fmtStamp(signedAt)
+          clientStamp.classList.add('stamped')
+
+          termStart.textContent = fmt.format(signedAt)
+          var end = new Date(signedAt)
+          end.setFullYear(end.getFullYear() + 1)
+          end.setDate(end.getDate() - 1)
+          termEnd.textContent = fmt.format(end)
+        }
+
+        function doSign() {
+          var record = {
+            name: nameInput.value.trim(),
+            title: titleInput.value.trim(),
+            signedAt: new Date().toISOString(),
+            client: fieldValues(),
+          }
+          try { localStorage.setItem(STORE_KEY, JSON.stringify(record)) } catch (e) {}
+          renderSigned(record)
+        }
+        signBtn.addEventListener('click', doSign)
+
+        printBtn.addEventListener('click', function (e) {
+          e.preventDefault()
+          window.print()
+        })
+
+        // Restore a signature already made on this device, so re-opening the
+        // link shows "Signed" instead of asking beat.gg to sign again.
+        try {
+          var saved = localStorage.getItem(STORE_KEY)
+          if (saved) {
+            var record = JSON.parse(saved)
+            FIELD_IDS.forEach(function (id) {
+              var el = document.getElementById(id)
+              if (el && record.client && record.client[id] !== undefined) el.value = record.client[id]
+            })
+            updateAcceptCompanyLabel()
+            checkbox.checked = true
+            nameInput.value = record.name
+            titleInput.value = record.title
+            renderSigned(record)
+          }
+        } catch (e) {}
+      })()
+    </script>
   </body>
 </html>

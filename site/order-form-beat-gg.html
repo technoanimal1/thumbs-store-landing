@@ -317,6 +317,13 @@
         var tsSignedOn = new Date() // Thumbs Store's side is pre-executed as of page load ("today")
         document.getElementById('ts-stamp').textContent = 'Signed electronically on ' + fmt.format(tsSignedOn)
 
+        function termEndFor(startDate) {
+          var end = new Date(startDate)
+          end.setFullYear(end.getFullYear() + 1)
+          end.setDate(end.getDate() - 1)
+          return end
+        }
+
         var checkbox = document.getElementById('accept-cb')
         var nameInput = document.getElementById('signer-name')
         var titleInput = document.getElementById('signer-title')
@@ -387,11 +394,14 @@
           clientStamp.classList.add('stamped')
 
           termStart.textContent = fmt.format(signedAt)
-          var end = new Date(signedAt)
-          end.setFullYear(end.getFullYear() + 1)
-          end.setDate(end.getDate() - 1)
-          termEnd.textContent = fmt.format(end)
+          termEnd.textContent = fmt.format(termEndFor(signedAt))
         }
+
+        // Before signing, preview the term as if it started today — it locks
+        // to the real signing moment the instant beat.gg signs.
+        var today = new Date()
+        termStart.textContent = fmt.format(today) + ' (today — locks in at signature)'
+        termEnd.textContent = fmt.format(termEndFor(today))
 
         function doSign() {
           var record = {

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order Form — beat.gg × thumbs.store</title>
+    <meta name="description" content="Order Form between THUMBS.STORE OÜ (Estonia) and beat.gg (3-102-952292 SRL): one-year Studio plan subscription under the API License Agreement v1.3." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --yellow: #fef150;
+        --page: #000; --panel: #121212; --deep: #0a0a0a; --ring: #222222;
+        --muted: rgb(255 255 255 / 0.66); --dim: rgb(255 255 255 / 0.4);
+        --good: #7ee787;
+        --sans: 'Inter', system-ui, sans-serif;
+        --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; background: var(--page); color: #fff; font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+      a { color: inherit; text-decoration: none; }
+      h1, h2, h3, p { margin: 0; }
+      :focus-visible { outline: 2px solid #fff; outline-offset: 3px; border-radius: 8px; }
+      ::selection { background: var(--yellow); color: #050505; }
+      main { max-width: 820px; margin: 0 auto; padding: 60px 24px 0; display: flex; flex-direction: column; gap: 40px; }
+
+      .navwrap { position: fixed; top: 0; left: 0; right: 0; z-index: 60; display: flex; justify-content: center; background: rgb(0 0 0 / 0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgb(255 255 255 / 0.07); }
+      nav { width: 100%; max-width: 1270px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; }
+      .brand { display: flex; align-items: center; gap: 10px; flex: none; font-weight: 600; font-size: 14px; }
+      .brand svg { width: 28px; height: 26px; }
+      .btn { display: inline-flex; align-items: center; gap: 8px; justify-content: center; padding: 9px 18px; border-radius: 999px; border: 0; font: 600 13px/1.2 var(--sans); cursor: pointer; white-space: nowrap; transition: background 0.2s ease; }
+      .btn-y { background: #fff; color: #000; }
+      .btn-y:hover { background: var(--yellow); }
+      .btn-o { color: #fff; background: rgb(255 255 255 / 0.06); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.16); }
+      .btn-o:hover { background: rgb(255 255 255 / 0.12); }
+
+      main { padding-top: 100px; }
+
+      .doc-head { display: flex; flex-direction: column; gap: 16px; }
+      .doc-head .kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); }
+      .doc-head h1 { font-size: clamp(30px, 4vw, 44px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.1; text-wrap: balance; }
+      .doc-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+      .pill { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid rgb(255 255 255 / 0.18); color: var(--muted); border-radius: 999px; padding: 4px 12px; }
+      .pill.v { background: var(--yellow); color: #000; border-color: var(--yellow); }
+      .doc-meta .btn { margin-left: auto; }
+      .doc-intro { color: var(--muted); font-size: 15px; border-left: 2px solid rgb(255 255 255 / 0.14); padding-left: 18px; }
+      .doc-intro a { text-decoration: underline; text-underline-offset: 3px; color: #fff; }
+
+      article { display: flex; flex-direction: column; gap: 34px; }
+      section.c { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 90px; }
+      section.c h2 { font-size: 19px; font-weight: 600; letter-spacing: -0.01em; padding-top: 10px; border-top: 1px solid rgb(255 255 255 / 0.08); }
+      section.c h2 span { font-family: var(--mono); color: var(--dim); font-weight: 500; margin-right: 10px; font-size: 16px; }
+      section.c p { font-size: 14.5px; color: var(--muted); }
+      section.c p b.n { font-family: var(--mono); font-weight: 600; color: rgb(255 255 255 / 0.85); margin-right: 8px; font-size: 13px; }
+      .note { font-size: 13px; color: var(--dim); font-style: italic; }
+
+      .ex-wrap { border: 1px solid var(--ring); border-radius: 16px; overflow: hidden; }
+      .ex-wrap table { border: 0; width: 100%; border-collapse: collapse; font-size: 13.5px; }
+      .ex-wrap th, .ex-wrap td { text-align: left; padding: 10px 16px; border-bottom: 1px solid rgb(255 255 255 / 0.06); }
+      .ex-wrap tr:last-child th, .ex-wrap tr:last-child td { border-bottom: 0; }
+      .ex-wrap th { color: var(--dim); font-weight: 500; width: 42%; }
+      .ex-wrap td { color: #fff; font-family: var(--mono); font-size: 12.5px; }
+      .ex-wrap .g th { color: rgb(255 255 255 / 0.85); font-weight: 700; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; background: var(--deep); padding-top: 14px; }
+      .ex-wrap td.status-valid { color: var(--good); font-weight: 700; }
+
+      .pricebox { border: 1px solid var(--ring); border-radius: 20px; background: var(--panel); padding: 24px 26px; display: flex; flex-direction: column; gap: 18px; }
+      .pricebox .plan-kicker { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); }
+      .pricebox .price { display: flex; align-items: baseline; gap: 8px; }
+      .pricebox .price b { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; }
+      .pricebox .price span { font-size: 15px; color: var(--dim); }
+      .prow { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; font-size: 14px; padding: 10px 0; border-top: 1px solid rgb(255 255 255 / 0.08); }
+      .prow:first-of-type { border-top: 0; padding-top: 0; }
+      .prow .l { color: var(--muted); }
+      .prow .r { font-family: var(--mono); color: #fff; font-weight: 600; white-space: nowrap; }
+      .prow.total { border-top: 1px solid rgb(255 255 255 / 0.16); font-size: 15px; }
+      .prow.total .l { color: #fff; font-weight: 600; }
+      .prow.total .r { color: var(--yellow); font-size: 17px; }
+      .meter { height: 6px; border-radius: 999px; background: rgb(255 255 255 / 0.1); overflow: hidden; }
+      .meter i { display: block; height: 100%; background: #fff; border-radius: 999px; }
+      .meter-label { display: flex; justify-content: space-between; font-size: 12px; color: var(--dim); }
+
+      .warn { border: 1px solid rgb(254 241 80 / 0.4); background: rgb(254 241 80 / 0.06); border-radius: 14px; padding: 14px 18px; font-size: 13.5px; color: #fff; }
+      .warn b { color: var(--yellow); }
+
+      .sign-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+      .sign-box { border: 1px solid var(--ring); border-radius: 16px; background: var(--panel); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+      .sign-box b.who { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); }
+      .sign-line { border-top: 1px solid rgb(255 255 255 / 0.22); padding-top: 8px; margin-top: 24px; font-size: 12px; color: var(--dim); }
+      .sign-field { font-size: 13px; color: var(--muted); }
+      .sign-field b { color: #fff; font-weight: 600; }
+
+      .accept { border: 1px solid var(--ring); border-radius: 16px; background: var(--deep); padding: 20px 22px; display: flex; gap: 14px; align-items: flex-start; }
+      .accept input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--yellow); flex: none; }
+      .accept label { font-size: 13.5px; color: var(--muted); }
+      .accept label b { color: #fff; }
+
+      .contact { border: 1px solid var(--ring); border-radius: 20px; background: var(--deep); padding: 24px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between; }
+      .contact p { font-size: 14px; color: var(--muted); }
+      .contact a.mail { color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+      footer { border-top: 1px solid rgb(255 255 255 / 0.08); padding: 32px 0 52px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--dim); }
+      footer .links { display: flex; gap: 20px; }
+      footer a:hover { color: #fff; }
+
+      @media (max-width: 809.98px) {
+        main { padding: 90px 20px 0; }
+        .doc-meta .btn { margin-left: 0; }
+        .sign-grid { grid-template-columns: 1fr; }
+      }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+    </style>
+  </head>
+  <body>
+    <div class="navwrap">
+      <nav>
+        <a class="brand" href="/" aria-label="thumbs.store — home">
+          <svg viewBox="0 0 47 43" fill="none" aria-hidden="true">
+            <path d="M41.7042 4.77305V0H20.9914C17.7229 0 15.6381 1.04435 13.4141 2.98993L2.98993 13.2748C1.04435 15.4989 0 17.5837 0 20.8521V38.227H5.14824V43H25.8572C29.1257 43 31.2105 41.9557 33.4346 40.0101L43.8587 29.7252C45.8043 27.5011 46.8486 25.4124 46.8486 22.1479V4.77305H41.7042ZM38.5093 30.3479C38.5093 33.129 36.146 35.3531 33.3649 35.3531H8.34317V12.6521C8.34317 9.87101 10.7026 7.64694 13.4837 7.64694H38.5093V30.3479Z" fill="#FFF050"/>
+          </svg>
+          thumbs.store
+        </a>
+        <a class="btn btn-o" href="/license">License Agreement ↗</a>
+      </nav>
+    </div>
+
+    <main>
+      <header class="doc-head">
+        <span class="kicker">Legal · Order Form</span>
+        <h1>Order Form — beat.gg</h1>
+        <div class="doc-meta">
+          <span class="pill v">1 Year Term</span>
+          <span class="pill">Studio Plan · Annual</span>
+          <span class="pill">THUMBS.STORE OÜ · Estonia</span>
+        </div>
+        <p class="doc-intro">
+          This Order Form is entered into between <b>THUMBS.STORE OÜ</b>, a private limited
+          company registered in the Republic of Estonia ("Thumbs Store"), and the client
+          identified below ("Customer"). It is executed under, and incorporates by reference,
+          the <a href="/license">API License Agreement (General Form, v1.3)</a> between the
+          parties. In the event of any conflict between this Order Form and the License
+          Agreement, this Order Form prevails as to the commercial terms it sets out; the
+          License Agreement governs all other matters, including acceptable use, warranties,
+          liability and Estonian governing law.
+        </p>
+      </header>
+
+      <article>
+        <section class="c" id="s1">
+          <h2><span>1.</span>Client Information</h2>
+          <div class="ex-wrap">
+            <table>
+              <tr><th>Company Name</th><td>3-102-952292 SRL</td></tr>
+              <tr><th>Doing Business As</th><td>beat.gg</td></tr>
+              <tr><th>Authorised Domain(s)</th><td>beat.gg</td></tr>
+              <tr><th>Contact Email</th><td>mh3534161@gmail.com</td></tr>
+              <tr><th>Contact Phone</th><td>+506.CR.1318155149</td></tr>
+              <tr><th>Country</th><td>Costa Rica</td></tr>
+              <tr><th>Gaming Licence Number</th><td>ALSI-202603039-FI2</td></tr>
+              <tr><th>Licence Type</th><td>B2C — <span class="status-valid" style="font-family:inherit">Valid</span></td></tr>
+              <tr><th>Licence Issued</th><td>31 March 2026</td></tr>
+              <tr><th>Licence Expires</th><td>30 March 2027</td></tr>
+            </table>
+          </div>
+          <p><b class="n">1.1</b>Customer represents and warrants that the information above is accurate and that beat.gg is operated under the gaming licence stated above, valid for the duration of this Order Form, per clause 6.2 of the License Agreement.</p>
+        </section>
+
+        <section class="c" id="s2">
+          <h2><span>2.</span>Subscription and Pricing</h2>
+          <div class="pricebox">
+            <div>
+              <span class="plan-kicker">Your Plan · Studio · Annual</span>
+              <div class="price"><b>$55</b><span>/month</span></div>
+            </div>
+            <div>
+              <div class="meter-label"><span>50 credits used of 70</span><span>fits your plan</span></div>
+              <div class="meter"><i style="width:71%"></i></div>
+            </div>
+            <div class="prow"><span class="l">One-time catalogue render</span><span class="r">$3,255 · 3,100 cr batch</span></div>
+            <div class="prow"><span class="l">Effective per thumbnail · year one</span><span class="r">$1.059</span></div>
+            <div class="prow total"><span class="l">thumbs.store · year one</span><span class="r">$3,917</span></div>
+          </div>
+          <p><b class="n">2.1</b>Subscription fee: $55/month, billed annually, covering up to 70 thumbnail credits/month under the Studio plan.</p>
+          <p><b class="n">2.2</b>One-time catalogue render: a one-time fee of $3,255 for an initial batch of 3,100 credits, provisioned on the Effective Date to onboard beat.gg's existing catalogue.</p>
+          <p><b class="n">2.3</b>Total Year One fee: $3,917 ($55 × 12 subscription + $3,255 one-time render, per the pricing summary above), due per clause 15.1 of the License Agreement.</p>
+        </section>
+
+        <section class="c" id="s3">
+          <h2><span>3.</span>Term</h2>
+          <p><b class="n">3.1</b><b style="color:#fff">Effective Date:</b> 14 September 2026</p>
+          <p><b class="n">3.2</b><b style="color:#fff">Term:</b> One (1) year, expiring 13 September 2027, unless renewed or terminated earlier under the License Agreement.</p>
+          <p><b class="n">3.3</b>Per clause 15.5 of the License Agreement, this Order Form renews automatically for successive one-year terms unless either party gives written notice of non-renewal at least 30 calendar days before the end of the current term.</p>
+        </section>
+
+        <section class="c" id="s4">
+          <h2><span>4.</span>Incorporated Terms</h2>
+          <p><b class="n">4.1</b>This Order Form is Exhibit A to, and forms part of, the API License Agreement (General Form, v1.3) available at <a href="/license" style="text-decoration:underline">thumbs.store/license</a>, which governs the licence grant, acceptable use, security, warranties, liability, indemnification, fees and termination.</p>
+          <p><b class="n">4.2</b>This Order Form, together with the License Agreement, constitutes the entire agreement between Thumbs Store and beat.gg relating to its subject matter, per clause 19.1 of the License Agreement.</p>
+          <div class="warn">⚠ <b>Note:</b> every thumbnail delivered under this Order Form carries an invisible digital watermark uniquely tied to beat.gg's API Key, per clause 7.2 of the License Agreement.</div>
+        </section>
+
+        <section class="c" id="s5">
+          <h2><span>5.</span>Governing Law</h2>
+          <p><b class="n">5.1</b>This Order Form is governed by and construed in accordance with the laws of the Republic of Estonia, per clause 18.1 of the License Agreement.</p>
+          <p><b class="n">5.2</b>Any dispute arising under this Order Form shall be resolved per clause 18.2 of the License Agreement — before the Harju County Court, Tallinn, Estonia, or by arbitration under the Rules of the Arbitration Court of the Estonian Chamber of Commerce and Industry, by mutual written agreement.</p>
+        </section>
+
+        <section class="c" id="s6">
+          <h2><span>6.</span>Acceptance</h2>
+          <div class="accept">
+            <input type="checkbox" id="accept-cb" aria-describedby="accept-label" />
+            <label id="accept-label" for="accept-cb">
+              I confirm that I am duly authorised to bind <b>3-102-952292 SRL (DBA beat.gg)</b> and
+              that beat.gg has read and accepts this Order Form, the
+              <b>API License Agreement (General Form, v1.3)</b>, and the Terms of Service of
+              THUMBS.STORE OÜ.
+            </label>
+          </div>
+          <div class="sign-grid">
+            <div class="sign-box">
+              <b class="who">For THUMBS.STORE OÜ</b>
+              <div class="sign-field">Name: <b>_______________________</b></div>
+              <div class="sign-field">Title: <b>_______________________</b></div>
+              <div class="sign-line">Signature &amp; date</div>
+            </div>
+            <div class="sign-box">
+              <b class="who">For 3-102-952292 SRL (beat.gg)</b>
+              <div class="sign-field">Name: <b>_______________________</b></div>
+              <div class="sign-field">Title: <b>_______________________</b></div>
+              <div class="sign-line">Signature &amp; date</div>
+            </div>
+          </div>
+          <p class="note">Note: this page is a client-specific Order Form generated for record and signature purposes. Retain a signed/countersigned or timestamped-acceptance copy per clause 17 (Confidentiality) of the License Agreement.</p>
+        </section>
+      </article>
+
+      <div class="contact">
+        <p>Questions about this Order Form: <a class="mail" href="mailto:legal@thumbs.store">legal@thumbs.store</a></p>
+        <a class="btn btn-y" href="/license">View License Agreement</a>
+      </div>
+
+      <footer>
+        <span>© <span id="year">2026</span> THUMBS.STORE OÜ · Order Form · beat.gg</span>
+        <div class="links">
+          <a href="/">Home</a>
+          <a href="/license">License</a>
+          <a href="/pricing">Pricing</a>
+        </div>
+      </footer>
+    </main>
+    <script>document.getElementById('year').textContent = String(new Date().getFullYear())</script>
+  </body>
+</html>

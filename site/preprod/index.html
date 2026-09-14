@@ -2,6 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      /* Accessibility widget: apply saved preferences before first paint so
+         there's no flash of un-adjusted content on repeat visits. */
+      (function () {
+        try {
+          var root = document.documentElement
+          var z = localStorage.getItem('ts-a11y-zoom')
+          if (z && 'zoom' in root.style) root.style.zoom = z
+          var cls = []
+          if (localStorage.getItem('ts-a11y-contrast') === '1') cls.push('a11y-contrast')
+          if (localStorage.getItem('ts-a11y-motion') === '1') cls.push('a11y-motion-off')
+          if (localStorage.getItem('ts-a11y-underline') === '1') cls.push('a11y-underline')
+          if (cls.length) root.classList.add.apply(root.classList, cls)
+        } catch (e) {}
+      })()
+    </script>
+    <style>
+      /* ---- accessibility widget ---- */
+      #a11y-toggle {
+        position: fixed; left: 20px; bottom: 20px; z-index: 2147483000;
+        width: 52px; height: 52px; border-radius: 999px; border: 0;
+        background: #fef150; color: #000;
+        display: grid; place-items: center; cursor: pointer;
+        box-shadow: 0 6px 20px rgb(0 0 0 / 0.45);
+        transition: transform 0.15s ease;
+      }
+      #a11y-toggle:hover { transform: translateY(-2px); }
+      #a11y-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+      #a11y-panel {
+        position: fixed; left: 20px; bottom: 84px; z-index: 2147483000;
+        width: 290px; max-width: calc(100vw - 40px);
+        background: #121212; border: 1px solid #262626; border-radius: 20px;
+        padding: 18px; box-shadow: 0 20px 50px rgb(0 0 0 / 0.55);
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; color: #fff;
+      }
+      #a11y-panel[hidden] { display: none; }
+      .a11y-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+      .a11y-head span { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+      #a11y-close { background: none; border: 0; color: rgb(255 255 255 / 0.5); cursor: pointer; padding: 4px; display: grid; place-items: center; border-radius: 999px; }
+      #a11y-close:hover { color: #fff; background: rgb(255 255 255 / 0.08); }
+      #a11y-close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      .a11y-row, .a11y-switchrow { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-top: 1px solid rgb(255 255 255 / 0.08); }
+      .a11y-panel-body > :first-child { border-top: 0; }
+      .a11y-label, .a11y-switchrow span { font-size: 13px; color: rgb(255 255 255 / 0.75); }
+      .a11y-stepper { display: flex; align-items: center; gap: 8px; }
+      .a11y-stepper button { width: 26px; height: 26px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.2); background: none; color: #fff; font-size: 12px; font-weight: 700; cursor: pointer; }
+      .a11y-stepper button:disabled { opacity: 0.3; cursor: default; }
+      .a11y-stepper button:hover:not(:disabled) { border-color: #fff; }
+      .a11y-stepper button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      .a11y-stepper output { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; color: #fff; min-width: 34px; text-align: center; }
+      .a11y-switch { position: relative; width: 40px; height: 22px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.2); background: rgb(255 255 255 / 0.06); cursor: pointer; padding: 0; flex: none; }
+      .a11y-switch i { position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 999px; background: #fff; transition: left 0.15s ease; }
+      .a11y-switch.on { background: #fef150; border-color: #fef150; }
+      .a11y-switch.on i { left: 20px; background: #000; }
+      .a11y-switch:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      #a11y-reset { margin-top: 14px; width: 100%; padding: 9px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.16); background: none; color: rgb(255 255 255 / 0.75); font-size: 12px; font-weight: 600; cursor: pointer; }
+      #a11y-reset:hover { color: #fff; border-color: rgb(255 255 255 / 0.34); }
+      #a11y-reset:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      html.a11y-contrast { filter: contrast(1.3) saturate(1.15); }
+      html.a11y-underline a:not(#a11y-panel a) { text-decoration: underline !important; text-underline-offset: 3px; }
+      html.a11y-motion-off, html.a11y-motion-off *, html.a11y-motion-off *::before, html.a11y-motion-off *::after {
+        animation: none !important; transition: none !important; scroll-behavior: auto !important;
+      }
+      @media (max-width: 480px) {
+        #a11y-toggle { left: 14px; bottom: 14px; width: 46px; height: 46px; }
+        #a11y-panel { left: 14px; bottom: 70px; width: calc(100vw - 28px); }
+      }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pre-production — thumbs.store</title>
     <meta name="robots" content="noindex, nofollow" />
@@ -38,5 +106,170 @@
       <p class="note">To promote a page: move it out of <code>site/preprod/</code>, restore its nav link and sitemap entry, and flip its robots tag back to <code>index, follow</code>. The pricing page here is the finished draft — hidden from the public site until you're ready.</p>
       <a class="home" href="/">← Back to the live site</a>
     </main>
+    <!-- ---- accessibility widget ---- -->
+    <button type="button" id="a11y-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="a11y-panel" aria-label="Accessibility options">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="7.2" r="1.6" fill="currentColor" stroke="none" />
+        <line x1="7.5" y1="10.2" x2="16.5" y2="10.2" />
+        <line x1="12" y1="10.2" x2="12" y2="14.4" />
+        <line x1="12" y1="14.4" x2="8.6" y2="18.4" />
+        <line x1="12" y1="14.4" x2="15.4" y2="18.4" />
+      </svg>
+    </button>
+    <div id="a11y-panel" role="dialog" aria-label="Accessibility settings" aria-hidden="true" hidden>
+      <div class="a11y-head">
+        <span>Accessibility</span>
+        <button type="button" id="a11y-close" aria-label="Close accessibility panel">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="4" x2="20" y2="20" /><line x1="20" y1="4" x2="4" y2="20" /></svg>
+        </button>
+      </div>
+      <div class="a11y-panel-body">
+        <div class="a11y-row">
+          <span class="a11y-label" id="a11y-size-label">Text size</span>
+          <div class="a11y-stepper" role="group" aria-labelledby="a11y-size-label">
+            <button type="button" id="a11y-dec" aria-label="Decrease text size">A−</button>
+            <output id="a11y-size-out" for="a11y-dec a11y-inc">100%</output>
+            <button type="button" id="a11y-inc" aria-label="Increase text size">A+</button>
+          </div>
+        </div>
+        <div class="a11y-switchrow">
+          <span id="a11y-contrast-label">High contrast</span>
+          <button type="button" class="a11y-switch" id="a11y-contrast-sw" role="switch" aria-checked="false" aria-labelledby="a11y-contrast-label"><i></i></button>
+        </div>
+        <div class="a11y-switchrow">
+          <span id="a11y-motion-label">Reduce motion</span>
+          <button type="button" class="a11y-switch" id="a11y-motion-sw" role="switch" aria-checked="false" aria-labelledby="a11y-motion-label"><i></i></button>
+        </div>
+        <div class="a11y-switchrow">
+          <span id="a11y-underline-label">Underline links</span>
+          <button type="button" class="a11y-switch" id="a11y-underline-sw" role="switch" aria-checked="false" aria-labelledby="a11y-underline-label"><i></i></button>
+        </div>
+      </div>
+      <button type="button" id="a11y-reset">Reset all</button>
+    </div>
+    <script>
+      ;(function () {
+        var root = document.documentElement
+        var KEY = { zoom: 'ts-a11y-zoom', contrast: 'ts-a11y-contrast', motion: 'ts-a11y-motion', underline: 'ts-a11y-underline' }
+        var STEPS = [0.875, 1, 1.125, 1.25, 1.375, 1.5]
+        var supportsZoom = 'zoom' in root.style
+
+        var saved = parseFloat(localStorage.getItem(KEY.zoom))
+        var zoomIndex = STEPS.indexOf(saved)
+        if (zoomIndex === -1) zoomIndex = STEPS.indexOf(1)
+
+        var toggle = document.getElementById('a11y-toggle')
+        var panel = document.getElementById('a11y-panel')
+        var closeBtn = document.getElementById('a11y-close')
+        var dec = document.getElementById('a11y-dec')
+        var inc = document.getElementById('a11y-inc')
+        var sizeOut = document.getElementById('a11y-size-out')
+        var contrastSw = document.getElementById('a11y-contrast-sw')
+        var motionSw = document.getElementById('a11y-motion-sw')
+        var underlineSw = document.getElementById('a11y-underline-sw')
+        var resetBtn = document.getElementById('a11y-reset')
+
+        function applyZoom() {
+          var v = STEPS[zoomIndex]
+          if (supportsZoom) {
+            root.style.zoom = v
+          } else {
+            // Browsers without CSS zoom (older Firefox): scale the page and
+            // compensate width so the layout doesn't grow a horizontal
+            // scrollbar or clip the right edge.
+            document.body.style.transformOrigin = 'top left'
+            document.body.style.transform = 'scale(' + v + ')'
+            document.body.style.width = 100 / v + '%'
+          }
+          localStorage.setItem(KEY.zoom, String(v))
+          sizeOut.textContent = Math.round(v * 100) + '%'
+          dec.disabled = zoomIndex === 0
+          inc.disabled = zoomIndex === STEPS.length - 1
+        }
+
+        function setSwitch(btn, on) {
+          btn.setAttribute('aria-checked', String(on))
+          btn.classList.toggle('on', on)
+        }
+        function syncSwitches() {
+          setSwitch(contrastSw, root.classList.contains('a11y-contrast'))
+          setSwitch(motionSw, root.classList.contains('a11y-motion-off'))
+          setSwitch(underlineSw, root.classList.contains('a11y-underline'))
+        }
+
+        function onKeydown(e) {
+          if (e.key === 'Escape') closePanel()
+        }
+        function onOutside(e) {
+          if (!panel.contains(e.target) && e.target !== toggle) closePanel(false)
+        }
+        function openPanel() {
+          panel.hidden = false
+          panel.setAttribute('aria-hidden', 'false')
+          toggle.setAttribute('aria-expanded', 'true')
+          closeBtn.focus()
+          document.addEventListener('keydown', onKeydown)
+          document.addEventListener('click', onOutside, true)
+        }
+        function closePanel(returnFocus) {
+          panel.hidden = true
+          panel.setAttribute('aria-hidden', 'true')
+          toggle.setAttribute('aria-expanded', 'false')
+          document.removeEventListener('keydown', onKeydown)
+          document.removeEventListener('click', onOutside, true)
+          if (returnFocus !== false) toggle.focus()
+        }
+        toggle.addEventListener('click', function () {
+          if (panel.hidden) openPanel()
+          else closePanel()
+        })
+        closeBtn.addEventListener('click', function () {
+          closePanel()
+        })
+
+        dec.addEventListener('click', function () {
+          if (zoomIndex > 0) {
+            zoomIndex--
+            applyZoom()
+          }
+        })
+        inc.addEventListener('click', function () {
+          if (zoomIndex < STEPS.length - 1) {
+            zoomIndex++
+            applyZoom()
+          }
+        })
+
+        function bindSwitch(btn, cls, key) {
+          btn.addEventListener('click', function () {
+            var on = !root.classList.contains(cls)
+            root.classList.toggle(cls, on)
+            localStorage.setItem(key, on ? '1' : '0')
+            setSwitch(btn, on)
+          })
+        }
+        bindSwitch(contrastSw, 'a11y-contrast', KEY.contrast)
+        bindSwitch(motionSw, 'a11y-motion-off', KEY.motion)
+        bindSwitch(underlineSw, 'a11y-underline', KEY.underline)
+
+        resetBtn.addEventListener('click', function () {
+          zoomIndex = STEPS.indexOf(1)
+          root.classList.remove('a11y-contrast', 'a11y-motion-off', 'a11y-underline')
+          if (!supportsZoom) {
+            document.body.style.transform = ''
+            document.body.style.width = ''
+          }
+          localStorage.removeItem(KEY.contrast)
+          localStorage.removeItem(KEY.motion)
+          localStorage.removeItem(KEY.underline)
+          applyZoom()
+          syncSwitches()
+        })
+
+        syncSwitches()
+        applyZoom()
+      })()
+    </script>
   </body>
 </html>

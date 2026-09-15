@@ -262,6 +262,7 @@
                 <input id="signer-title" placeholder="Your title (e.g. CEO, Director)" autocomplete="off" />
               </div>
               <button type="button" id="sign-btn" disabled>Sign &amp; Accept on behalf of beat.gg</button>
+              <p class="note" id="sign-error" style="display:none;color:#ff8a8a;font-style:normal;margin-top:8px"></p>
               <div class="post-sign" id="post-sign">
                 <a class="btn btn-o" href="#" id="print-btn">Download / print signed copy</a>
               </div>
@@ -285,7 +286,7 @@
             </div>
           </div>
 
-          <p class="note">This page records acceptance electronically: checking the box above, entering your name and title, and clicking "Sign &amp; Accept" constitutes your electronic signature and binds beat.gg to this Order Form and the incorporated License Agreement, per clause 19.6 (Notices) and clause 17 (Confidentiality) of the License Agreement. Your device stores a signed copy locally so this page shows "Signed" the next time you open it; use "Download / print signed copy" to keep an independent record, and email a copy to <a href="mailto:legal@thumbs.store" style="text-decoration:underline">legal@thumbs.store</a> for Thumbs Store's file.</p>
+          <p class="note">This page records acceptance electronically: checking the box above, entering your name and title, and clicking "Sign &amp; Accept" constitutes your electronic signature and binds beat.gg to this Order Form and the incorporated License Agreement, per clause 19.6 (Notices) and clause 17 (Confidentiality) of the License Agreement. Your signature is recorded on Thumbs Store's servers at the moment you sign — with a server timestamp, your IP address and the exact terms you accepted — independently of this device; use "Download / print signed copy" for your own records.</p>
         </section>
       </article>
 
@@ -386,11 +387,17 @@
           postSign.classList.add('show')
 
           clientBox.classList.add('signed')
-          clientStatus.textContent = '✓ Signed electronically'
-          clientStatus.classList.remove('pending')
           clientNameOut.textContent = record.name
           clientTitleOut.textContent = record.title
-          clientStamp.textContent = 'Signed electronically on ' + fmtStamp(signedAt)
+
+          if (record.serverConfirmed) {
+            clientStatus.textContent = '✓ Signed & recorded on server'
+            clientStamp.textContent = 'Signed electronically on ' + fmtStamp(signedAt) + ' · server record #' + String(record.serverId).slice(0, 8)
+          } else {
+            clientStatus.textContent = '✓ Signed electronically'
+            clientStamp.textContent = 'Signed electronically on ' + fmtStamp(signedAt)
+          }
+          clientStatus.classList.remove('pending')
           clientStamp.classList.add('stamped')
 
           termStart.textContent = fmt.format(signedAt)
@@ -403,15 +410,64 @@
         termStart.textContent = fmt.format(today) + ' (today — locks in at signature)'
         termEnd.textContent = fmt.format(termEndFor(today))
 
+        var SIGN_ENDPOINT = 'https://udvbjvwavgrjwsziqtxl.supabase.co/functions/v1/sign-order-form'
+        var signError = document.getElementById('sign-error')
+
+        function showSignError(msg) {
+          signError.textContent = msg
+          signError.style.display = 'block'
+        }
+
         function doSign() {
-          var record = {
-            name: nameInput.value.trim(),
-            title: titleInput.value.trim(),
-            signedAt: new Date().toISOString(),
-            client: fieldValues(),
+          signError.style.display = 'none'
+          signBtn.disabled = true
+          signBtn.textContent = 'Submitting…'
+
+          var payload = {
+            orderFormSlug: 'beat-gg',
+            signerName: nameInput.value.trim(),
+            signerTitle: titleInput.value.trim(),
+            client: {
+              companyName: document.getElementById('f-company').value.trim(),
+              dba: document.getElementById('f-dba').value.trim(),
+              domain: document.getElementById('f-domain').value.trim(),
+              contactEmail: document.getElementById('f-email').value.trim(),
+              contactPhone: document.getElementById('f-phone').value.trim(),
+              country: document.getElementById('f-country').value.trim(),
+              licenceNumber: document.getElementById('f-licno').value.trim(),
+              licenceType: document.getElementById('f-lictype').value.trim(),
+              licenceIssued: document.getElementById('f-licissued').value,
+              licenceExpires: document.getElementById('f-licexpires').value,
+            },
           }
-          try { localStorage.setItem(STORE_KEY, JSON.stringify(record)) } catch (e) {}
-          renderSigned(record)
+
+          fetch(SIGN_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          })
+            .then(function (res) {
+              if (!res.ok) throw new Error('server_error_' + res.status)
+              return res.json()
+            })
+            .then(function (data) {
+              if (!data || !data.ok) throw new Error('server_rejected')
+              var record = {
+                name: payload.signerName,
+                title: payload.signerTitle,
+                signedAt: data.signed_at,
+                client: fieldValues(),
+                serverConfirmed: true,
+                serverId: data.id,
+              }
+              try { localStorage.setItem(STORE_KEY, JSON.stringify(record)) } catch (e) {}
+              renderSigned(record)
+            })
+            .catch(function () {
+              signBtn.disabled = false
+              signBtn.textContent = 'Sign & Accept on behalf of beat.gg'
+              showSignError('Couldn’t record your signature on our server — please check your connection and try again. Your signature is only valid once it’s confirmed here.')
+            })
         }
         signBtn.addEventListener('click', doSign)
 

@@ -248,17 +248,13 @@
         width: 100%;
         padding-top: 10px;
       }
-      .fan .tilebox { transition: transform 0.3s ease; animation: fanfloat 6s ease-in-out infinite; }
-      .fan .tilebox:nth-child(1) { animation-delay: 0s; transform: rotate(-3deg); }
-      .fan .tilebox:nth-child(2) { animation-delay: 0.7s; transform: rotate(-1deg) translateY(-14px); }
-      .fan .tilebox:nth-child(3) { animation-delay: 1.4s; transform: translateY(-24px); }
-      .fan .tilebox:nth-child(4) { animation-delay: 2.1s; transform: rotate(1deg) translateY(-14px); }
-      .fan .tilebox:nth-child(5) { animation-delay: 2.8s; transform: rotate(3deg); }
-      .fan .tilebox:hover { transform: translateY(-30px) scale(1.04); animation-play-state: paused; }
-      @keyframes fanfloat {
-        0%, 100% { margin-top: 0; }
-        50% { margin-top: -8px; }
-      }
+      .fan .tilebox { transition: transform 0.3s ease; }
+      .fan .tilebox:nth-child(1) { transform: rotate(-3deg); }
+      .fan .tilebox:nth-child(2) { transform: rotate(-1deg) translateY(-14px); }
+      .fan .tilebox:nth-child(3) { transform: translateY(-24px); }
+      .fan .tilebox:nth-child(4) { transform: rotate(1deg) translateY(-14px); }
+      .fan .tilebox:nth-child(5) { transform: rotate(3deg); }
+      .fan .tilebox:hover { transform: translateY(-30px) scale(1.04); }
       .fan-note { text-align: center; font-size: 12px; color: var(--dim); margin-top: 22px; }
       .fan-note a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
       .fan-note a:hover { color: #fff; }
@@ -331,19 +327,8 @@
         text-shadow: 0 2px 12px rgb(0 0 0 / 0.6);
       }
       .tsx .tile > .coins { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; z-index: 3; pointer-events: none; }
-      .tsx .tile[data-treatment="ai"] .lay-kv {
-        animation: heroBreathe 5.5s ease-in-out infinite;
-        transform-origin: 50% 62%;
-        will-change: transform;
-        backface-visibility: hidden;
-      }
-      .tsx .tile[data-treatment="ai"] .scan { animation: heroScan 5.5s ease-in-out infinite; }
-      .tsx .tile[data-treatment="ai"] .spark { animation: heroSpark 5.5s ease-in-out infinite; }
       .tsx .tile.frameless { border-color: transparent; background: transparent; }
       .tsx .tile.frameless .lay-bg { filter: blur(16px) brightness(0.82) saturate(1.18); transform: scale(1.4); }
-      @keyframes heroBreathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
-      @keyframes heroScan { 0% { top: 2%; opacity: 0; } 8% { opacity: 1; } 46% { top: 92%; opacity: 1; } 54%, 100% { top: 92%; opacity: 0; } }
-      @keyframes heroSpark { 0%, 50% { opacity: 0; scale: 0.4; } 58%, 66% { opacity: 1; scale: 1; } 74%, 100% { opacity: 0; scale: 0.4; } }
 
       /* ---- provider marquee ---- */
       .provhead { text-align: center; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); margin-bottom: 18px; }
@@ -1536,7 +1521,6 @@
         const boot = () => {
           document.querySelectorAll('.tile[data-composite]').forEach(paintComposite)
           applyMetrics()
-          document.querySelectorAll('.tsx .tile[data-treatment="css"] .coins').forEach(initCoins)
           paintShowcase()
         }
         if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true })

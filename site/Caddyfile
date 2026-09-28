@@ -9,6 +9,13 @@
 	@apex host thumbs.store
 	redir @apex https://www.thumbs.store{uri} permanent
 
+	# Account administration lives in the dashboard app, not on this site, but
+	# it gets the short address because that is the one worth remembering.
+	# A 302, not a 301: browsers cache a permanent redirect forever, and this
+	# is a convenience link, not a fact about the site's shape.
+	redir /admin https://app.thumbs.store/admin
+	redir /admin/* https://app.thumbs.store/admin
+
 	root * /srv
 	encode gzip
 

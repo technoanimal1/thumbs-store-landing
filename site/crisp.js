@@ -11,12 +11,12 @@
  * someone who asks a question here and signs up later keeps one conversation
  * thread instead of arriving twice as a stranger.
  *
- * The ID is not a secret — Crisp ships it to the browser by design, and it only
- * identifies which inbox to open. Replace the empty string below and the widget
- * turns on; left empty, this file does nothing at all.
+ * The ID below is not a secret — Crisp ships it to the browser by design, and
+ * it only names which inbox to open. Blanking it switches the chat off across
+ * the whole marketing site without touching seven pages.
  */
 ;(function () {
-  var WEBSITE_ID = ''
+  var WEBSITE_ID = 'cc685043-11d4-4c53-8bbb-ddbbbd395d7b'
 
   if (!WEBSITE_ID) return
 

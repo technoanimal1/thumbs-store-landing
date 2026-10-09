@@ -1,0 +1,619 @@
+Provider,Game title,SoftSwiss identifier,Status,Thumbs Store game ID,Notes
+BGaming,Chicken Shot,bgmng:ChickenShot,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+BGaming,Elements of Power,bgmng:ElementsOfPower,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+BGaming,Fortuna TRUEWAYS,bgmng:FortunaTrueways,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+BGaming,Fruit Million,bgmng:FruitMillion,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+BGaming,Golden Avalon Hold and Win,bgmng:GoldenAvalonHoldAndWin,READY — link now,a685cad7-1af3-49f8-911b-4cc74c67f00b,Artwork live; same provider.
+BGaming,Golden Paw Hold & Win,bgmng:GoldenPawHoldAndWin,READY — link now,aea82001-8df8-4056-8f95-8aa3de6bf907,Artwork live; same provider.
+BGaming,Jogo Do Bicho Simple,bgmng:JogoDoBichoSimple,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+BGaming,Kicker Mania,bgmng:KickerMania,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+BGaming,Money Maker,bgmng:MoneyMaker,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+BGaming,Multihand Blackjack,bgmng:MultihandBlackjack,CONFIRM FIRST,63fceffe-d4e4-4661-8e01-91f7c1851b12,"Title matches our ""PRAGMATIC"" art — different provider, so branding would be wrong. Confirm before linking."
+BGaming,Road 2 Riches,bgmng:Road2Riches,READY — link now,87d55000-f60c-4bab-977f-2ccf9b98ea0a,Artwork live; same provider.
+BGaming,Royal Fruits MultiLines,bgmng:RoyalFruitsMultiLines,READY — link now,21e72e46-0a30-46f0-a990-ca8eec983bbf,Artwork live; same provider.
+BGaming,Slot Machine,bgmng:SlotMachine,READY — link now,6bc6b8a2-bf28-44fc-ad46-bcc7189078eb,Artwork live; same provider.
+BGaming,Sweet Royale Megaways,bgmng:SweetRushMegaways,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+BGaming,Winter Trophy Hold and Win,bgmng:WinterTrophyHoldAndWin,READY — link now,2fb90167-ec75-4f9d-a445-2c9b17621ac4,Artwork live; same provider.
+Evolution,Always 8 Baccarat,evolution:Always8Baccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Baccarat Lobby,evolution:baccarat,CONFIRM FIRST,2245dbfb-42d4-410f-a603-6b54d58d3853,"Title matches our ""PRAGMATIC"" art — different provider, so branding would be wrong. Confirm before linking."
+Evolution,Blackjack Classic 18,evolution:bjclassic18,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 20,evolution:bjclassic20,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 21,evolution:bjclassic21,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 22,evolution:bjclassic22,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 23,evolution:bjclassic23,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 24,evolution:bjclassic24,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 25,evolution:bjclassic25,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 27,evolution:BlackjackClassic27,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 28,evolution:BlackjackClassic28,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 29,evolution:bjclassic29,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 34,evolution:BlackjackClassic34,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 35,evolution:bjclassic35,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 37,evolution:bjclassic37,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 38,evolution:bjclassic38,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 39,evolution:classic_speed_blackjack_37,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 51,evolution:bjclassic51,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 52,evolution:bjclassic52,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 53,evolution:bjclassic53,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 54,evolution:bjclassic54,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 55,evolution:bjclassic55,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 57,evolution:bjclassic57,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 59,evolution:bjclassic59,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 6,evolution:bjclassic67,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 60,evolution:bjclassic60,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 61,evolution:bjclassic61,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 62,evolution:bjclassic62,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 63,evolution:bjclassic63,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 64,evolution:bjclassic64,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 65,evolution:bjclassic65,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 66,evolution:bjclassic66,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 67,evolution:BlackjackClassic67,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 68,evolution:bjclassic68,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 8,evolution:blackjack_classic8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic 9,evolution:blackjack_classic9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru,evolution:BlackjackClassicRu,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 10,evolution:BlackjackClassicRu10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 11,evolution:BlackjackClassicRu11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 2,evolution:BlackjackClassicRu2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 3,evolution:BlackjackClassicRu3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 4,evolution:BlackjackClassicRu4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 5,evolution:BlackjackClassicRu5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 6,evolution:BlackjackClassicRu6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 7,evolution:BlackjackClassicRu7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 8,evolution:BlackjackClassicRu8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Classic Ru 9,evolution:BlackjackClassicRu9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Blackjack Lobby,evolution:blackjack,CONFIRM FIRST,9cc44e20-27a7-4626-a2a3-dad73ce76808,"Title matches our ""NETENT"" art — different provider, so branding would be wrong. Confirm before linking."
+Evolution,Blackjack VIP A DNT,evolution:blackjack_vip_a_dnt,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Bucharest Auto-Roulette,evolution:BucharestAutoRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Bucharest Blackjack A,evolution:BucharestBlackjackA,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Bucharest Blackjack B,evolution:BucharestBlackjackB,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Bucharest Infinite Free Bet Blackjack,evolution:BucharestInfiniteFreeBetBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Casino Malta Roulette,evolution:casino_malta,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Classic Always 6 Blackjack 1,evolution:ClassicAlways6Blackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Always 6 Blackjack 2,evolution:ClassicAlways6Blackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Always 6 Blackjack 3,evolution:ClassicAlways6Blackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Always 6 Blackjack 4,evolution:ClassicAlways6Blackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 1,evolution:ClassicBetStackerBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 10,evolution:ClassicBetStackerBlackjack10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 11,evolution:ClassicBetStackerBlackjack11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 12,evolution:ClassicBetStackerBlackjack12,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 13,evolution:ClassicBetStackerBlackjack13,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 14,evolution:ClassicBetStackerBlackjack14,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 15,evolution:ClassicBetStackerBlackjack15,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 16,evolution:ClassicBetStackerBlackjack16,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 17,evolution:ClassicBetStackerBlackjack17,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 18,evolution:ClassicBetStackerBlackjack18,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 19,evolution:ClassicBetStackerBlackjack19,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 2,evolution:ClassicBetStackerBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 20,evolution:ClassicBetStackerBlackjack20,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 21,evolution:ClassicBetStackerBlackjack21,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 22,evolution:ClassicBetStackerBlackjack22,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 23,evolution:ClassicBetStackerBlackjack23,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 24,evolution:ClassicBetStackerBlackjack24,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 25,evolution:ClassicBetStackerBlackjack25,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 26,evolution:ClassicBetStackerBlackjack26,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 3,evolution:ClassicBetStackerBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 4,evolution:ClassicBetStackerBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 5,evolution:ClassicBetStackerBlackjack5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 6,evolution:ClassicBetStackerBlackjack6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 7,evolution:ClassicBetStackerBlackjack7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 8,evolution:ClassicBetStackerBlackjack8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Bet Stacker Blackjack 9,evolution:ClassicBetStackerBlackjack9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 118,evolution:ClassicSpeedBlackjack118,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 15,evolution:bjclassic15,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 16,evolution:bjclassic16,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 17,evolution:bjclassic27,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 19,evolution:bjclassic19,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 2,evolution:bjclassic2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 20,evolution:classic_speed_blackjack_20,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 21,evolution:classic_speed_blackjack_21,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 22,evolution:classic_speed_blackjack_22,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 23,evolution:classic_speed_blackjack_23,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 24,evolution:bjclassic34,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 25,evolution:classic_speed_blackjack_25,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 26,evolution:classic_speed_blackjack_26,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 27,evolution:classic_speed_blackjack_27,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 3,evolution:classic_speed_blackjack_3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 30,evolution:classic_speed_blackjack_30,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 31,evolution:classic_speed_blackjack_31,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 32,evolution:bjclassic40,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 33,evolution:bjclassic33,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 34,evolution:classic_speed_blackjack_34,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 36,evolution:classic_speed_blackjack_36,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 39,evolution:classic_speed_blackjack_39,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 4,evolution:blackjack_classic1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 40,evolution:ClassicSpeedBlackjack40,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 41,evolution:classic_speed_blackjack_41,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 45,evolution:classic_speed_blackjack_45,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 46,evolution:classic_speed_blackjack_46,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 47,evolution:classic_speed_blackjack_47,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 48,evolution:classic_speed_blackjack_48,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 49,evolution:classic_speed_blackjack_49,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 5,evolution:classic_speed_blackjack_5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 50,evolution:classic_speed_blackjack_50,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 51,evolution:ClassicSpeedBlackjack51,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 52,evolution:ClassicSpeedBlackjack52,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 53,evolution:ClassicSpeedBlackjack53,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 54,evolution:ClassicSpeedBlackjack54,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 57,evolution:classic_speed_blackjack_57,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 58,evolution:classic_speed_blackjack_58,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 59,evolution:classic_speed_blackjack_59,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 6,evolution:classic_speed_blackjack_6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 60,evolution:ClassicSpeedBlackjack60,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 61,evolution:ClassicSpeedBlackjack61,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 7,evolution:blackjack_classic2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 72,evolution:ClassicSpeedBlackjack72,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 73,evolution:ClassicSpeedBlackjack73,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 77,evolution:ClassicSpeedBlackjack77,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 8,evolution:ClassicSpeedBlackjack8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 82,evolution:ClassicSpeedBlackjack82,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 88,evolution:ClassicSpeedBlackjack88,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 89,evolution:ClassicSpeedBlackjack89,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 9,evolution:classic_speed_blackjack_9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 90,evolution:ClassicSpeedBlackjack90,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 95,evolution:ClassicSpeedBlackjack95,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 96,evolution:ClassicSpeedBlackjack96,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 97,evolution:ClassicSpeedBlackjack97,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 98,evolution:ClassicSpeedBlackjack98,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Speed Blackjack 99,evolution:ClassicSpeedBlackjack99,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Ukrainian Blackjack 1,evolution:ClassicUkrainianBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Ukrainian Blackjack 2,evolution:ClassicUkrainianBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classic Ukrainian Blackjack 3,evolution:ClassicUkrainianBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Classique Blackjack Deux,evolution:ClassiqueBlackjackDeux,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Crazy Time A,evolution:crazytimea,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,Crazy Time Italia,evolution:CrazyTimeItalia,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,Deutsches Roulette,evolution:deutsches_roulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Disco Roulette,evolution:DiscoRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Disco Roulette,evolution:DiscoRouletteMT,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Dragonara Roulette,evolution:DragonaraRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 1,evolution:DynastyClassicBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 2,evolution:DynastyClassicBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 3,evolution:DynastyClassicBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 4,evolution:DynastyClassicBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 5,evolution:DynastyClassicBlackjack5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 6,evolution:DynastyClassicBlackjack6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 7,evolution:DynastyClassicBlackjack7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 8,evolution:DynastyClassicBlackjack8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Classic Blackjack 9,evolution:DynastyClassicBlackjack9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 10,evolution:DynastySpeedBaccarat10,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 11,evolution:DynastySpeedBaccarat11,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 12,evolution:DynastySpeedBaccarat12,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 13,evolution:DynastySpeedBaccarat13,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 14,evolution:DynastySpeedBaccarat14,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 15,evolution:DynastySpeedBaccarat15,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 16,evolution:DynastySpeedBaccarat16,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 17,evolution:DynastySpeedBaccarat17,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Dynasty Speed Baccarat 9,evolution:DynastySpeedBaccarat9,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Emperor Golden Wealth Baccarat,evolution:EmperorGoldenWealthBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Emperor Roulette,evolution:EmperorRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Emperor Sic Bo,evolution:EmperorSicBo,TABLE TEMPLATE — SICBO,,Numbered dealer table. Covered by the single Sicbo template; see note on shared images.
+Evolution,Emperor Speed Baccarat C,evolution:EmperorSpeedBaccaratC,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Emperor Speed Baccarat D,evolution:EmperorSpeedBaccaratD,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Evo Speed Blackjack 10,evolution:EvoSpeedBlackjack10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Evo Speed Blackjack 11,evolution:EvoSpeedBlackjack11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Evo Speed Blackjack 2,evolution:EvoSpeedBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Evo Speed Blackjack 3,evolution:EvoSpeedBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Evo Speed Blackjack 4,evolution:EvoSpeedBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Evo Speed Blackjack 5,evolution:EvoSpeedBlackjack5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Evo Speed Blackjack 6,evolution:EvoSpeedBlackjack6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Evo Speed Blackjack 7,evolution:EvoSpeedBlackjack7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Extreme Texas Hold'em,evolution:extreme_texas_holdem,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,First Person Baccarat,evolution:rngbaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,First Person Craps,evolution:rng-craps,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,First Person Dragon Tiger,evolution:rngdragontiger,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,First Person Lightning Baccarat,evolution:FirstPersonLightningBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,First Person Lobby,evolution:rng,LOBBY TILE,,"Navigation entry, not a game. Covered by one lobby image per section if wanted."
+Evolution,First Person Roulette,evolution:roulette_fp_rng,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,First Person Super Sic Bo,evolution:FirstPersonSuperSicBo,TABLE TEMPLATE — SICBO,,Numbered dealer table. Covered by the single Sicbo template; see note on shared images.
+Evolution,First Person Top Card,evolution:rngtopcard,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,First Person XXXtreme Lightning Baccarat,evolution:FirstPersonXXXtremeLightningBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Football Studio Roulette,evolution:FootballStudioRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Game Show Lobby,evolution:game_shows,LOBBY TILE,,"Navigation entry, not a game. Covered by one lobby image per section if wanted."
+Evolution,Greek Lightning Roulette,evolution:GreekLightningRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Hindi Lightning Roulette,evolution:HindiLightningRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Infinite Free Bet Blackjack,evolution:InfiniteFreeBetBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Japanese Roulette,evolution:japanese_roulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Jawhara Roulette,evolution:arabic_roulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Klasik Bet Stacker Blackjack 1,evolution:KlasikBetStackerBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Bet Stacker Blackjack 2,evolution:KlasikBetStackerBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack,evolution:KlasikBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 1,evolution:KlasikBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 10,evolution:KlasikBlackjack10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 11,evolution:KlasikBlackjack11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 12,evolution:KlasikBlackjack12,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 13,evolution:KlasikBlackjack13,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 14,evolution:KlasikBlackjack14,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 15,evolution:KlasikBlackjack15,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 16,evolution:KlasikBlackjack16,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 18,evolution:KlasikBlackjack18,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 19,evolution:KlasikBlackjack19,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 2,evolution:KlasikBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 20,evolution:KlasikBlackjack20,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 21,evolution:KlasikBlackjack21,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 22,evolution:KlasikBlackjack22,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 3,evolution:KlasikBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 4,evolution:KlasikBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 5,evolution:KlasikBlackjack5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 6,evolution:KlasikBlackjack6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 7,evolution:KlasikBlackjack7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 8,evolution:KlasikBlackjack8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Blackjack 9,evolution:KlasikBlackjack9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Freebet Blackjack 1,evolution:KlasikFreebetBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Freebet Blackjack 2,evolution:KlasikFreebetBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 1,evolution:KlasikSpeedBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 10,evolution:KlasikSpeedBlackjack10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 2,evolution:KlasikSpeedBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 3,evolution:KlasikSpeedBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 4,evolution:KlasikSpeedBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 5,evolution:KlasikSpeedBlackjack5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 6,evolution:KlasikSpeedBlackjack6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 8,evolution:KlasikSpeedBlackjack8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Klasik Speed Blackjack 9,evolution:KlasikSpeedBlackjack9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,No Commission Baccarat,evolution:super_six,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Norsk Roulette,evolution:norsk_roulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Poker Lobby,evolution:poker,LOBBY TILE,,"Navigation entry, not a game. Covered by one lobby image per section if wanted."
+Evolution,Red Baron 2,evolution:RedBaron2,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,Roulette,evolution:roulette_direct,CONFIRM FIRST,709527f9-c086-414f-9991-c90ebdf0afdf,"Title matches our ""InOUT"" art — different provider, so branding would be wrong. Confirm before linking."
+Evolution,Roulette Lobby,evolution:roulette_lobby,CONFIRM FIRST,9e8a8e8b-5232-49fd-a377-4843fd43462b,"Title matches our ""NETENT"" art — different provider, so branding would be wrong. Confirm before linking."
+Evolution,Ruleta Auto Francesa,evolution:RuletaAutoFrancesa,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Ruleta Automatica,evolution:RuletaAutomatica,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Ruleta En Vivo,evolution:ruleta_envivo,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Ruletka Live,evolution:russian_roulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Salon Prive Baccarat A,evolution:salon_private_baccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat B,evolution:salon_private_baccarat_2,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat C,evolution:salon_prive_baccarat_c,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat D,evolution:salon_prive_baccarat_d,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat E,evolution:salon_prive_baccarat_e,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat F,evolution:SalonPriveBaccaratF,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat G,evolution:SalonPriveBaccaratG,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat H,evolution:SalonPriveBaccaratH,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat I,evolution:SalonPriveBaccaratI,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat J,evolution:SalonPriveBaccaratJ,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat K,evolution:SalonPriveBaccaratK,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat L,evolution:SalonPriveBaccaratL,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat M,evolution:SalonPriveBaccaratM,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Baccarat N,evolution:SalonPriveBaccaratN,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Salon Prive Lobby,evolution:salon_prive,LOBBY TILE,,"Navigation entry, not a game. Covered by one lobby image per section if wanted."
+Evolution,Salon Prive Roulette,evolution:salon_private_roulette_one,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Speed Auto Roulette,evolution:speed_auto_roulette,CONFIRM FIRST,3fd9878e-da9c-4ec4-9bce-5ba91e061193,"Title matches our ""PlayTech"" art — different provider, so branding would be wrong. Confirm before linking."
+Evolution,Speed Baccarat 3,evolution:speed_baccarat_3,CONFIRM FIRST,f0459c38-8c4e-4c48-93e5-a232ba521184,"Title matches our ""Pragmatic Live"" art — different provider, so branding would be wrong. Confirm before linking."
+Evolution,Speed Baccarat A,evolution:speed_baccarata,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat B,evolution:speed_baccaratb,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat C,evolution:speed_baccaratc,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat D,evolution:speed_baccaratd,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat F,evolution:speed_baccaratf,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat G,evolution:speed_baccaratg,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat H,evolution:speed_baccarath,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat L,evolution:speed_baccaratl,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat N,evolution:speed_baccaratn,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat Q,evolution:speed_baccaratq,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat R,evolution:speed_baccaratr,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat S,evolution:speed_baccarats,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat T,evolution:speed_baccaratt,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat W,evolution:speed_baccaratw,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat X,evolution:speed_baccaratx,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Speed Baccarat Z,evolution:speed_baccarat_z,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Suomalainen Ruletti,evolution:suomalainen_roulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Super Speed Baccarat,evolution:SuperSpeedBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Super Speed Baccarat A,evolution:SuperSpeedBaccaratA,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Evolution,Svensk Roulette,evolution:svensk_roulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Top Games,evolution:top_games,LOBBY TILE,,"Navigation entry, not a game. Covered by one lobby image per section if wanted."
+Evolution,Triple Card Poker,evolution:triple_card,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,Turkce Crazy Time,evolution:TurkceCrazyTime,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Evolution,Turkce Rulet,evolution:turkce_roulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Turkce XXXtreme Lightning Roulette,evolution:TurkceXXXtremeLightningRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,Turkish Lightning Roulette,evolution:TurkishLightningRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Evolution,VIP Bet Stacker Blackjack 1,evolution:BetStackerBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,VIP Bet Stacker Blackjack 2,evolution:BetStackerBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,VIP Bet Stacker Blackjack 3,evolution:BetStackerBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,VIP Bet Stacker Blackjack 4,evolution:BetStackerBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,VIP Roulette,evolution:vip_roulette,CONFIRM FIRST,ec39778a-f3f6-4394-9863-948269df1560,"Title matches our ""Pragmatic Live"" art — different provider, so branding would be wrong. Confirm before linking."
+Evolution,Ventuno Capri,evolution:Ventuno,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,Ventuno Positano,evolution:VentunoXTra,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Evolution,XXXtreme Lightning Baccarat,evolution:XXXtremeLightningBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,777 Wheel Blitz,pragmaticexternal:777WheelBlitz,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,American Blackjack,pragmaticexternal:AmericanBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,American Roulette,pragmaticexternal:AmericanRoulette,READY — link now,5905c97f-a9a5-4bd6-9b81-28b944d8ace3,Artwork live; same provider.
+Pragmatic Play,Auto Mega Roulette,pragmaticexternal:AutoMegaRoulette,READY — link now,55993ca3-0b00-436d-8404-507c4145fdbb,Artwork live; same provider.
+Pragmatic Play,Baccarat,pragmaticexternal:Baccarat,CONFIRM FIRST,daed94ec-fcf7-47c8-81ac-12b686475695,"Title matches our ""Ezugi"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Baccarat 1,pragmaticexternal:LiveBaccaratA,READY — link now,a1b263d7-b57d-4143-9b32-41d3a39382c1,Artwork live; same provider.
+Pragmatic Play,Baccarat 2,pragmaticexternal:LiveBaccaratB,CONFIRM FIRST,f31e6f82-e500-4e35-88f2-3eb04a74580b,"Title matches our ""PlayTech"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Baccarat 3,pragmaticexternal:LiveBaccaratC,READY — link now,611a50a9-0672-4f09-9616-7e4ed01a760f,Artwork live; same provider.
+Pragmatic Play,Baccarat 5,pragmaticexternal:LiveBaccaratD,READY — link now,f5ae4557-7c0c-43f1-ae44-94769a5e2507,Artwork live; same provider.
+Pragmatic Play,Baccarat 6,pragmaticexternal:LiveBaccaratE,READY — link now,065310f8-a65a-4ded-b188-f7789f17b42c,Artwork live; same provider.
+Pragmatic Play,Baccarat 7,pragmaticexternal:Baccarat7,READY — link now,75ba4bda-604c-4b07-85c4-a5a9ff685771,Artwork live; same provider.
+Pragmatic Play,Baccarat 9,pragmaticexternal:NoCommBaccarat1,READY — link now,e1c40eb6-7073-4ed5-a50c-cf7e8f200b69,Artwork live; same provider.
+Pragmatic Play,Baccarat Latino 1,pragmaticexternal:BaccaratLatino1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Bet Behind Pro Blackjack,pragmaticexternal:BetBehindProBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Better Barn House Bonanza,pragmaticexternal:BetterBarnHouseBonanza,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Big Small Baccarat,pragmaticexternal:BigSmallBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Blackjack Latino 1,pragmaticexternal:BlackjackLatino1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 10,pragmaticexternal:BlackjackLatino10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 11,pragmaticexternal:BlackjackLatino11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 12,pragmaticexternal:BlackjackLatino12,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 13,pragmaticexternal:BlackjackLatino13,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 14,pragmaticexternal:BlackjackLatino14,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 15,pragmaticexternal:BlackjackLatino15,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 16,pragmaticexternal:BlackjackLatino16,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 17,pragmaticexternal:BlackjackLatino17,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 18,pragmaticexternal:BlackjackLatino18,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 19,pragmaticexternal:BlackjackLatino19,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 2,pragmaticexternal:BlackjackLatino2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 20,pragmaticexternal:BlackjackLatino20,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 21,pragmaticexternal:BlackjackLatino21,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 3,pragmaticexternal:BlackjackLatino3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 4,pragmaticexternal:BlackjackLatino4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 5,pragmaticexternal:BlackjackLatino5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 6,pragmaticexternal:BlackjackLatino6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 7,pragmaticexternal:BlackjackLatino7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 8,pragmaticexternal:BlackjackLatino8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Blackjack Latino 9,pragmaticexternal:BlackjackLatino9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 10,pragmaticexternal:BlackjackX10Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 11,pragmaticexternal:BlackjackX11Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 12,pragmaticexternal:BlackjackX12Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 13,pragmaticexternal:BlackjackX13Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 14,pragmaticexternal:BlackjackX14Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 15,pragmaticexternal:BlackjackX15Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 16,pragmaticexternal:BlackjackX16Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 17,pragmaticexternal:BlackjackX17Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 18,pragmaticexternal:BlackjackX18Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 19,pragmaticexternal:BlackjackX19Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 2,pragmaticexternal:BlackjackX2Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 20,pragmaticexternal:BlackjackX20Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 21,pragmaticexternal:BlackjackX21Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 22,pragmaticexternal:BlackjackX22Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 23,pragmaticexternal:BlackjackX23Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 24,pragmaticexternal:BlackjackX24Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 25,pragmaticexternal:BlackjackX25Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 26,pragmaticexternal:BlackjackX26Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 27,pragmaticexternal:BlackjackX27Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 28,pragmaticexternal:BlackjackX28Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 29,pragmaticexternal:BlackjackX29Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 3,pragmaticexternal:BlackjackX3Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 30,pragmaticexternal:BlackjackX30Emerald,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 4,pragmaticexternal:BlackjackX4Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 5,pragmaticexternal:BlackjackX5Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 6,pragmaticexternal:BlackjackX6Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 7,pragmaticexternal:BlackjackX7Azure,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 8,pragmaticexternal:BlackjackX8Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX 9,pragmaticexternal:BlackjackX9Ruby,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX Latino 1,pragmaticexternal:BlackjackXLatino1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX Latino 2,pragmaticexternal:BlackjackXLatino2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX Latino 3,pragmaticexternal:BlackjackXLatino3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX Latino 4,pragmaticexternal:BlackjackXLatino4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,BlackjackX Latino 5,pragmaticexternal:BlackjackXLatino5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Baccarat 1,pragmaticexternal:BrazilianBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 1,pragmaticexternal:BrazilianBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 10,pragmaticexternal:BrazilianBlackjack10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 11,pragmaticexternal:BrazilianBlackjack11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 12,pragmaticexternal:BrazilianBlackjack12,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 14,pragmaticexternal:BrazilianBlackjack14,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 2,pragmaticexternal:BrazilianBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 3,pragmaticexternal:BrazilianVIPBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 5,pragmaticexternal:BrazilianBlackjack5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 6,pragmaticexternal:BrazilianBlackjack6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 7,pragmaticexternal:BrazilianBlackjack7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Blackjack 9,pragmaticexternal:BrazilianBlackjack9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian BlackjackX 1,pragmaticexternal:BrazilianBlackjackX1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian BlackjackX 2,pragmaticexternal:BrazilianBlackjackX2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian BlackjackX 3,pragmaticexternal:BrazilianBlackjackX3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian BlackjackX 4,pragmaticexternal:BrazilianBlackjackX4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian BlackjackX 5,pragmaticexternal:BrazilianBlackjackX5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Free Bet Blackjack 1,pragmaticexternal:BrazilianFreeBetBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Free Bet Blackjack 2,pragmaticexternal:BrazilianFreeBetBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Free Bet Blackjack 3,pragmaticexternal:BrazilianBlackjack13,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian ONE Blackjack,pragmaticexternal:BrazilianONEBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Roulette,pragmaticexternal:BrazilianRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Brazilian Speed Baccarat 1,pragmaticexternal:BrazilianSpeedBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Brazilian Speed Baccarat 2,pragmaticexternal:BrazilianSpeedBaccarat2,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Brazilian Speed Baccarat 3,pragmaticexternal:BrazilianSpeedBaccarat3,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Brazilian Speed Baccarat 4,pragmaticexternal:BrazilianSpeedBaccarat4,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Brazilian Speed Blackjack 1,pragmaticexternal:BrazilianBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Speed Blackjack 2,pragmaticexternal:BrazilianBlackjack8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Speed Blackjack 3,pragmaticexternal:BrazilianBlackjack15,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian Turbo Baccarat 1,pragmaticexternal:BrazilianTurboBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Brazilian VIP Blackjack 1,pragmaticexternal:BrazilianVIPBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Brazilian VIP Blackjack 2,pragmaticexternal:BrazilianVIPBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Bubble Up!,pragmaticexternal:BubbleUp,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Candy Rush,pragmaticexternal:CandyRush,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Cantonese Speed Baccarat,pragmaticexternal:CantoneseSpeedBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Casino Hold'em,pragmaticexternal:CasinoHoldem,CONFIRM FIRST,8b542f92-4007-482d-b42a-0ccafff21f3d,"Title matches our ""Evolution"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Chinese Speed Baccarat 1,pragmaticexternal:ChineseSpeedBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Chinese Speed Baccarat 2,pragmaticexternal:ChineseSpeedBaccarat2,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Chinese Speed Baccarat 3,pragmaticexternal:ChineseSpeedBaccarat3,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Color Game Bonanza,pragmaticexternal:ColorGameBonanza,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Cosmic Clusters!,pragmaticexternal:CosmicClusters,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Death Dominion,pragmaticexternal:DeathDominion,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Dragon Tiger,pragmaticexternal:DragonTiger1,CONFIRM FIRST,454f9ec0-c473-4f91-9ffa-33dad542e02a,"Title matches our ""Evolution"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Dutch Blackjack 3,pragmaticexternal:DutchBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Dutch BlackjackX 1,pragmaticexternal:DutchBlackjackX1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Dutch BlackjackX 2,pragmaticexternal:DutchBlackjackX2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Dutch BlackjackX 3,pragmaticexternal:DutchBlackjackX3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Dutch BlackjackX 4,pragmaticexternal:DutchBlackjackX4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Dutch BlackjackX 5,pragmaticexternal:DutchBlackjackX5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Eastern Fury,pragmaticexternal:EasternFury,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Emerald Blackjack,pragmaticexternal:EmeraldBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Emerald Blackjack 2,pragmaticexternal:EmeraldBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Eternal Diamonds,pragmaticexternal:EternalDiamonds,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Floating Dragon Hold&Spin,pragmaticexternal:FloatingDragon1,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Floating Dragon New Year Festival Ultra Megaways Hold & Spin,pragmaticexternal:FloatingDragonNewYearFestivalUltraMegawaysHoldSpin,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Football Blitz Top Card,pragmaticexternal:SuperTrunfo,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Football Blitz Top Card Latino,pragmaticexternal:FootballBlitzTopCardLatino,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Fortune Roulette,pragmaticexternal:FortuneRoulette,CONFIRM FIRST,fef20e3b-202a-42a0-a84a-07781e28c4b0,"Title matches our ""Tada Gaming"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Free Bet Blackjack Latino 1,pragmaticexternal:FreeBetBlackjackLatino1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Free Bet Blackjack Latino 2,pragmaticexternal:FreeBetBlackjackLatino2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Free Bet Blackjack Latino 3,pragmaticexternal:FreeBetBlackjackLatino3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Free Bet Blackjack Latino 4,pragmaticexternal:FreeBetBlackjackLatino4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Free Bet Blackjack Latino 5,pragmaticexternal:FreeBetBlackjackLatino5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,French Roulette La Partage,pragmaticexternal:FrenchRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Gates of Olympus POP,pragmaticexternal:GatesofOlympusPOP,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Gates of Olympus Roulette,pragmaticexternal:GatesofOlympusRoulette,READY — link now,bc972e7e-a084-4de3-b233-ec12aa4bfb90,Artwork live; same provider.
+Pragmatic Play,German Roulette,pragmaticexternal:RouletteGermany,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Golden Retriever,pragmaticexternal:GoldenRetriever,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Harvest Moon - Grave Profits,pragmaticexternal:HarvestMoonGraveProfits,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Hearts of Venus,pragmaticexternal:HeartsofVenus,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Hi-Lo Baccarat,pragmaticexternal:HiLoBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 1,pragmaticexternal:IndonesianBlackjackX1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 10,pragmaticexternal:IndonesianBlackjackX10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 11,pragmaticexternal:IndonesianBlackjackX11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 12,pragmaticexternal:IndonesianBlackjackX12,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 13,pragmaticexternal:IndonesianBlackjackX13,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 14,pragmaticexternal:IndonesianBlackjackX14,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 15,pragmaticexternal:IndonesianBlackjackX15,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 16,pragmaticexternal:IndonesianBlackjackX16,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 17,pragmaticexternal:IndonesianBlackjackX17,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 18,pragmaticexternal:IndonesianBlackjackX18,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 19,pragmaticexternal:IndonesianBlackjackX19,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 2,pragmaticexternal:IndonesianBlackjackX2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 20,pragmaticexternal:IndonesianBlackjackX20,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 3,pragmaticexternal:IndonesianBlackjackX3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 4,pragmaticexternal:IndonesianBlackjackX4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 5,pragmaticexternal:IndonesianBlackjackX5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 6,pragmaticexternal:IndonesianBlackjackX6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 7,pragmaticexternal:IndonesianBlackjackX7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 8,pragmaticexternal:IndonesianBlackjackX8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian BlackjackX 9,pragmaticexternal:IndonesianBlackjackX9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian Mega Sic Bo,pragmaticexternal:IndonesianMegaSicBo,TABLE TEMPLATE — SICBO,,Numbered dealer table. Covered by the single Sicbo template; see note on shared images.
+Pragmatic Play,Indonesian ONE Blackjack,pragmaticexternal:IndonesianOneBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Indonesian Speed Baccarat 1,pragmaticexternal:IndonesianSpeedBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Indonesian Speed Baccarat 2,pragmaticexternal:IndonesianSpeedBaccarat2,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Jade Legends,pragmaticexternal:JadeLegends,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Japanese Speed Baccarat 1,pragmaticexternal:JapaneseSpeedBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Japanese Speed Baccarat 2,pragmaticexternal:JapaneseSpeedBaccarat2,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Japanese Speed Baccarat 3,pragmaticexternal:JapaneseSpeedBaccarat3,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Kirmizi Turkish Blackjack 2,pragmaticexternal:KirmiziTurkishBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Kirmizi Turkish Blackjack X 1,pragmaticexternal:KirmiziTurkishBlackjackX1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Kirmizi Turkish Blackjack X 2,pragmaticexternal:KirmiziTurkishBlackjackX2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Kirmizi Turkish Blackjack X 3,pragmaticexternal:KirmiziTurkishBlackjackX3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Kirmizi Turkish Blackjack X 4,pragmaticexternal:KirmiziTurkishBlackjackX4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Kirmizi Turkish Blackjack X 5,pragmaticexternal:KirmiziTurkishBlackjackX5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Kirmizi Turkish Speed Blackjack 2,pragmaticexternal:KirmiziTurkishSpeedBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Korean Baccarat 1,pragmaticexternal:KoreanSpeedBaccarat4,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Korean Baccarat 2,pragmaticexternal:SpeedBaccarat6Korean,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Korean Blackjack 1,pragmaticexternal:KoreanBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Korean BlackjackX 1,pragmaticexternal:KoreanBlackjackX1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Korean BlackjackX 2,pragmaticexternal:KoreanBlackjackX2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Korean BlackjackX 3,pragmaticexternal:KoreanBlackjackX3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Korean Mega Sic Bo,pragmaticexternal:KoreanMegaSicBo,TABLE TEMPLATE — SICBO,,Numbered dealer table. Covered by the single Sicbo template; see note on shared images.
+Pragmatic Play,Korean ONE Blackjack,pragmaticexternal:KoreanOneBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Korean Prive Lounge Baccarat 1,pragmaticexternal:KoreanPriveLoungeBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Korean Roulette,pragmaticexternal:KoreanRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Korean Speed Baccarat 1,pragmaticexternal:KoreanSpeedBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Korean Speed Baccarat 2,pragmaticexternal:SpeedBaccarat2Korean,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Korean Speed Baccarat 3,pragmaticexternal:KoreanSpeedBaccarat3,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Korean Speed Baccarat 5,pragmaticexternal:KoreanSpeedBaccarat5,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Korean Speed Blackjack 1,pragmaticexternal:KoreanSpeedBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Korean Turbo Baccarat,pragmaticexternal:KoreanSpeedBaccarat6,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Lucky Drums 88,pragmaticexternal:LuckyDrums88,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Mega Roulette,pragmaticexternal:MegaRoulette,READY — link now,b12ec9dd-b05e-4243-bdd4-303a32be7bea,Artwork live; same provider.
+Pragmatic Play,Mega Roulette 3000,pragmaticexternal:MegaRoulette3000,READY — link now,3550acc2-babd-4879-ac07-1d608a7763a5,Artwork live; same provider.
+Pragmatic Play,Nederlandse Roulette,pragmaticexternal:Roulette11Dutch,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,ONE Blackjack 2,pragmaticexternal:ONEBlackjack2Indigo,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,ONE Blackjack Latino,pragmaticexternal:ONEBlackjackLatino,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Oracle of Gold,pragmaticexternal:OracleofGold,IN PROGRESS,e19b230e-f022-411b-96a7-9836fbba90fc,"Matched, artwork being completed."
+Pragmatic Play,Panda Fortune 2,pragmaticexternal:PandaFortune21,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Pearl Blackjack,pragmaticexternal:PearlBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Pearl Blackjack 2,pragmaticexternal:PearlBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,PowerUP Roulette,pragmaticexternal:PowerUPRoulette,READY — link now,f122c831-7a59-42b7-a504-2d7e066426fd,Artwork live; same provider.
+Pragmatic Play,Privé Lounge Russian Poker,pragmaticexternal:PriveLoungeRussianPoker,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Ra vs Osiris,pragmaticexternal:RavsOsiris,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Romanian Roulette,pragmaticexternal:Roulette12Romanian,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Roulette,pragmaticexternal:RouletteCrystal,CONFIRM FIRST,709527f9-c086-414f-9991-c90ebdf0afdf,"Title matches our ""InOUT"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Roulette 1,pragmaticexternal:RouletteAzure,READY — link now,233d80d4-b53a-4073-9f20-93428ee68582,Artwork live; same provider.
+Pragmatic Play,Roulette 2 Extra Time,pragmaticexternal:LiveRouletteA,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Roulette 3,pragmaticexternal:Roulette10Ruby,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Roulette Italia Tricolore,pragmaticexternal:Roulette7Italian,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Roulette Latina,pragmaticexternal:Roulette14Spanish,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Russian Blackjack 1,pragmaticexternal:RussianBlackjack1,READY — link now,a6c264c3-68f0-4d26-8791-41f756d954f0,Artwork live; same provider.
+Pragmatic Play,Russian Blackjack 2,pragmaticexternal:RussianBlackjack2,READY — link now,d41d2e73-7827-4f41-ab47-a1b01cd0ddd7,Artwork live; same provider.
+Pragmatic Play,Russian Blackjack 3,pragmaticexternal:RussianBlackjack3,READY — link now,27fabead-2497-4be6-89fb-587d9b3eb82e,Artwork live; same provider.
+Pragmatic Play,Russian Blackjack 4,pragmaticexternal:RussianBlackjack4,READY — link now,66572673-bd0a-44b6-ac21-54664322dffc,Artwork live; same provider.
+Pragmatic Play,Russian Blackjack 5,pragmaticexternal:RussianBlackjack5,READY — link now,a706c163-a6a7-4267-8071-021b829e0c92,Artwork live; same provider.
+Pragmatic Play,Russian Blackjack 6,pragmaticexternal:RussianBlackjack6,READY — link now,96847809-1782-40f1-a051-ad565b8188d0,Artwork live; same provider.
+Pragmatic Play,Russian Prive Lounge Blackjack 1,pragmaticexternal:RussianPriveLoungeBlackjack1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Russian Prive Lounge Blackjack 2,pragmaticexternal:RussianPriveLoungeBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Russian Roulette,pragmaticexternal:RouletteRussia,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Seotda Baccarat,pragmaticexternal:SeotdaBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Snakes & Ladders 2 - Snake Eyes,pragmaticexternal:SnakesandLadders2SnakeEyes,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Snakes & Ladders Live,pragmaticexternal:SnakesAndLaddersLive,READY — link now,d1fe471f-653d-4706-a95c-76a1257510bd,Artwork live; same provider.
+Pragmatic Play,Speed Auto-Roulette 1,pragmaticexternal:SpeedAutoRoulette1,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Speed Baccarat 1,pragmaticexternal:SpeedBaccaratA,CONFIRM FIRST,6e8babeb-dee3-4e19-9496-4d1872c454b5,"Title matches our ""PlayTech"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Speed Baccarat 11,pragmaticexternal:SpeedBaccarat11,READY — link now,5622a3a2-3633-4971-9b50-cf2016a1cdbc,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 12,pragmaticexternal:SpeedBaccarat12,READY — link now,43e91887-9a54-4d6d-a201-9470af8ff11c,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 13,pragmaticexternal:SpeedBaccarat13,READY — link now,9d1d5c6d-1dcb-437b-9433-bb6906ff4945,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 15,pragmaticexternal:SpeedBaccarat15,READY — link now,8e8da51e-8437-4a58-857f-4b5c337c5558,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 16,pragmaticexternal:NoCommSpeedBaccarat1,READY — link now,3bb1f58d-fce5-4310-a8ba-917414536deb,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 17,pragmaticexternal:NoCommSpeedBaccarat2,READY — link now,d848a7c7-81bd-4095-9165-ec1d75b2b579,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 18,pragmaticexternal:SpeedBaccarat14,READY — link now,1f558a79-d587-4cc7-a8cc-61c454e32378,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 2,pragmaticexternal:SpeedBaccaratB,READY — link now,d25b73f8-ae30-42be-80fa-288d793dfdc4,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 3,pragmaticexternal:SpeedBaccaratC,READY — link now,f0459c38-8c4e-4c48-93e5-a232ba521184,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 5,pragmaticexternal:SpeedBaccaratD,READY — link now,cb853cd1-9de7-4291-be92-d20066089019,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 6,pragmaticexternal:SpeedBaccaratE,READY — link now,992c800a-9633-40e1-aee7-41ad22b986ed,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 8,pragmaticexternal:SpeedBaccarat8,READY — link now,22a8e4cd-757c-4e59-8462-28ede7359d5a,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat 9,pragmaticexternal:SpeedBaccarat9,READY — link now,0b2b3b55-2e55-4858-8f5c-7dcc83e992e6,Artwork live; same provider.
+Pragmatic Play,Speed Baccarat Latino 1,pragmaticexternal:SpeedBaccaratLatino1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Speed Baccarat Latino 2,pragmaticexternal:SpeedBaccaratLatino2,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Speed Baccarat Latino 3,pragmaticexternal:SpeedBaccaratLatino3,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Speed Baccarat Latino 4,pragmaticexternal:SpeedBaccaratLatino4,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Speed Blackjack 1,pragmaticexternal:SpeedBlackjack1Ruby,READY — link now,2a5c1e77-24e8-4e78-897d-4cf53ab1ee3c,Artwork live; same provider.
+Pragmatic Play,Speed Blackjack 2,pragmaticexternal:SpeedBlackjack2Ruby,READY — link now,b35eef4c-8b98-4ece-9ef4-6e69559bd5c5,Artwork live; same provider.
+Pragmatic Play,Speed Blackjack Latino 1,pragmaticexternal:SpeedBlackjackLatino1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Speed Blackjack Latino 2,pragmaticexternal:SpeedBlackjackLatino2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Speed Blackjack Latino 3,pragmaticexternal:SpeedBlackjackLatino3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Speed Roulette,pragmaticexternal:SpeedRoulette,CONFIRM FIRST,2eb0934f-5cc0-4975-a61f-847c54320bfb,"Title matches our ""Evolution"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Speed Roulette 2,pragmaticexternal:SpeedRoulette2,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Speed Roulette Latina,pragmaticexternal:SpeedRouletteLatina,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Squeeze Baccarat,pragmaticexternal:SqueezeBaccarat,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Super Serge,pragmaticexternal:SuperSerge,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Sweet Bonanza Candyland,pragmaticexternal:SweetBonanzaCandyland,READY — link now,c444c0fd-43ac-4218-a577-112690017424,Artwork live; same provider.
+Pragmatic Play,Thai Baccarat 1,pragmaticexternal:ThaiBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Thai Speed Baccarat 1,pragmaticexternal:ThaiSpeedBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,The Amazing Money Machine,pragmaticexternal:TheAmazingMoneyMachine1,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,The Magic Cauldron - Enchanted Brew,pragmaticexternal:TheMagicCauldronEnchantedBrew1,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,Topaz Blackjack,pragmaticexternal:TopazBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Topaz Blackjack 2,pragmaticexternal:TopazBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Treasure Island,pragmaticexternal:TreasureIsland,READY — link now,01519cc2-6736-4db8-9c3e-130039d3d8d9,Artwork live; same provider.
+Pragmatic Play,Turbo Baccarat,pragmaticexternal:Baccarat8,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Turbo Baccarat Latino 1,pragmaticexternal:TurboBaccaratLatino1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 1,pragmaticexternal:BlackjackTurkish1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 10,pragmaticexternal:TurkishBlackjack10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 11,pragmaticexternal:TurkishBlackjack11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 12,pragmaticexternal:TurkishBlackjack12,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 13,pragmaticexternal:TurkishBlackjack13,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 14,pragmaticexternal:TurkishBlackjack14,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 15,pragmaticexternal:TurkishBlackjack15,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 16,pragmaticexternal:TurkishBlackjack16,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 3,pragmaticexternal:TurkishBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 4,pragmaticexternal:TurkishBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 5,pragmaticexternal:TurkishBlackjack5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 6,pragmaticexternal:TurkishBlackjack6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 7,pragmaticexternal:TurkishBlackjack7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 8,pragmaticexternal:TurkishBlackjack8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Blackjack 9,pragmaticexternal:TurkishBlackjack9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish BlackjackX 10,pragmaticexternal:TurkishBlackjackX10,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish BlackjackX 11,pragmaticexternal:TurkishBlackjackX11,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish BlackjackX 12,pragmaticexternal:TurkishBlackjackX12,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish BlackjackX 6,pragmaticexternal:TurkishBlackjackX6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish BlackjackX 7,pragmaticexternal:TurkishBlackjackX7,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish BlackjackX 8,pragmaticexternal:TurkishBlackjackX8,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish BlackjackX 9,pragmaticexternal:TurkishBlackjackX9,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Mega Roulette,pragmaticexternal:TurkishMegaRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Turkish ONE Blackjack,pragmaticexternal:TurkishONEBlackjack,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Roulette,pragmaticexternal:Roulette6Turkish,CONFIRM FIRST,5705fd53-0f3d-41af-b13f-16844203ed71,"Title matches our ""Ezugi"" art — different provider, so branding would be wrong. Confirm before linking."
+Pragmatic Play,Turkish Speed Blackjack 1,pragmaticexternal:SpeedBlackjackTurkish1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish Speed Blackjack 3,pragmaticexternal:TurkishSpeedBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish VIP Blackjack 1,pragmaticexternal:VIPBlackjackTurkish1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish VIP Blackjack 2,pragmaticexternal:TurkishVIPBlackjack2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish VIP Blackjack 3,pragmaticexternal:TurkishVIPBlackjack3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish VIP Blackjack 4,pragmaticexternal:TurkishVIPBlackjack4,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish VIP Blackjack 5,pragmaticexternal:TurkishVIPBlackjack5,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Turkish VIP Blackjack 6,pragmaticexternal:TurkishVIPBlackjack6,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,VIP Blackjack Latino 1,pragmaticexternal:VIPBlackjackLatino1,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,VIP Blackjack Latino 2,pragmaticexternal:VIPBlackjackLatino2,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,VIP Blackjack Latino 3,pragmaticexternal:VIPBlackjackLatino3,TABLE TEMPLATE — BLACKJACK,,Numbered dealer table. Covered by the single Blackjack template; see note on shared images.
+Pragmatic Play,Vietnamese Speed Baccarat 1,pragmaticexternal:VietnameseSpeedBaccarat1,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Vietnamese Speed Baccarat 2,pragmaticexternal:VietnameseSpeedBaccarat2,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Vietnamese Speed Baccarat 3,pragmaticexternal:VietnameseSpeedBaccarat3,TABLE TEMPLATE — BACCARAT,,Numbered dealer table. Covered by the single Baccarat template; see note on shared images.
+Pragmatic Play,Viva Brasil Roulette,pragmaticexternal:VivaBrasilRoulette,TABLE TEMPLATE — ROULETTE,,Numbered dealer table. Covered by the single Roulette template; see note on shared images.
+Pragmatic Play,Wild Gladiators,pragmaticexternal:WildGladiators,READY — link now,045008b9-8031-4c01-b87f-19d113d9cf94,Artwork live; same provider.
+Pragmatic Play,Wolf Gold 1 000 000,pragmaticexternal:WolfGold1000000,ARTWORK NEEDED,,"Distinct game, no artwork yet."
+Pragmatic Play,You Can Piggy Bank On It,pragmaticexternal:YouCanPiggyBankOnIt,ARTWORK NEEDED,,"Distinct game, no artwork yet."

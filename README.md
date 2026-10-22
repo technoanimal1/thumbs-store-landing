@@ -11,6 +11,7 @@ on Vercel. Zero build step: plain static HTML, one file per page.
 | `/blog` | `blog.html` |
 | `/roadmap` | `roadmap.html` |
 | `/license` | `license.html` — API License Agreement v1.3 (+ `api-license-v1.3.pdf`) |
+| `/coverage-private` | `coverage-private.html` — games per provider. Link-only: not in the nav or sitemap, `noindex` meta + `X-Robots-Tag` header. Counts are a snapshot from Studio; edit the list by hand to update |
 
 Also ships `sitemap.xml`, `robots.txt`, `favicon.svg`, the `og.png` share card
 and a branded `404.html`.

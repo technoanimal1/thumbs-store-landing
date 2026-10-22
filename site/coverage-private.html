@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>thumbs.store Catalogue Coverage</title>
+    <meta name="description" content="Games per provider in the thumbs.store catalogue." />
+    <!-- Private page: reachable only by its link. Not in the nav, sitemap or robots.txt
+         (listing it there would advertise it); kept out of search by this tag and the
+         X-Robots-Tag header in vercel.json. -->
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --yellow: #fef150;
+        --page: #000000;
+        --panel: #121212;
+        --ring: #222222;
+        --line: rgb(255 255 255 / 0.08);
+        --text: #ffffff;
+        --muted: rgb(255 255 255 / 0.62);
+        --dim: rgb(255 255 255 / 0.4);
+        --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--text);
+        font-family: var(--sans);
+        font-size: 16px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      a { color: inherit; text-decoration: none; }
+      h1, h2, p { margin: 0; }
+      :focus-visible { outline: 2px solid #fff; outline-offset: 3px; border-radius: 8px; }
+      ::selection { background: var(--yellow); color: #050505; }
+
+      main {
+        max-width: 1270px;
+        margin: 0 auto;
+        padding: 140px 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+      }
+      .eyebrow {
+        font-size: 13px; font-weight: 600; letter-spacing: 0.14em;
+        color: var(--dim); text-transform: uppercase;
+      }
+      .lede { max-width: 620px; color: var(--muted); font-size: 17px; line-height: 1.6em; }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        padding: 12px 24px; border-radius: 999px; border: 0;
+        font-family: var(--sans); font-size: 14px; font-weight: 600; letter-spacing: -0.01em;
+        cursor: pointer; white-space: nowrap; transition: background 0.2s ease;
+      }
+      .btn-y { background: #ffffff; color: #000000; }
+      .btn-y:hover { background: var(--yellow); }
+      .btn-o { color: #fff; background: rgb(255 255 255 / 0.06); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.16); }
+      .btn-o:hover { background: rgb(255 255 255 / 0.12); }
+
+      /* ---- nav (same as the rest of the site) ---- */
+      .navwrap {
+        position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+        display: flex; justify-content: center;
+        background: rgb(0 0 0 / 0.72);
+        backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgb(255 255 255 / 0.07);
+      }
+      nav {
+        width: 100%; max-width: 1270px;
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 16px; padding: 14px 24px;
+      }
+      .brand { display: flex; align-items: center; gap: 8px; flex: none; }
+      .brand-mark { width: 28px; height: 26px; flex: none; }
+      .brand-lock { display: flex; flex-direction: column; gap: 4px; }
+      .brand-word { width: 143px; height: 14px; display: block; }
+      .brand-sub { display: flex; justify-content: space-between; align-items: baseline; width: 143px; line-height: 1; }
+      .brand-sub i { font-style: italic; font-weight: 600; font-size: 10px; color: rgb(255 240 80); }
+      .brand-sub b { font-weight: 600; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(255 255 255 / 0.75); }
+      .nav-cta { display: flex; align-items: center; gap: 10px; }
+      .nav-tg { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.16); color: rgb(255 255 255 / 0.72); font-size: 13px; font-weight: 500; white-space: nowrap; }
+      .nav-tg:hover { color: #fff; border-color: rgb(255 255 255 / 0.34); }
+      .nav-tg svg { width: 15px; height: 15px; flex: none; }
+      .nav-cta .btn { padding: 9px 18px; font-size: 13px; }
+      .nav-links { display: flex; align-items: center; gap: 4px; margin-right: auto; margin-left: 28px; }
+      .nav-link { font-size: 13px; font-weight: 600; color: var(--muted); padding: 9px 12px; border-radius: 999px; }
+      .nav-link:hover { color: #fff; background: rgb(255 255 255 / 0.06); }
+
+      /* ---- hero ---- */
+      .hero { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+      .private-pill {
+        font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+        color: #000; background: var(--yellow); border-radius: 999px; padding: 5px 14px;
+      }
+      .hero h1 {
+        font-size: clamp(38px, 4.8vw, 62px); font-weight: 600;
+        letter-spacing: -0.04em; line-height: 1.05em; text-wrap: balance;
+      }
+      .hero h1 span { color: var(--yellow); }
+      .stats {
+        display: grid; grid-template-columns: repeat(3, 1fr);
+        width: 100%; margin-top: 24px;
+        border: 1px solid var(--ring); border-radius: 33px; background: var(--panel);
+      }
+      .stat { padding: 28px 30px; display: flex; flex-direction: column; gap: 6px; }
+      .stat + .stat { border-left: 1px solid var(--ring); }
+      .stat b { font-size: 44px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+      .stat span { font-size: 13px; color: var(--muted); }
+
+      /* ---- provider list ---- */
+      .list-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+      .list-head h2 { font-size: clamp(26px, 2.6vw, 34px); font-weight: 600; letter-spacing: -0.03em; }
+      .search {
+        width: min(320px, 100%);
+        padding: 11px 18px; border-radius: 999px;
+        border: 1px solid rgb(255 255 255 / 0.16); background: rgb(255 255 255 / 0.04);
+        color: #fff; font-family: var(--sans); font-size: 14px;
+      }
+      .search::placeholder { color: var(--dim); }
+      .search:focus { outline: none; border-color: #fff; }
+      .providers {
+        list-style: none; margin: 24px 0 0; padding: 8px 30px;
+        border: 1px solid var(--ring); border-radius: 33px; background: var(--panel);
+        columns: 2; column-gap: 56px;
+      }
+      .providers li {
+        break-inside: avoid;
+        display: grid; grid-template-columns: 30px minmax(0, 1fr) minmax(60px, 34%) 56px;
+        align-items: center; gap: 14px;
+        padding: 12px 0; border-bottom: 1px solid var(--line);
+      }
+      .rank { font-family: var(--mono); font-size: 12px; color: var(--dim); }
+      .pname { font-size: 15px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .bar { height: 6px; border-radius: 999px; background: rgb(255 255 255 / 0.06); overflow: hidden; }
+      .bar i { display: block; height: 100%; border-radius: 999px; background: rgb(255 255 255 / 0.55); }
+      .providers li:nth-child(-n+5) .bar i { background: var(--yellow); }
+      .providers li b { text-align: right; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+      .providers li[hidden] { display: none; }
+      .total {
+        display: flex; justify-content: space-between; align-items: baseline;
+        margin-top: 16px; padding: 18px 30px;
+        border: 1px solid rgb(255 255 255 / 0.85); border-radius: 999px;
+        font-weight: 600;
+      }
+      .total b { font-size: 22px; font-variant-numeric: tabular-nums; }
+      .empty { margin-top: 16px; color: var(--muted); font-size: 14px; }
+      .note { margin-top: 14px; color: var(--dim); font-size: 13px; }
+
+      footer {
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 16px; flex-wrap: wrap;
+        border-top: 1px solid var(--line);
+        padding: 36px 0 56px; color: var(--dim); font-size: 13px;
+      }
+      footer .links { display: flex; gap: 24px; flex-wrap: wrap; }
+      footer a:hover { color: #fff; }
+
+      @media (max-width: 1199.98px) { .nav-links { display: none; } }
+      @media (max-width: 899.98px) { .providers { columns: 1; } }
+      @media (max-width: 809.98px) {
+        main { padding: 120px 16px 0; gap: 56px; }
+        .hero h1 { font-size: 36px; }
+        .nav-tg span { display: none; }
+        .nav-tg { padding: 7px 9px; }
+        .nav-cta .btn-o { display: none; }
+        .stats { grid-template-columns: 1fr; }
+        .stat + .stat { border-left: 0; border-top: 1px solid var(--ring); }
+        .stat { padding: 22px 24px; }
+        .stat b { font-size: 36px; }
+        .providers { padding: 4px 20px; border-radius: 24px; }
+        .providers li { grid-template-columns: 26px minmax(0, 1fr) 52px; }
+        .bar { display: none; }
+        .total { padding: 16px 20px; }
+        .search { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navwrap">
+      <nav>
+        <a class="brand" href="/" aria-label="thumbs.store — home">
+          <svg class="brand-mark" viewBox="0 0 47 43" fill="none" aria-hidden="true">
+            <g clip-path="url(#ts-brand-mark-clip)">
+              <path d="M41.7042 4.77305V0H20.9914C17.7229 0 15.6381 1.04435 13.4141 2.98993L2.98993 13.2748C1.04435 15.4989 0 17.5837 0 20.8521V38.227H5.14824V43H25.8572C29.1257 43 31.2105 41.9557 33.4346 40.0101L43.8587 29.7252C45.8043 27.5011 46.8486 25.4124 46.8486 22.1479V4.77305H41.7042ZM38.5093 30.3479C38.5093 33.129 36.146 35.3531 33.3649 35.3531H8.34317V12.6521C8.34317 9.87101 10.7026 7.64694 13.4837 7.64694H38.5093V30.3479Z" fill="#FFF050"/>
+            </g>
+            <defs><clipPath id="ts-brand-mark-clip"><rect width="46.8486" height="43" fill="white"/></clipPath></defs>
+          </svg>
+          <span class="brand-lock">
+            <svg class="brand-word" viewBox="0 0 239 24" fill="none" aria-hidden="true">
+              <g clip-path="url(#ts-brand-word-clip)">
+                <path d="M165.069 23.822V0H188.822C189.014 0 190.279 0.37239 190.534 0.479179C192.308 1.21574 197.53 6.04039 199.159 7.5984C202.297 10.5967 202.182 13.3403 199.093 16.2975C197.428 17.8912 192.461 22.5104 190.627 23.3018C190.334 23.4277 189.197 23.822 188.956 23.822H165.066H165.069ZM196.147 9.58357V7.18768C196.147 6.30873 194.318 4.79179 193.477 4.79179H170.271V9.58357H196.147ZM196.147 14.3754H170.271V19.0302H193.614C194.079 19.0302 195.232 18.2033 195.533 17.8008C195.69 17.5927 196.147 16.6727 196.147 16.4974V14.3754Z" fill="white"/>
+                <path d="M238.999 0V4.79179H210.591C210.037 4.79179 208.885 5.56669 208.545 6.03217C208.455 6.15539 207.921 7.12196 207.921 7.18768V9.58357H238.999V12.1164C238.999 14.2631 234.377 18.4799 232.772 19.9913C231.453 21.2345 228.901 23.822 227.02 23.822H202.718V19.0302H231.264C231.658 19.0302 232.688 18.3402 232.978 18.0062C233.18 17.7734 233.797 16.7247 233.797 16.4974V14.3754H202.718V11.5687C202.718 11.2456 203.315 9.97787 203.518 9.63012C204.567 7.82567 209.449 3.16258 211.207 1.71135C212.036 1.02681 213.901 0.00273816 214.974 0.00273816H239.002L238.999 0Z" fill="white"/>
+                <path d="M142.068 0V4.92869C143.749 3.61164 145.321 1.18015 147.369 0.440844C147.695 0.323103 148.845 0 149.119 0H162.878V23.822H157.676V4.79179H144.875C144.483 4.79179 143.38 5.35859 143.076 5.66252C142.583 6.15539 142.068 7.33006 142.068 8.00913V23.822H136.866V4.79179H124.065C123.512 4.79179 122.359 5.56669 122.019 6.03217C121.929 6.15539 121.395 7.12196 121.395 7.18768V23.822H116.192V11.5687C116.192 11.2456 116.789 9.97787 116.992 9.63012C118.041 7.82567 122.923 3.16258 124.681 1.71135C125.51 1.02681 127.375 0.00273816 128.448 0.00273816H142.071L142.068 0Z" fill="white"/>
+                <path d="M44.3157 0V6.77695C44.3157 6.89196 44.6306 7.70793 44.7209 7.8777C45.3343 9.01677 46.4624 9.45214 47.6863 9.56714C52.5685 10.0272 58.1215 9.15916 63.0064 9.58083C65.9389 9.83274 68.0802 12.9187 70.3255 14.515V0H75.528V23.822H70.3255V17.182C70.3255 15.9169 68.8606 14.5533 67.6448 14.3863C62.7462 14.1426 57.5985 14.6683 52.7273 14.3808C48.6693 14.1399 47.5823 11.8562 44.7264 9.64929C44.5895 9.5425 44.5512 9.38642 44.3157 9.44393V23.8193H39.1132V0H44.3157Z" fill="white"/>
+                <path d="M108.799 0H114.002V23.822H108.799V18.8933C106.316 21.0127 105.089 23.5756 101.48 23.8275C98.2985 24.0493 93.1399 24.0657 89.9691 23.8275C88.4302 23.7125 87.3705 23.2278 86.2068 22.2503C84.7994 21.0647 79.041 15.4186 78.351 14.0878C78.0197 13.4471 77.5816 11.9932 77.5816 11.2977V0H82.7157L82.921 0.205362V16.7712C82.921 17.5708 84.835 19.1452 85.7304 19.0275C92.2116 18.5921 99.4705 19.6135 105.861 19.0357C107.203 18.9152 108.799 17.6365 108.799 16.2236V0Z" fill="white"/>
+                <path d="M21.452 0V4.79179C21.6902 4.85203 21.7258 4.69321 21.8627 4.58642C23.8123 3.09412 25.447 0 28.3659 0H36.8542L37.0595 0.205362V4.79179H24.1217C23.826 4.79179 22.8129 5.31751 22.5445 5.54204C22.2214 5.81038 21.452 6.96041 21.452 7.32459V23.822H16.2495V4.79179H0.641968V0H21.452Z" fill="white"/>
+              </g>
+              <defs><clipPath id="ts-brand-word-clip"><rect width="238.357" height="24" fill="white" transform="translate(0.641968)"/></clipPath></defs>
+            </svg>
+            <span class="brand-sub"><i>.store</i><b>By Cubicle</b></span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/studio">Studio</a>
+          <a class="nav-link" href="/pricing">Pricing</a>
+          <a class="nav-link" href="/blog">Blog</a>
+          <a class="nav-link" href="/roadmap">Roadmap</a>
+        </div>
+        <div class="nav-cta">
+          <a class="nav-tg" href="https://t.me/cubicledesign" target="_blank" rel="noopener" aria-label="Telegram @cubicledesign">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.2c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.33-4.78 8.7-7.86c.38-.34-.08-.53-.59-.19l-10.75 6.77-4.63-1.45c-1-.32-1.03-1 .21-1.49l18.1-6.98c.84-.3 1.57.2 1.28 1.41Z"/></svg>
+            <span>@cubicledesign</span>
+          </a>
+          <a class="btn btn-o" href="https://app.thumbs.store/login">Log in</a>
+          <a class="btn btn-y" href="https://app.thumbs.store/signup">Sign up</a>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <section class="hero">
+        <span class="private-pill">Private link</span>
+        <p class="eyebrow">Catalogue coverage</p>
+        <h1><span>11,621</span> casino game thumbnails from <span>85</span> providers</h1>
+        <p class="lede">Every provider in the thumbs.store catalogue and how many of its games are ready to use.</p>
+        <div class="stats">
+          <div class="stat"><b>11,621</b><span>games</span></div>
+          <div class="stat"><b>85</b><span>providers</span></div>
+          <div class="stat"><b>39</b><span>providers with 100+ games</span></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="providers-title">
+        <div class="list-head">
+          <h2 id="providers-title">Games by provider</h2>
+          <input class="search" id="q" type="search" placeholder="Find a provider" aria-label="Find a provider" autocomplete="off" />
+        </div>
+        <ol class="providers" id="list">
+            <li data-name="spinomenal"><span class="rank">01</span><span class="pname">Spinomenal</span><span class="bar" aria-hidden="true"><i style="width:100.0%"></i></span><b>880</b></li>
+            <li data-name="pragmatic"><span class="rank">02</span><span class="pname">PRAGMATIC</span><span class="bar" aria-hidden="true"><i style="width:99.4%"></i></span><b>875</b></li>
+            <li data-name="play&#x27;n go"><span class="rank">03</span><span class="pname">Play&#x27;n Go</span><span class="bar" aria-hidden="true"><i style="width:62.7%"></i></span><b>552</b></li>
+            <li data-name="bgaming"><span class="rank">04</span><span class="pname">BGAMING</span><span class="bar" aria-hidden="true"><i style="width:43.8%"></i></span><b>385</b></li>
+            <li data-name="hacksaw g."><span class="rank">05</span><span class="pname">Hacksaw G.</span><span class="bar" aria-hidden="true"><i style="width:43.5%"></i></span><b>383</b></li>
+            <li data-name="red tiger"><span class="rank">06</span><span class="pname">Red Tiger</span><span class="bar" aria-hidden="true"><i style="width:41.1%"></i></span><b>362</b></li>
+            <li data-name="amusnet"><span class="rank">07</span><span class="pname">Amusnet</span><span class="bar" aria-hidden="true"><i style="width:40.0%"></i></span><b>352</b></li>
+            <li data-name="relax"><span class="rank">08</span><span class="pname">Relax</span><span class="bar" aria-hidden="true"><i style="width:37.0%"></i></span><b>326</b></li>
+            <li data-name="netent"><span class="rank">09</span><span class="pname">NETENT</span><span class="bar" aria-hidden="true"><i style="width:33.9%"></i></span><b>298</b></li>
+            <li data-name="jili gaming"><span class="rank">10</span><span class="pname">JILI gaming</span><span class="bar" aria-hidden="true"><i style="width:31.6%"></i></span><b>278</b></li>
+            <li data-name="playtech"><span class="rank">11</span><span class="pname">PlayTech</span><span class="bar" aria-hidden="true"><i style="width:29.8%"></i></span><b>262</b></li>
+            <li data-name="ka gaming"><span class="rank">12</span><span class="pname">KA Gaming</span><span class="bar" aria-hidden="true"><i style="width:28.7%"></i></span><b>253</b></li>
+            <li data-name="endrophina"><span class="rank">13</span><span class="pname">Endrophina</span><span class="bar" aria-hidden="true"><i style="width:28.4%"></i></span><b>250</b></li>
+            <li data-name="flatdog"><span class="rank">14</span><span class="pname">Flatdog</span><span class="bar" aria-hidden="true"><i style="width:27.7%"></i></span><b>244</b></li>
+            <li data-name="betsoft gaming"><span class="rank">15</span><span class="pname">BetSoft Gaming</span><span class="bar" aria-hidden="true"><i style="width:25.7%"></i></span><b>226</b></li>
+            <li data-name="egt digital"><span class="rank">16</span><span class="pname">EGT Digital</span><span class="bar" aria-hidden="true"><i style="width:24.8%"></i></span><b>218</b></li>
+            <li data-name="mascot"><span class="rank">17</span><span class="pname">Mascot</span><span class="bar" aria-hidden="true"><i style="width:24.2%"></i></span><b>213</b></li>
+            <li data-name="onlyplay"><span class="rank">18</span><span class="pname">Onlyplay</span><span class="bar" aria-hidden="true"><i style="width:22.8%"></i></span><b>201</b></li>
+            <li data-name="wazdan"><span class="rank">19</span><span class="pname">Wazdan</span><span class="bar" aria-hidden="true"><i style="width:22.5%"></i></span><b>198</b></li>
+            <li data-name="rubyplay"><span class="rank">20</span><span class="pname">RubyPlay</span><span class="bar" aria-hidden="true"><i style="width:21.8%"></i></span><b>192</b></li>
+            <li data-name="yggdrasil"><span class="rank">21</span><span class="pname">Yggdrasil</span><span class="bar" aria-hidden="true"><i style="width:21.8%"></i></span><b>192</b></li>
+            <li data-name="evolution"><span class="rank">22</span><span class="pname">Evolution</span><span class="bar" aria-hidden="true"><i style="width:20.8%"></i></span><b>183</b></li>
+            <li data-name="pg soft"><span class="rank">23</span><span class="pname">PG Soft</span><span class="bar" aria-hidden="true"><i style="width:20.3%"></i></span><b>179</b></li>
+            <li data-name="spinoro"><span class="rank">24</span><span class="pname">Spinoro</span><span class="bar" aria-hidden="true"><i style="width:20.3%"></i></span><b>179</b></li>
+            <li data-name="nolimit city"><span class="rank">25</span><span class="pname">Nolimit City</span><span class="bar" aria-hidden="true"><i style="width:20.2%"></i></span><b>178</b></li>
+            <li data-name="amigo gaming"><span class="rank">26</span><span class="pname">Amigo gaming</span><span class="bar" aria-hidden="true"><i style="width:18.3%"></i></span><b>161</b></li>
+            <li data-name="playnetic"><span class="rank">27</span><span class="pname">Playnetic</span><span class="bar" aria-hidden="true"><i style="width:18.2%"></i></span><b>160</b></li>
+            <li data-name="1spin4win"><span class="rank">28</span><span class="pname">1spin4win</span><span class="bar" aria-hidden="true"><i style="width:18.0%"></i></span><b>158</b></li>
+            <li data-name="triple cherry"><span class="rank">29</span><span class="pname">Triple Cherry</span><span class="bar" aria-hidden="true"><i style="width:17.2%"></i></span><b>151</b></li>
+            <li data-name="booming games"><span class="rank">30</span><span class="pname">Booming Games</span><span class="bar" aria-hidden="true"><i style="width:16.0%"></i></span><b>141</b></li>
+            <li data-name="3oaks"><span class="rank">31</span><span class="pname">3OAKS</span><span class="bar" aria-hidden="true"><i style="width:15.5%"></i></span><b>136</b></li>
+            <li data-name="barbarabang"><span class="rank">32</span><span class="pname">BarbaraBang</span><span class="bar" aria-hidden="true"><i style="width:15.5%"></i></span><b>136</b></li>
+            <li data-name="pragmatic live"><span class="rank">33</span><span class="pname">Pragmatic Live</span><span class="bar" aria-hidden="true"><i style="width:14.0%"></i></span><b>123</b></li>
+            <li data-name="quickspin"><span class="rank">34</span><span class="pname">Quickspin</span><span class="bar" aria-hidden="true"><i style="width:13.6%"></i></span><b>120</b></li>
+            <li data-name="pateplay"><span class="rank">35</span><span class="pname">Pateplay</span><span class="bar" aria-hidden="true"><i style="width:12.7%"></i></span><b>112</b></li>
+            <li data-name="thunderkick"><span class="rank">36</span><span class="pname">Thunderkick</span><span class="bar" aria-hidden="true"><i style="width:12.0%"></i></span><b>106</b></li>
+            <li data-name="clawbuster"><span class="rank">37</span><span class="pname">Clawbuster</span><span class="bar" aria-hidden="true"><i style="width:11.6%"></i></span><b>102</b></li>
+            <li data-name="novomatic"><span class="rank">38</span><span class="pname">Novomatic</span><span class="bar" aria-hidden="true"><i style="width:11.6%"></i></span><b>102</b></li>
+            <li data-name="platipus"><span class="rank">39</span><span class="pname">Platipus</span><span class="bar" aria-hidden="true"><i style="width:11.5%"></i></span><b>101</b></li>
+            <li data-name="belatra games"><span class="rank">40</span><span class="pname">Belatra Games</span><span class="bar" aria-hidden="true"><i style="width:10.6%"></i></span><b>93</b></li>
+            <li data-name="inout"><span class="rank">41</span><span class="pname">InOUT</span><span class="bar" aria-hidden="true"><i style="width:10.5%"></i></span><b>92</b></li>
+            <li data-name="gamzix"><span class="rank">42</span><span class="pname">Gamzix</span><span class="bar" aria-hidden="true"><i style="width:10.3%"></i></span><b>91</b></li>
+            <li data-name="zillion"><span class="rank">43</span><span class="pname">Zillion</span><span class="bar" aria-hidden="true"><i style="width:10.2%"></i></span><b>90</b></li>
+            <li data-name="avatar ux"><span class="rank">44</span><span class="pname">Avatar UX</span><span class="bar" aria-hidden="true"><i style="width:10.0%"></i></span><b>88</b></li>
+            <li data-name="popiplay"><span class="rank">45</span><span class="pname">Popiplay</span><span class="bar" aria-hidden="true"><i style="width:9.7%"></i></span><b>85</b></li>
+            <li data-name="spinbyte"><span class="rank">46</span><span class="pname">SpinByte</span><span class="bar" aria-hidden="true"><i style="width:9.7%"></i></span><b>85</b></li>
+            <li data-name="big time gaming"><span class="rank">47</span><span class="pname">Big Time Gaming</span><span class="bar" aria-hidden="true"><i style="width:9.1%"></i></span><b>80</b></li>
+            <li data-name="octoplay"><span class="rank">48</span><span class="pname">Octoplay</span><span class="bar" aria-hidden="true"><i style="width:9.0%"></i></span><b>79</b></li>
+            <li data-name="fc gaming"><span class="rank">49</span><span class="pname">FC gaming</span><span class="bar" aria-hidden="true"><i style="width:8.9%"></i></span><b>78</b></li>
+            <li data-name="netgame"><span class="rank">50</span><span class="pname">NetGame</span><span class="bar" aria-hidden="true"><i style="width:8.6%"></i></span><b>76</b></li>
+            <li data-name="peter&amp;sons"><span class="rank">51</span><span class="pname">Peter&amp;Sons</span><span class="bar" aria-hidden="true"><i style="width:8.6%"></i></span><b>76</b></li>
+            <li data-name="blueprint"><span class="rank">52</span><span class="pname">Blueprint</span><span class="bar" aria-hidden="true"><i style="width:6.4%"></i></span><b>56</b></li>
+            <li data-name="dreamplay"><span class="rank">53</span><span class="pname">DreamPlay</span><span class="bar" aria-hidden="true"><i style="width:6.4%"></i></span><b>56</b></li>
+            <li data-name="gameart"><span class="rank">54</span><span class="pname">GameArt</span><span class="bar" aria-hidden="true"><i style="width:6.0%"></i></span><b>53</b></li>
+            <li data-name="playson"><span class="rank">55</span><span class="pname">Playson</span><span class="bar" aria-hidden="true"><i style="width:5.8%"></i></span><b>51</b></li>
+            <li data-name="tada gaming"><span class="rank">56</span><span class="pname">Tada Gaming</span><span class="bar" aria-hidden="true"><i style="width:5.7%"></i></span><b>50</b></li>
+            <li data-name="games inc"><span class="rank">57</span><span class="pname">Games Inc</span><span class="bar" aria-hidden="true"><i style="width:5.5%"></i></span><b>48</b></li>
+            <li data-name="mancala"><span class="rank">58</span><span class="pname">Mancala</span><span class="bar" aria-hidden="true"><i style="width:5.1%"></i></span><b>45</b></li>
+            <li data-name="sa gaming"><span class="rank">59</span><span class="pname">SA Gaming</span><span class="bar" aria-hidden="true"><i style="width:5.1%"></i></span><b>45</b></li>
+            <li data-name="ezugi"><span class="rank">60</span><span class="pname">Ezugi</span><span class="bar" aria-hidden="true"><i style="width:4.5%"></i></span><b>40</b></li>
+            <li data-name="turbogames"><span class="rank">61</span><span class="pname">TurboGames</span><span class="bar" aria-hidden="true"><i style="width:4.4%"></i></span><b>39</b></li>
+            <li data-name="bullshark"><span class="rank">62</span><span class="pname">BullShark</span><span class="bar" aria-hidden="true"><i style="width:4.2%"></i></span><b>37</b></li>
+            <li data-name="spin joy"><span class="rank">63</span><span class="pname">Spin Joy</span><span class="bar" aria-hidden="true"><i style="width:4.2%"></i></span><b>37</b></li>
+            <li data-name="backseat gaming"><span class="rank">64</span><span class="pname">Backseat Gaming</span><span class="bar" aria-hidden="true"><i style="width:4.0%"></i></span><b>35</b></li>
+            <li data-name="king midas"><span class="rank">65</span><span class="pname">King Midas</span><span class="bar" aria-hidden="true"><i style="width:4.0%"></i></span><b>35</b></li>
+            <li data-name="beplay"><span class="rank">66</span><span class="pname">BePlay</span><span class="bar" aria-hidden="true"><i style="width:3.9%"></i></span><b>34</b></li>
+            <li data-name="7rings"><span class="rank">67</span><span class="pname">7Rings</span><span class="bar" aria-hidden="true"><i style="width:2.8%"></i></span><b>25</b></li>
+            <li data-name="esoterica"><span class="rank">68</span><span class="pname">Esoterica</span><span class="bar" aria-hidden="true"><i style="width:2.8%"></i></span><b>25</b></li>
+            <li data-name="true labs"><span class="rank">69</span><span class="pname">True labs</span><span class="bar" aria-hidden="true"><i style="width:2.8%"></i></span><b>25</b></li>
+            <li data-name="iconic21"><span class="rank">70</span><span class="pname">Iconic21</span><span class="bar" aria-hidden="true"><i style="width:2.7%"></i></span><b>24</b></li>
+            <li data-name="spribe"><span class="rank">71</span><span class="pname">Spribe</span><span class="bar" aria-hidden="true"><i style="width:2.7%"></i></span><b>24</b></li>
+            <li data-name="shady lady"><span class="rank">72</span><span class="pname">Shady Lady</span><span class="bar" aria-hidden="true"><i style="width:2.2%"></i></span><b>19</b></li>
+            <li data-name="mannaplay"><span class="rank">73</span><span class="pname">MannaPlay</span><span class="bar" aria-hidden="true"><i style="width:2.0%"></i></span><b>18</b></li>
+            <li data-name="vibra gaming"><span class="rank">74</span><span class="pname">Vibra Gaming</span><span class="bar" aria-hidden="true"><i style="width:2.0%"></i></span><b>18</b></li>
+            <li data-name="bluebird"><span class="rank">75</span><span class="pname">Bluebird</span><span class="bar" aria-hidden="true"><i style="width:1.6%"></i></span><b>14</b></li>
+            <li data-name="poggiplay"><span class="rank">76</span><span class="pname">PoggiPlay</span><span class="bar" aria-hidden="true"><i style="width:1.6%"></i></span><b>14</b></li>
+            <li data-name="upgames"><span class="rank">77</span><span class="pname">UPGAMES</span><span class="bar" aria-hidden="true"><i style="width:1.6%"></i></span><b>14</b></li>
+            <li data-name="155.io"><span class="rank">78</span><span class="pname">155.io</span><span class="bar" aria-hidden="true"><i style="width:1.5%"></i></span><b>13</b></li>
+            <li data-name="amatic"><span class="rank">79</span><span class="pname">Amatic</span><span class="bar" aria-hidden="true"><i style="width:1.4%"></i></span><b>12</b></li>
+            <li data-name="fantasma"><span class="rank">80</span><span class="pname">Fantasma</span><span class="bar" aria-hidden="true"><i style="width:1.2%"></i></span><b>11</b></li>
+            <li data-name="win fast"><span class="rank">81</span><span class="pname">Win fast</span><span class="bar" aria-hidden="true"><i style="width:0.8%"></i></span><b>7</b></li>
+            <li data-name="veliplay"><span class="rank">82</span><span class="pname">Veliplay</span><span class="bar" aria-hidden="true"><i style="width:0.7%"></i></span><b>6</b></li>
+            <li data-name="animo"><span class="rank">83</span><span class="pname">Animo</span><span class="bar" aria-hidden="true"><i style="width:0.6%"></i></span><b>4</b></li>
+            <li data-name="luckystreak"><span class="rank">84</span><span class="pname">Luckystreak</span><span class="bar" aria-hidden="true"><i style="width:0.6%"></i></span><b>3</b></li>
+            <li data-name="red rake"><span class="rank">85</span><span class="pname">Red Rake</span><span class="bar" aria-hidden="true"><i style="width:0.6%"></i></span><b>3</b></li>
+        </ol>
+        <p class="empty" id="empty" hidden>No provider matches that name.</p>
+        <div class="total"><span>Total · 85 providers</span><b>11,621 games</b></div>
+        <p class="note">Catalogue as of 22 October 2026. New games are added every week.</p>
+      </section>
+
+      <footer>
+        <span>© 2026 thumbs.store · By Cubicle</span>
+        <div class="links">
+          <a href="/">Home</a>
+          <a href="/studio">Studio</a>
+          <a href="/pricing">Pricing</a>
+          <a href="https://cal.com/cubicle">Book a demo</a>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      ;(() => {
+        const q = document.getElementById('q')
+        const items = [...document.querySelectorAll('#list li')]
+        const empty = document.getElementById('empty')
+        q.addEventListener('input', () => {
+          const term = q.value.trim().toLowerCase()
+          let shown = 0
+          for (const li of items) {
+            const hit = !term || li.dataset.name.includes(term)
+            li.hidden = !hit
+            if (hit) shown++
+          }
+          empty.hidden = shown > 0
+        })
+      })()
+    </script>
+    <script src="/crisp.js" defer></script>
+  </body>
+</html>

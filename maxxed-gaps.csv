@@ -1,30 +1,33 @@
 status,action,provider,game,slug,background,key_visual,logo_colour,logo_white,flagged,comment,rtp,variance,max_win,release_date
-fix_missing_asset,Supply the key visual,BetSoft Gaming,Slotfather,slotfather,yes,MISSING,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
-fix_missing_asset,Supply the key visual,Endrophina,age of glory,age-of-glory,yes,MISSING,yes,yes,yes,P4 - key visual missing,,,,
-fix_missing_asset,Supply the colour logo and white logo,Endrophina,almighty sparta dice,almighty-sparta-dice,yes,yes,MISSING,MISSING,yes,P1 - no logo at all. Do not bake,,,,
-fix_missing_asset,Supply the colour logo and white logo,Hacksaw G.,Miami Multiplier,miami-multiplier,yes,yes,MISSING,MISSING,yes,P1 - no logo at all. Do not bake,,,,
-fix_missing_asset,Supply the key visual,NETENT,dead or alive 3 wanted,dead-or-alive-3-wanted,yes,MISSING,yes,yes,yes,P4 - key visual missing,,,,
-fix_missing_asset,Supply the background,Nolimit City,wixx,wixx,MISSING,yes,yes,yes,yes,P3 - background missing,,,,
-fix_missing_asset,Supply the background,Play'n Go,Trinityimpact,trinityimpact,MISSING,yes,yes,yes,yes,P3 - background missing,,,,
-fix_missing_asset,Supply the background,Popiplay,Cultist,cultist,MISSING,yes,yes,yes,yes,P3 - background missing,,,,
-fix_missing_asset,Supply the colour logo and white logo,Popiplay,Emotions,emotions,yes,yes,MISSING,MISSING,yes,P1 - no logo at all. Do not bake,,,,
-fix_missing_asset,Supply the key visual,Red Tiger,Vault Cracker Megaways,vault-cracker-megaways,yes,MISSING,yes,yes,yes,P4 - key visual missing,,,,
-fix_missing_asset,Supply the background and colour logo and white logo,Spinomenal,Joker Charms Valentine's,joker-charms-valentine-s,MISSING,yes,MISSING,MISSING,yes,P1 - no logo and no background. Do not bake,,,,
-fix_missing_asset,Supply the key visual,Thunderkick,The Wildos,the-wildos,yes,MISSING,yes,yes,no,key visual missing (not flagged in the studio),,,,
+fix_missing_asset,Supply the colour logo,Big Time Gaming,Fireworks Megaways,fireworks-megaways,yes,yes,MISSING,yes,no,,,,,
+fix_missing_asset,Supply the colour logo,Big Time Gaming,Rasputin Megaways,rasputin-megaways,yes,yes,MISSING,yes,no,,,,,
+fix_missing_asset,Supply the colour logo and white logo,Nolimit City,Evil Goblins,evil-goblins,yes,yes,MISSING,MISSING,yes,Assetroom import (missing: logo) - check title,,,,
+fix_missing_asset,Supply the colour logo and white logo,Nolimit City,Warrior Graveyard,warrior-graveyard,yes,yes,MISSING,MISSING,yes,Assetroom import (missing: logo) - check title,,,,
+fix_missing_asset,Supply the background and key visual,Spinomenal,Queen Of Ice Christmas Edition,queen-of-ice-christmas-edition,MISSING,MISSING,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,BetSoft Gaming,Back To Venus,back-to-venus,yes,yes,yes,yes,yes,colour logo could not be set (note in Georgian),,,,
 fix_flagged,Review the card and clear the flag,BetSoft Gaming,Sleighin' It,sleighin-it,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,BetSoft Gaming,Slotfather,slotfather,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,BetSoft Gaming,Slotfather 2,slotfather-ii,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,BGAMING,Fortuna TRUEWAYS,fortuna-trueways,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Big Time Gaming,Golden Goose Megaways,golden-goose-megaways,yes,yes,yes,yes,yes,kk,,,,
 fix_flagged,Review the card and clear the flag,Booming Games,Red Hot Volcano,red-hot-volcano,yes,yes,yes,yes,yes,k,,,,
+fix_flagged,Review the card and clear the flag,Endrophina,age of glory,age-of-glory,yes,yes,yes,yes,yes,"P4 - key visual missing. Background and title still read, but there is no subject. | Assetroom filled 28 Oct: key visual - check",,,,
+fix_flagged,Review the card and clear the flag,Endrophina,almighty sparta dice,almighty-sparta-dice,yes,yes,yes,yes,yes,"P1 - no logo at all (white and colour both missing). Maxxed renders white, so there is no wordmark to fall back on. Do not bake. | Assetroom filled 28 Oct: colour + white logo - check",,,,
 fix_flagged,Review the card and clear the flag,Endrophina,royal xmass,royal-xmass,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Evolution,Always 8 Baccarat,always-8-baccarat,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Hacksaw G.,Alpha Eagle,alpha-eagle,yes,yes,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,Hacksaw G.,Double Salary For 1 Year,double-salary-for-1-year,yes,yes,yes,yes,yes,bg,,,,
 fix_flagged,Review the card and clear the flag,Hacksaw G.,evil eyes,evil-eyes,yes,yes,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,Hacksaw G.,le fisherman,le-fisherman,yes,yes,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,Hacksaw G.,le pharaoh,le-pharaoh,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Hacksaw G.,Miami Multiplier,miami-multiplier,yes,yes,yes,yes,yes,"P1 - no logo at all (white and colour both missing). Maxxed renders white, so there is no wordmark to fall back on. Do not bake. | Assetroom filled: originalLogo, whiteLogo",,,,
 fix_flagged,Review the card and clear the flag,Hacksaw G.,phoenix duelreels,phoenix-duelreels,yes,yes,yes,yes,yes,kk,,,,
-fix_flagged,Review the card and clear the flag,Hacksaw G.,toshi video club,toshi-video-club,yes,yes,yes,yes,yes,original logo does not change (note in Georgian),,,,
+fix_flagged,Review the card and clear the flag,Hacksaw G.,toshi video club,toshi-video-club,yes,yes,yes,yes,yes,original logo will not change (note in Georgian),,,,
+fix_flagged,Review the card and clear the flag,NETENT,dead or alive 3 wanted,dead-or-alive-3-wanted,yes,yes,yes,yes,yes,"P4 - key visual missing. Background and title still read, but there is no subject. | Assetroom filled: character",,,,
+fix_flagged,Review the card and clear the flag,NETENT,Piggy Riches,piggy-riches,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Nolimit City,Deadwood xNudge,deadwood-xnudge,yes,yes,yes,yes,yes,j,,,,
+fix_flagged,Review the card and clear the flag,Nolimit City,Tombstone Slaughter: El Gordo’s Revenge,tombstone-slaughter-el-gordos-revenge,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Nolimit City,wixx,wixx,yes,yes,yes,yes,yes,P3 - background missing. Renders on the flat frame colour instead of artwork. | Assetroom filled: background16,,,,
 fix_flagged,Review the card and clear the flag,Onlyplay,Party Juice,party-juice,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,1001 Spins,1001-spins,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,7 & Hot Fruits,7-hot-fruits,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
@@ -35,7 +38,7 @@ fix_flagged,Review the card and clear the flag,Platipus,Aztec Coins,aztec-coins,
 fix_flagged,Review the card and clear the flag,Platipus,Aztec Temple,aztec-temple,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Bison Trail,bison-trail,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Book of Light,book-of-light,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
-fix_flagged,Review the card and clear the flag,Platipus,Caishen's Gifts,caishen-s-gifts,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Platipus,Caishen’s Gifts,caishen-s-gifts,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Chilli Fiesta,chilli-fiesta,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Chinese Tigers,chinese-tigers,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Cinderella,cinderella,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
@@ -44,8 +47,8 @@ fix_flagged,Review the card and clear the flag,Platipus,Crystal Sevens,crystal-s
 fix_flagged,Review the card and clear the flag,Platipus,Da Ji Da Li,da-ji-da-li,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Diamond Hunt,diamond-hunt,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Dragon's Element Deluxe,dragon-s-element-deluxe,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
-fix_flagged,Review the card and clear the flag,Platipus,Dragon's Money,dragon-s-money,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Dragon`s Element,dragon-s-element,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Platipus,Dragon’s Money,dragon-s-money,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,First of Olympians,first-of-olympians,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Frozen Mirror,frozen-mirror,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Guises of Dracula,guises-of-dracula,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
@@ -53,433 +56,195 @@ fix_flagged,Review the card and clear the flag,Platipus,Hallowin,hallowin,yes,ye
 fix_flagged,Review the card and clear the flag,Platipus,Hawaiian Night,hawaiian-night,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Jackpot Lab,jackpot-lab,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Platipus,Jacks or Better,jacks-or-better,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,24K Dragon,24k-dragon,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Play'n Go,3 hand casino holdem,3-hand-casino-holdem,yes,yes,yes,yes,yes,,,,,
-fix_flagged,Review the card and clear the flag,Play'n Go,Book of Dead GO Collect,book-of-dead-go-collect,yes,yes,yes,yes,yes,background has since been filled (Assetroom) - flag can probably be cleared,,,,
-fix_flagged,Review the card and clear the flag,Play'n Go,Cash Vandal,cash-vandal,yes,yes,yes,yes,yes,white logo generated 26 Oct by gpt-image-1.5 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Ankh of Anubis Awakening,ankh-of-anubis-awakening,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Beasts of Fire Maximum,beasts-of-fire-maximum,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Big Win 777,big-win-777,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Book of Dead GO Collect,book-of-dead-go-collect,yes,yes,yes,yes,yes,P3 - background missing. Renders on the flat frame colour instead of artwork. | Assetroom filled: background16,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Cash Vandal,cash-vandal,yes,yes,yes,yes,yes,white logo generated 26 Oct - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Fire Toad 2,fire-toad-2,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Gemix 100,gemix-100,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Play'n Go,Hotel Yeti Way,hotel-yeti-way,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Legacy of Egypt,legacy-of-egypt,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Play'n Go,Moon Princess 100,moon-princess-100,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Rich Wilde and the Shield of Athena,rich-wilde-and-the-shield-of-athena,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Tome of Madness Bingo,tome-of-madness-bingo,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Play'n Go,Trinityimpact,trinityimpact,yes,yes,yes,yes,yes,P3 - background missing. Renders on the flat frame colour instead of artwork. | Assetroom filled: background16,,,,
 fix_flagged,Review the card and clear the flag,PlayTech,Bubblegum Burst,bubblegum-burst,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Popiplay,Cultist,cultist,yes,yes,yes,yes,yes,P3 - background missing. Renders on the flat frame colour instead of artwork. | Assetroom filled: background16,,,,
+fix_flagged,Review the card and clear the flag,Popiplay,Emotions,emotions,yes,yes,yes,yes,yes,"P1 - no logo at all (white and colour both missing). Maxxed renders white, so there is no wordmark to fall back on. Do not bake. | Assetroom filled: originalLogo, whiteLogo",,,,
+fix_flagged,Review the card and clear the flag,Popiplay,Unipopcorn,unipopcorn,yes,yes,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,PRAGMATIC,3 Genie Wishes,3-genie-wishes,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Better Barn House Bonanza,better-barn-house-bonanza,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,PRAGMATIC,Candy Blitz,candy-blitz,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Candy Blitz BOOM,candy-blitz-boom,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Floating Dragon New Year Festival Ultra Megaways Hold & Spin,floating-dragon-new-year-festival-ultra-megaways-hold-spin,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Gates of Gatotkaca 1000,gates-of-gatotkaca-1000,yes,yes,yes,yes,yes,white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,PRAGMATIC,Gold Party 2 After Hours,gold-party-2-after-hours,yes,yes,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,PRAGMATIC,Jane Hunter and the Mask of Montezuma,jane-hunter-and-the-mask-of-montezuma,yes,yes,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,PRAGMATIC,Jasmine Dreams,jasmine-dreams,yes,yes,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,PRAGMATIC,Leprechaun Carol,leprechaun-carol,yes,yes,yes,yes,yes,,,,,
 fix_flagged,Review the card and clear the flag,PRAGMATIC,Leprechaun Song,leprechaun-song,yes,yes,yes,yes,yes,,,,,
-fix_flagged,Review the card and clear the flag,PRAGMATIC,Santa's Great Gifts,santa-s-great-gifts,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Mahjong Wins 2,mahjong-wins-2,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Panda Fortune 2,panda-fortune-2,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Plants vs Aliens,plants-vs-aliens,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Santa’s Great Gifts,santa-s-great-gifts,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Spin & Score Megaways,spin-score-megaways,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,The Hand of Midas,the-hand-of-midas,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,The Roo House,the-roo-house,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Tipsy Yeti Megaways,tipsy-yeti-megaways,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,PRAGMATIC,Wild Hop & Drop,wild-hop-drop,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Red Tiger,Cash or Nothing,cash-or-nothing,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Red Tiger,Jackrabbit Jackpots,jackrabbit-jackpots,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Red Tiger,Monopoly Cash is King,monopoly-cash-is-king,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
 fix_flagged,Review the card and clear the flag,Red Tiger,Revolvero,revolvero,yes,yes,yes,yes,yes,white logo regenerated 26 Oct - confirm it reads,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Backseat Gaming,Diamond Mole,diamond-mole,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9631,High,x25000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Backseat Gaming,Ghostly Hallows,ghostly-hallows,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Backseat Gaming,Pirate Bonanza,pirate-bonanza,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9426,High,x10000.00,09.07.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Backseat Gaming,Power Pops,power-pops,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9631,Med-High,x30000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Backseat Gaming,Roman Bonanza,roman-bonanza,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9631,High,x10000.00,25.04.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Betsoft,Coins of Ra Power - Hold & Win,coins-of-ra-power-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Betsoft,Joker Poker,joker-poker,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Betsoft,Super Joker,super-joker,,,,,,from Maxxed.io_Thumbnails_1.xlsx,[ i ],N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Aloha King Elvis,aloha-king-elvis,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9492,Med-High,x2000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Always Up! x10000,always-up-x10000,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9605,High,x10490.00,04.02.2026
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Aviamasters X-mas,aviamasters-x-mas,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.97,Low,x250.00,01.12.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,BC Bonanza,bc-bonanza,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9597,N/A,x15000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Candy Monsta,candy-monsta,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9406,Med-High,x1000.00,12.10.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Catch the Gold Hold and Win,catch-the-gold-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9498,Med-High,x2000.00,13.08.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,ClustersDom,clustersdom,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9671,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Diner War,diner-war,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9625,High,x5000.00,21.07.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Dragon's Crash,dragon-s-crash,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.97,High,x10000.00,07.03.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Fishing Time,fishing-time,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Football Plinko,football-plinko,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.99,Adjusted,x10000.00,11.06.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Fortuna TRUEWAYS,fortuna-trueways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9707,High,x10000.00,23.09.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Fortune Spin,fortune-spin,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.98,Med,x10000.00,02.09.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Golden Avalon Hold and Win,golden-avalon-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.971,Med-High,x3000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Golden Paw Hold & Win,golden-paw-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9713,Med,x2000.00,12.11.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Lucky Lu,lucky-lu,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9607,Med,x559.00,14.05.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Piggy Bank Hold and Win,piggy-bank-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9698,Low-Med,x2500.00,19.03.2026
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Road 2 Riches,road-2-riches,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9624,High,x2000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Slot Machine,slot-machine,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.97,High,x2124.00,07.12.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Wild Tiger,wild-tiger,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9711,Low-Med,x3000.00,04.01.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,BGaming,Winter Trophy Hold and Win,winter-trophy-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9614,High,x5624.00,02.02.2026
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Big Time Gaming,Fireworks Megaways,fireworks-megaways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9644,High,x150335.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Big Time Gaming,Rasputin Megaways,rasputin-megaways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9668,High,x68180.00,12.12.2022
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,2025 Hit Slot,2025-hit-slot,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9605,N/A,x2025.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Book of Brawlers,book-of-brawlers,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Burning Hell 3000,burning-hell-3000,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Clover Flames Dice,clover-flames-dice,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.961,Med,x1000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Crown Coins Dice,crown-coins-dice,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9606,High,x2500.00,06.01.2026
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Cupid,cupid,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,N/A,N/A,09.02.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Gambleman,gambleman,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9607,High,x16000.00,17.03.2026
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Hell Hot 20 Dice,hell-hot-20-dice,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9601,N/A,N/A,21.02.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Minotaurus,minotaurus,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Nazar Wishes,nazar-wishes,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Red Cap,red-cap,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,N/A,N/A,26.08.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Royal Xmass 2 Dice,royal-xmass-2-dice,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9605,High,x25000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Endorphina,Royal Xmass Dice,royal-xmass-dice,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9601,High,x93750.00,22.12.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Evolution,Always 8 Baccarat,always-8-baccarat,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9829,N/A,N/A,08.01.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Evolution,Gonzo's Treasure Hunt,gonzo-s-treasure-hunt,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9656,N/A,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Evolution,Infinite Fun Fun 21 Blackjack,infinite-fun-fun-21-blackjack,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,27.06.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Evolution,Prosperity Tree Baccarat,prosperity-tree-baccarat,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9889,N/A,N/A,12.09.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Fantasma Games,Fortuna Gold,fortuna-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,Med,x5542.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Fantasma Games,Lucky Otter,lucky-otter,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9465,Med-High,x4416.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Fantasma Games,Wicked Kitty,wicked-kitty,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9453,Low,x4544.00,10.05.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,GameArt,Caribbean Stud Poker,caribbean-stud-poker,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.973,N/A,x200.00,11.11.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,GameArt,Pirate Queen,pirate-queen,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9586,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,GameArt,Roulette,roulette,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.973,N/A,N/A,16.09.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Hacksaw Gaming,2 Wild 2 Die,2-wild-2-die,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9625,High,x15000.00,04.01.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Hacksaw Gaming,Cubes 2,cubes-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,High,x10500.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Hacksaw Gaming,Epic Bullets and Bounty,epic-bullets-and-bounty,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9428,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Hacksaw Gaming,Gold Rush Scratch,gold-rush-scratch,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.5867,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Hacksaw Gaming,Marlin Masters: Atlantis,marlin-masters-atlantis,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9426,Med,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Hacksaw Gaming,Marlin Masters: The Big Haul,marlin-masters-the-big-haul,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9628,Med,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Hacksaw Gaming,Rusty & Curly,rusty-curly,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9629,Med,x10000.00,28.03.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Mancala Gaming,Adventures,adventures,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x1500.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,NetEnt,Elements: The Awakening,elements-the-awakening,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9602,Low-Med,N/A,11.11.2013
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,NetEnt,Frankenstein,frankenstein,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.966,Med,N/A,23.04.2015
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,NetEnt,Gonzo's Quest II: Return to El Dorado,gonzo-s-quest-ii-return-to-el-dorado,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,NetEnt,Piggy Riches,piggy-riches,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9638,Med,[ i ],05.09.2010
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,NetEnt,Piggy Riches 3: Hog Heaven,piggy-riches-3-hog-heaven,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9606,High,x10387.00,26.08.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,NetEnt,Taco Fury XXXtreme,taco-fury-xxxtreme,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9403,Low,x533.00,05.05.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,NetEnt,Warlords: Crystals of Power,warlords-crystals-of-power,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9689,Low-Med,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Big Black Cock,big-black-cock,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Evil Goblins,evil-goblins,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9428,High,x31969.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Fruits,fruits,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9623,N/A,x500.00,30.01.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Golden Genie & the Walking Wilds,golden-genie-the-walking-wilds,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Little Bighorn,little-bighorn,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9409,High,x25676.00,11.10.2022
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Monkey's Gold xPays,monkey-s-gold-xpays,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Tesla Jolt,tesla-jolt,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9666,Low,N/A,29.03.2018
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Thor Hammer Time,thor-hammer-time,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9603,Med,x15000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Tombstone Slaughter: El Gordo’s Revenge,tombstone-slaughter-el-gordo-s-revenge,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9408,High,x500000.00,28.01.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,Warrior Graveyard,warrior-graveyard,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9414,High,x9797.00,03.11.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Nolimit City,xWays Hoarder xSplit,xways-hoarder-xsplit,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.941,High,x11030.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,10 Devils Hotfire,10-devils-hotfire,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.94,Low,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,4 Gold Lanterns Hold and Win,4-gold-lanterns-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Bells of Glory Hold and Win,bells-of-glory-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Bonsai Gold 2: Age of Prosperity,bonsai-gold-2-age-of-prosperity,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Bounty of the Seas 2: Hold & Win,bounty-of-the-seas-2-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.94,N/A,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Caribbean Poker,caribbean-poker,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Cash Connection Charming Lady,cash-connection-charming-lady,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Cash Connection Golden Book of Ra,cash-connection-golden-book-of-ra,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Cash Connection Sizzling Hot,cash-connection-sizzling-hot,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Christmas Boom,christmas-boom,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x3000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Devil's Coins Hotfire Hold and Win,devil-s-coins-hotfire-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,Med,x1000.00,06.03.2026
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Devils Hotfire Xpand,devils-hotfire-xpand,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x1500.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Imperial Express Hold & Win,imperial-express-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Joker's Magic Box Hotfire,joker-s-magic-box-hotfire,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Mystic Bull,mystic-bull,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Phoenix Hotfire Xpand,phoenix-hotfire-xpand,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.94,N/A,x3000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Red Dog,red-dog,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x11.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Red Hot Fruits,red-hot-fruits,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,High,N/A,20.06.2016
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Rock & Riches: Hold & Win,rock-riches-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Sizzling Hot,sizzling-hot,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,The Money Game,the-money-game,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Well of Riches,well-of-riches,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Wild West Express,wild-west-express,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Novomatic,Wolf Luck,wolf-luck,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Asgardian Rising,asgardian-rising,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9676,High,x8305.00,02.02.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Bikini Paradise,bikini-paradise,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9695,High,x5000.00,04.06.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Diner Frenzy Spins,diner-frenzy-spins,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.968,Med,x2105.00,23.06.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Dragon's Treasure Quest,dragon-s-treasure-quest,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9676,High,x10000.00,08.07.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Galaxy Miner,galaxy-miner,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9677,High,x5000.00,21.07.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Graffiti Rush,graffiti-rush,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9675,Med,x5000.00,17.03.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Incan Wonders,incan-wonders,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9674,Low,x4500.00,17.02.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Mr. Treasure’s Fortune,mr-treasure-s-fortune,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9671,Med,x5000.00,27.02.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,PG Soft,Pharaoh Royals,pharaoh-royals,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9676,Med,x2000.00,21.10.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,1001 Mystery Genie Fortunes,1001-mystery-genie-fortunes,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x1234.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,13th Trial Hercules Abyssways,13th-trial-hercules-abyssways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,High,x60000.00,14.08.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,24K Dragon,24k-dragon,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x24000.00,19.11.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Alice Cooper and the Tome of Madness,alice-cooper-and-the-tome-of-madness,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x3000.00,07.10.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Ankh of Anubis Awakening,ankh-of-anubis-awakening,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x15000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Beast of Wealth,beast-of-wealth,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9417,High,x5000.00,17.09.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Beasts of Fire Maximum,beasts-of-fire-maximum,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9625,High,x50000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Bell of Fortune,bell-of-fortune,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9412,High,x2000.00,29.11.2012
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Big Win 777,big-win-777,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.945,High,x5000.00,24.10.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Boat Bonanza CrocoNile,boat-bonanza-croconile,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9425,Med,x6000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Boat Bonanza Down Under,boat-bonanza-down-under,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9425,High,x6000.00,28.03.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Book of Dead,book-of-dead,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9425,High,x5000.00,14.01.2016
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Bucking Rider,bucking-rider,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.947,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Bugs Party,bugs-party,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9424,High,[ i ],20.09.2016
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Buildin' Bucks,buildin-bucks,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x5000.00,12.09.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Casino Stud Poker,casino-stud-poker,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9478,High,N/A,25.08.2012
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Cat Wilde and the Incan Quest,cat-wilde-and-the-incan-quest,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Celebration of Wealth,celebration-of-wealth,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x5000.00,17.09.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Colt Lightning Firestorm,colt-lightning-firestorm,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x50000.00,23.05.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Colt Lightning Inferno,colt-lightning-inferno,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,High,x50000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Court Of Hearts,court-of-hearts,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9423,High,x8500.00,29.04.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Dansband På Turné,dansband-p-turn,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9422,High,x10000.00,09.07.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Def Leppard Hysteria,def-leppard-hysteria,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9427,Med,x10000.00,31.03.2022
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Divina Commedia I Nove Cerchi,divina-commedia-i-nove-cerchi,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x3000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Dragonfate's Favor,dragonfate-s-favor,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x30000.00,22.05.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Energoonz,energoonz,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9474,Med,x1000.00,28.11.2013
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Fangs and Fire,fangs-and-fire,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9434,High,x60000.00,27.11.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Fate of Dead Blitzways,fate-of-dead-blitzways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Fire Joker,fire-joker,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9423,Med,x800.00,14.06.2016
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Fire Toad 2,fire-toad-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,High,x5300.00,02.09.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Flying Pigs,flying-pigs,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9373,High,N/A,20.09.2016
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Fruit Bonanza,fruit-bonanza,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9305,Med,x5555.00,29.11.2012
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Game of Gladiators,game-of-gladiators,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9443,High,x5000.00,06.06.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Gemix 100,gemix-100,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x25000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Gold Volcano,gold-volcano,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Gunslinger: Reloaded,gunslinger-reloaded,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9464,Med,x5000.00,25.10.2018
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Helloween,helloween,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x5000.00,15.10.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Honey Rush,honey-rush,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.945,High,x9000.00,31.10.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Honey Rush Black and Yellow,honey-rush-black-and-yellow,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9625,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Hope Unleashed Fortune Rises,hope-unleashed-fortune-rises,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x1234.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Hugo,hugo,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.944,Med,x10000.00,16.08.2016
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Hugo 2,hugo-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9456,High,x5000.00,23.11.2017
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Hugo Carts,hugo-carts,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9424,High,x25000.00,26.08.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Hugo Goal,hugo-goal,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9455,High,[ i ],31.05.2018
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Invading Vegas Revenge on Mars,invading-vegas-revenge-on-mars,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x2500.00,06.02.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Jolly Roger Wild Kraken,jolly-roger-wild-kraken,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9426,Med,x20000.00,19.12.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,KISS REELS OF ROCK,kiss-reels-of-rock,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x50000.00,09.12.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Lab of Madness It's A-Wild!,lab-of-madness-it-s-a-wild,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x8000.00,18.09.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Lady of Fortune Destiny Spins,lady-of-fortune-destiny-spins,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x1950.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Lady of Fortune Remastered,lady-of-fortune-remastered,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Low-Med,x1500.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Legacy of Egypt,legacy-of-egypt,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.945,High,x5000.00,25.04.2018
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Legion Gold and the Sphinx of Dead,legion-gold-and-the-sphinx-of-dead,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9425,Med,x3000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Legion Gold Reckoning,legion-gold-reckoning,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Leprechaun goes to Hell,leprechaun-goes-to-hell,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9654,Med,x50000.00,07.06.2016
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Leprechaun's Diamond Dig,leprechaun-s-diamond-dig,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x3000.00,26.08.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Leprechaun's Vault,leprechaun-s-vault,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med-High,x9000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Moon Princess Trinity,moon-princess-trinity,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x4000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Mystery Egg Surprise,mystery-egg-surprise,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9399,Low-Med,x6480.00,20.03.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Mystery Genie Fortunes of the Lamp,mystery-genie-fortunes-of-the-lamp,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x6000.00,04.04.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,NSYNC Pop,nsync-pop,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x5000.00,30.06.2022
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Nugget n’ Nonsense,nugget-n-nonsense,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,High,x50000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Perfect Gems,perfect-gems,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.945,High,x5000.00,30.05.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Piggy Blitz Casino Gold,piggy-blitz-casino-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9625,Med,x8000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Piggy Blitz Disco Gold,piggy-blitz-disco-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9427,Med,x6000.00,07.11.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Potion of Madness,potion-of-madness,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x6000.00,30.01.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Raging Rex,raging-rex,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9434,High,x5000.00,10.01.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Reactoonz 100,reactoonz-100,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Reactoonz 2,reactoonz-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x5083.00,01.10.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Rich Wilde and the Pearls of Vishnu,rich-wilde-and-the-pearls-of-vishnu,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9617,Med,x2000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Rich Wilde and the Shield of Athena,rich-wilde-and-the-shield-of-athena,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9625,High,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Rich Wilde and the Tome of Dead,rich-wilde-and-the-tome-of-dead,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Rich Wilde and the Tome of Insanity,rich-wilde-and-the-tome-of-insanity,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Rise of Dead,rise-of-dead,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9454,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Rise of Olympus 1000,rise-of-olympus-1000,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9624,High,x60000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Rosy Orbit Treasure Turn,rosy-orbit-treasure-turn,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x6000.00,11.09.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Saxon,saxon,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9422,High,x10000.00,13.08.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Speed Cash,speed-cash,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9412,High,[ i ],29.11.2012
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Spice Spice Baby!,spice-spice-baby,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9618,Med,x6000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Spinnin' Records: Raving Reels,spinnin-records-raving-reels,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x3000.00,21.08.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Static Nightmare Abyssways,static-nightmare-abyssways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x30000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Temple of Wealth,temple-of-wealth,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x5000.00,17.09.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,The Green Knight Oath of Thorns,the-green-knight-oath-of-thorns,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9427,High,x14000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,The Sword and The Grail,the-sword-and-the-grail,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.945,High,x10000.00,06.08.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,The Sword and the Grail Excalibur,the-sword-and-the-grail-excalibur,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,High,x25000.00,25.04.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Tomb of Gold Reimagined,tomb-of-gold-reimagined,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9624,Low,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Tome of Madness Bingo,tome-of-madness-bingo,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9738,Med,x4250.00,18.12.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Twisted Sister,twisted-sister,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x4500.00,04.06.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,ValhalLuck,valhalluck,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9625,Med,x3000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Viper City Heist,viper-city-heist,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,High,x15000.00,19.06.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Wheel of Mictlan,wheel-of-mictlan,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,High,x40000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Wild Melon,wild-melon,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9372,High,x3333.00,29.11.2012
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Wild North Radiant Skies,wild-north-radiant-skies,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Low,x2000.00,12.03.2026
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Wild Rails,wild-rails,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9458,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Play'n GO,Wrappin' Gold,wrappin-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x1525.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Playtech,Mega Fire Blaze Khonsu God of Moon,mega-fire-blaze-khonsu-god-of-moon,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Popiplay,Gates Of Anubis,gates-of-anubis,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9611,High,x10200.00,22.03.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Popiplay,Moneyscript,moneyscript,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.968,Med,x4250.00,15.11.2022
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,5 Lions Megaways,5-lions-megaways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.955,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Big Bass - Keeping it Reel,big-bass-keeping-it-reel,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Book of the Fallen,book-of-the-fallen,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.955,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Chicken Drop,chicken-drop,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9551,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Gates of Gatot Kaca 1000,gates-of-gatot-kaca-1000,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.965,High,x15000.00,01.03.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Savannah Legend,savannah-legend,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.955,High,x10000.00,06.02.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Spin & Score Megaways,spin-score-megaways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9581,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Sugar Rush,sugar-rush,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.955,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Sweet Bonanza Xmas,sweet-bonanza-xmas,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9648,Med-High,x21175.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,The Dog House,the-dog-house,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9551,High,x6750.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,The Dog House - Muttley Crew,the-dog-house-muttley-crew,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,The Hand of Midas,the-hand-of-midas,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.955,High,x5000.00,11.02.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Tiny Toads,tiny-toads,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.955,High,x4000.00,05.12.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Volcano Goddess,volcano-goddess,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9649,High,x20000.00,13.03.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Waves of Poseidon,waves-of-poseidon,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9655,High,x5000.00,03.07.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Wild Gladiators,wild-gladiators,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9407,Low-Med,x4000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Wild West Gold,wild-west-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9556,High,x10000.00,26.03.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Wild West Gold Blazing Bounty,wild-west-gold-blazing-bounty,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9648,High,x7500.00,02.06.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Wild Wild Riches Returns,wild-wild-riches-returns,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9556,Med,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Wild Wildebeest Wins,wild-wildebeest-wins,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9551,High,x10000.00,27.01.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Wildies,wildies,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.95,High,x7500.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Witch Heart Megaways,witch-heart-megaways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9549,High,x9000.00,05.05.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Pragmatic Play,Wolf Gold,wolf-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9601,Med,x2500.00,27.04.2017
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Red Tiger,Diamond Blitz 3,diamond-blitz-3,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Relax Gaming,Cod Of Thunder Dream Drop,cod-of-thunder-dream-drop,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.94,Med-High,x7500.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Relax Gaming,Dead Man's Trail,dead-man-s-trail,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Relax Gaming,Emerald's Infinity Reels,emerald-s-infinity-reels,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,Med-High,x10000.00,11.03.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Relax Gaming,Templar Tumble,templar-tumble,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9626,Med-High,x17280.00,24.03.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Relax Gaming,Temple Tumble,temple-tumble,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9625,High,x7767.00,06.02.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Relax Gaming,The Great Pigsby,the-great-pigsby,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9655,N/A,N/A,09.01.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Relax Gaming,Trolls’ Gold,trolls-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,High,x10000.00,24.08.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Shady Lady,Black Friday,black-friday,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9635,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Shady Lady,Devil's Finger,devil-s-finger,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.94,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Shady Lady,Office Party,office-party,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9401,High,x20000.00,06.06.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Shady Lady,Oops,oops,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9628,High,x20000.00,09.05.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Shady Lady,Sew,sew,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,High,x20000.00,27.10.2025
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Shady Lady,Suck,suck,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9601,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,1 Reel - Demi Gods VII,1-reel-demi-gods-vii,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Book Of Demi Gods II Christmas Edition,book-of-demi-gods-ii-christmas-edition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Book Of Demi Gods II Reloaded,book-of-demi-gods-ii-reloaded,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Book Of Demi Gods III Reloaded,book-of-demi-gods-iii-reloaded,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Book Of Rebirth,book-of-rebirth,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.959,Med,x5000.00,05.03.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Book Of The Last Ronin,book-of-the-last-ronin,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x10000.00,29.04.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Fortuna de los Muertos,fortuna-de-los-muertos,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.956,N/A,x1000.00,02.11.2020
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Irish Treasures,irish-treasures,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.965,N/A,N/A,30.10.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Legend Of Lilith,legend-of-lilith,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9206,N/A,x3000.00,26.02.2024
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Majestic King Christmas Edition,majestic-king-christmas-edition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9516,N/A,x300.00,02.12.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Mega Wild Fruits & Chillies,mega-wild-fruits-chillies,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9578,N/A,x3000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Penny Fruits Christmas Edition,penny-fruits-christmas-edition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,N/A,x5000.00,11.12.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Queen of Ice Christmas Edition,queen-of-ice-christmas-edition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.958,N/A,x2000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Queen Of Water,queen-of-water,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9172,N/A,x2000.00,21.08.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Snegurochka II,snegurochka-ii,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Wild Santa,wild-santa,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.961,N/A,x1000.00,04.12.2019
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,Winners Gold,winners-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Low,x1000.00,15.07.2021
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Thunderkick,Cosmic Voyager,cosmic-voyager,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9614,High,x5000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Yggdrasil,Giganimals GigaBlox,giganimals-gigablox,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.94,High,x20000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Yggdrasil,Nice Catch 2 DoubleMax,nice-catch-2-doublemax,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9603,High,x10000.00,[ i ]
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Yggdrasil,Nice Catch DoubleMax,nice-catch-doublemax,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.961,High,x23972.00,11.04.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Yggdrasil,Ragnawolves WildEnergy,ragnawolves-wildenergy,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.961,High,x10000.00,30.05.2023
-add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Yggdrasil,Suncatcher Gigablox,suncatcher-gigablox,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,Med,x1430.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,1spin4win,Hot Coins & Fruits 100,hot-coins-fruits-100,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.911,Med,x400.00,26.08.2022
-add_import_first,Not in the studio - import the game and supply artwork,1spin4win,Wolf Spins 243,wolf-spins-243,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.971,Med,x1296.00,17.06.2022
-add_import_first,Not in the studio - import the game and supply artwork,Betsoft,Charms & Treasures,charms-treasures,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9403,High,x1414.00,27.04.2023
-add_import_first,Not in the studio - import the game and supply artwork,Betsoft,Coins of Halloween - Hold and Win,coins-of-halloween-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9621,High,x3500.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Betsoft,Slotfather 2,slotfather-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Betsoft,Tutankhamun’s Tomb: Hold and Win,tutankhamun-s-tomb-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9658,N/A,x2229.00,21.08.2025
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Disco Party,disco-party,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9701,Adjusted,x1500.00,21.01.2025
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Fruit Million,fruit-million,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.971,Med-High,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Gemza,gemza,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9717,High,x5000.00,15.12.2023
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Gold Rush with Johnny Cash,gold-rush-with-johnny-cash,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9608,High,x5820.00,16.06.2022
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Jewel Boom Super Drop,jewel-boom-super-drop,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9445,N/A,x2000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Oasis Poker,oasis-poker,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,N/A,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Piggy Bank Hold&Win,piggy-bank-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Royal Fruits MultiLines,royal-fruits-multilines,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9716,Low-Med,x3000.00,11.09.2024
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Snoop Dogg Dollars,snoop-dogg-dollars,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.97,High,x10000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Space Knight Merge Up,space-knight-merge-up,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9725,Med,x5000.00,12.08.2024
-add_import_first,Not in the studio - import the game and supply artwork,BGaming,Voodoo People,voodoo-people,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9688,Med-High,x7500.00,18.09.2024
-add_import_first,Not in the studio - import the game and supply artwork,Booming Games,"Booming Buffalo Hold and Win Extreme 25,000",booming-buffalo-hold-and-win-extreme-25-000,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,3 Royal Dracos,3-royal-dracos,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9612,High,x5000.00,04.02.2026
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,Almighty Sparta,almighty-sparta,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,N/A,N/A,28.05.2019
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,Amazons Riches,amazons-riches,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9803,Med-High,x1300.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,Book of Ganesha,book-of-ganesha,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9603,High,x5000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,Fortune Capybara,fortune-capybara,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9807,N/A,x2500.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,Mongol Treasures II: Archery Competition,mongol-treasures-ii-archery-competition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9606,N/A,x4000.00,11.10.2022
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,More Fresh Fruits,more-fresh-fruits,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,N/A,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,Starshine Crystals,starshine-crystals,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9608,High,x10000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Endorphina,Voodoo Dice,voodoo-dice,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,N/A,N/A,12.06.2019
-add_import_first,Not in the studio - import the game and supply artwork,Evolution,Auto-Roulette VIP,auto-roulette-vip,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9663,N/A,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Evolution,Classic Free Bet Blackjack,classic-free-bet-blackjack,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9845,N/A,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Evolution,Hindi Speed Baccarat A,hindi-speed-baccarat-a,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Hacksaw Gaming,Express 200,express-200,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.851,N/A,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Hacksaw Gaming,Haunted Circus,haunted-circus,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9483,High,x10000.00,31.05.2020
-add_import_first,Not in the studio - import the game and supply artwork,Hacksaw Gaming,Strength of Hercules,strength-of-hercules,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.943,Med-High,x10000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Hacksaw Gaming,The Wildwood Curse,the-wildwood-curse,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,Med,x10000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Hacksaw Gaming,Tiger Legends,tiger-legends,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,Med,x10000.00,04.09.2025
-add_import_first,Not in the studio - import the game and supply artwork,NetEnt,Aloha! Cluster Pays,aloha-cluster-pays,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9642,Low,N/A,25.03.2016
-add_import_first,Not in the studio - import the game and supply artwork,NetEnt,Golden Wheels of Egypt,golden-wheels-of-egypt,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9605,Med-High,x5000.00,16.04.2024
-add_import_first,Not in the studio - import the game and supply artwork,NetEnt,Good Old 7’s,good-old-7-s,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9414,Med-High,x3348.00,29.02.2024
-add_import_first,Not in the studio - import the game and supply artwork,NetEnt,Twin Spin XXXtreme,twin-spin-xxxtreme,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,High,x9600.00,25.05.2023
-add_import_first,Not in the studio - import the game and supply artwork,Nolimit City,Blood & Shadow,blood-shadow,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9403,High,x6666.00,07.03.2023
-add_import_first,Not in the studio - import the game and supply artwork,Nolimit City,BRICK SNAKE 2000,brick-snake-2000,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9603,High,x8110.00,21.03.2024
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,40 Mega Hotfire,40-mega-hotfire,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Book Hotfire Multichance Buy Bonus,book-hotfire-multichance-buy-bonus,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Book of Flames Buy Bonus,book-of-flames-buy-bonus,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Book of Flames Extra Hold & Win,book-of-flames-extra-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Book of Flames: Hold and Win,book-of-flames-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Dolphin's Pearl Deluxe Buy Bonus,dolphin-s-pearl-deluxe-buy-bonus,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Giza Fortunes Hold and Win,giza-fortunes-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Jackass Gold Hold and Win Christmas,jackass-gold-hold-and-win-christmas,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x1000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Jackass Gold: Hold and Win,jackass-gold-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,Med,x1346.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Twister Fortunes Hold & Win,twister-fortunes-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9405,N/A,x1000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Octoplay,Pip & Pippa's Pots of Plenty,pip-pippa-s-pots-of-plenty,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.957,Low-Med,x5000.00,20.11.2024
-add_import_first,Not in the studio - import the game and supply artwork,Onlyplay,Hot and Spicy Jackpot,hot-and-spicy-jackpot,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9605,Med,x10000.00,09.11.2021
-add_import_first,Not in the studio - import the game and supply artwork,PG Soft,Vampire's Charm,vampire-s-charm,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9675,Med,x20000.00,27.10.2020
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,3 Blades and Blessings,3-blades-and-blessings,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x4000.00,12.02.2026
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Banana Rush,banana-rush,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x3000.00,25.11.2025
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Boat Bonanza Christmas,boat-bonanza-christmas,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9425,Med-High,x5000.00,19.11.2024
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Boat Bonanza Rider,boat-bonanza-rider,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.967,High,x5000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Bullion Xpress,bullion-xpress,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9429,High,x6000.00,25.09.2025
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Chambers of Ancients,chambers-of-ancients,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9431,High,x20000.00,14.03.2024
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Easter Eggspedition,easter-eggspedition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9629,Med,x10000.00,28.03.2024
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Fulong 88,fulong-88,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med,x5000.00,18.04.2024
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Gem Drop,gem-drop,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.97,Med,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Gift Shop,gift-shop,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9412,High,x2000.00,29.11.2012
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,House of Doom 2 The Crypt,house-of-doom-2-the-crypt,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9425,High,x6000.00,11.03.2021
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Legacy Of Dynasties,legacy-of-dynasties,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9628,Med,x2300.00,13.11.2023
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Legacy of Inca,legacy-of-inca,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9427,Med,x6500.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Miner Donkey Rider,miner-donkey-rider,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.967,High,x5000.00,25.03.2025
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,MULTIFRUIT 81,multifruit-81,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9436,High,x2520.00,23.05.2017
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Shimmering Woods,shimmering-woods,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med-High,x25000.00,25.03.2021
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Sparky and Shortz,sparky-and-shortz,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9424,High,x10000.00,14.10.2021
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Sparky and Shortz Hidden Joules,sparky-and-shortz-hidden-joules,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med-High,x6000.00,28.06.2023
-add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Wild Survivor,wild-survivor,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Playtech,Epic Ape II,epic-ape-ii,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Playtech,Funky Fruits,funky-fruits,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9397,Low,x5000.00,30.09.2024
-add_import_first,Not in the studio - import the game and supply artwork,Popiplay,Blazing Coins Deluxe: Hold & Win,blazing-coins-deluxe-hold-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Popiplay,Gold And Glory Hold and Win,gold-and-glory-hold-and-win,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Ancient Egypt Classic,ancient-egypt-classic,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.955,High,x5015.00,31.10.2018
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Better Barn House Bonanza,better-barn-house-bonanza,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Candy Blitz BOOM,candy-blitz-boom,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Floating Dragon New Year Festival Ultra Megaways Hold & Spin,floating-dragon-new-year-festival-ultra-megaways-hold-spin,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Gatot Kaca's Fury,gatot-kaca-s-fury,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9654,High,x5000.00,28.02.2023
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Mahjong Wins 2,mahjong-wins-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.965,High,x100000.00,24.06.2024
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Panda Fortune 2,panda-fortune-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Plants vs Aliens,plants-vs-aliens,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,The Roo House,the-roo-house,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9651,High,x6750.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Tipsy Yeti Megaways,tipsy-yeti-megaways,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9658,High,x20000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Pragmatic Play,Wild Hop & Drop,wild-hop-drop,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9533,High,x5000.00,22.09.2022
-add_import_first,Not in the studio - import the game and supply artwork,Red Tiger,"Betty, Boris and Boo",betty-boris-and-boo,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9467,High,x5241.00,04.02.2021
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,4 Horsemen II,4-horsemen-ii,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Baba Yaga Tales,baba-yaga-tales,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9558,N/A,N/A,02.08.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods II - The Golden Era,book-of-demi-gods-ii-the-golden-era,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9614,High,x5000.00,02.06.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods III,book-of-demi-gods-iii,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9614,N/A,x5000.00,25.05.2021
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods III - The Golden Era,book-of-demi-gods-iii-the-golden-era,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9,N/A,x5000.00,08.06.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods IV - The Golden Era,book-of-demi-gods-iv-the-golden-era,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9614,High,x5000.00,02.05.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods V,book-of-demi-gods-v,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9171,N/A,N/A,02.01.2024
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods VI,book-of-demi-gods-vi,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Elves,book-of-elves,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9601,N/A,x10000.00,30.11.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Fairytale Beauties,book-of-fairytale-beauties,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9601,N/A,N/A,13.08.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Irish Treasures,book-of-irish-treasures,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9601,High,x10000.00,01.03.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Rampage 2,book-of-rampage-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9396,N/A,x5000.00,28.12.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Xmas 2,book-of-xmas-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9285,N/A,x10000.00,20.11.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Xmas 3,book-of-xmas-3,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x1000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Buffalo Rampage - Hold and Hit 3x3,buffalo-rampage-hold-and-hit-3x3,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x1000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Demi Gods 2 Expanded Edition,demi-gods-2-expanded-edition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.951,N/A,N/A,10.03.2019
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Demi Gods II Christmas Edition,demi-gods-ii-christmas-edition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.95,N/A,N/A,15.12.2018
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Demi Gods VI - Hold and Hit,demi-gods-vi-hold-and-hit,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Egyptian Rebirth II: Mummy's Return,egyptian-rebirth-ii-mummy-s-return,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fortuna De Los Muertos 3,fortuna-de-los-muertos-3,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9142,N/A,x1000.00,16.10.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fortuna De Los Muertos 4,fortuna-de-los-muertos-4,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x3000.00,15.10.2024
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fortuna de los Muertos II,fortuna-de-los-muertos-ii,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fruits Collection 20 Lines,fruits-collection-20-lines,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,Med-High,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fruits Collection 30 Lines,fruits-collection-30-lines,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,Low-Med,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fruits On Ice Collection - 30 Lines,fruits-on-ice-collection-30-lines,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9402,Low-Med,x3000.00,11.01.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fruits On Ice Collection 10 Lines,fruits-on-ice-collection-10-lines,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9402,High,x3000.00,11.01.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Golden Piggy Bank,golden-piggy-bank,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9647,N/A,x900.00,27.01.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Hawaiian Waves,hawaiian-waves,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9579,Med-High,x250.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Joker's Wild Ride - Patrick's Day,joker-s-wild-ride-patrick-s-day,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Kupala II,kupala-ii,,,,,,from Maxxed.io_Thumbnails_1.xlsx,,,,
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Magical Leprechaun - Hold and Hit,magical-leprechaun-hold-and-hit,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Majestic Thor,majestic-thor,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Mega Zeus - Hold and Hit 3X3,mega-zeus-hold-and-hit-3x3,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x5000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,New Year's Eve Fortune,new-year-s-eve-fortune,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,10.12.2024
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Origins Of Lilith - Expanded Edition,origins-of-lilith-expanded-edition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.963,N/A,x2000.00,02.06.2020
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Queen Of Ice Expanded Edition,queen-of-ice-expanded-edition,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9351,N/A,x3000.00,21.02.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Savannah's Queen,savannah-s-queen,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9475,N/A,N/A,26.04.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Snowing Gifts 2,snowing-gifts-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9142,N/A,x1000.00,08.12.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Snowing Gifts 3,snowing-gifts-3,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x3000.00,11.11.2024
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Spinning Lights,spinning-lights,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.95,N/A,N/A,22.05.2019
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Story of Loki - Master of Illusions,story-of-loki-master-of-illusions,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9604,Med-High,x3000.00,12.07.2023
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Tennis Champions,tennis-champions,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9572,N/A,x1000.00,20.06.2022
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,The Scarab Protector 2,the-scarab-protector-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9604,N/A,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Valentine Collection 20 Lines,valentine-collection-20-lines,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9402,Med-High,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Valentine Collection 30 Lines,valentine-collection-30-lines,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9402,Low-Med,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Valentine Collection 40 Lines,valentine-collection-40-lines,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9402,Low,x3000.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Victory Day,victory-day,,,,,,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x3000.00,22.04.2021
-add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Wild Santa 3,wild-santa-3,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.926,N/A,x3000.00,20.11.2023
-add_import_first,Not in the studio - import the game and supply artwork,Thunderkick,Beat the Beast: Griffin's Gold,beat-the-beast-griffin-s-gold,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.9614,High,x22222.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Yggdrasil,Gold Frontier Jackpots Fastpot5,gold-frontier-jackpots-fastpot5,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.94,Low,x1265.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Yggdrasil,Golden Gorgon,golden-gorgon,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,High,x2500.00,29.07.2021
-add_import_first,Not in the studio - import the game and supply artwork,Yggdrasil,Hades GigaBlox,hades-gigablox,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.96,Med,x11129.00,[ i ]
-add_import_first,Not in the studio - import the game and supply artwork,Yggdrasil,MexoMax 2,mexomax-2,,,,,,from Maxxed.io_Thumbnails_1.xlsx,0.94,High,x10000.00,25.09.2025
+fix_flagged,Review the card and clear the flag,Red Tiger,Vault Cracker Megaways,vault-cracker-megaways,yes,yes,yes,yes,yes,"P4 - key visual missing. Background and title still read, but there is no subject. | Assetroom filled: character",,,,
+fix_flagged,Review the card and clear the flag,Relax,Dead Man's Trail,dead-mans-trail,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Relax,The Great Pigsby,the-great-pigsby,yes,yes,yes,yes,yes,Assetroom import - check title; white logo generated 28 Oct by gpt-image-2 - confirm it reads,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,1 Reel Beauty,1-reel-beauty,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,1 Reel Demi Gods II,1-reel-demi-gods-ii,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,1 Reel Egypt,1-reel-egypt,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,1 Reel Egyptian Marvel,1-reel-egyptian-marvel,yes,yes,yes,yes,yes,character & logo,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,1 Reel immortal Warlords,1-reel-immortal-warlords,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,1 Reel Wolf & Piggies,1-reel-wolf-piggies,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,1 Reel Zeus's Lightning Blaze,1-reel-zeus-s-lightning-blaze,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Age of Pirates 15 Lines,age-of-pirates-15-lines,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Athena's Glory Story of Arachne,athena-s-glory-story-of-arachne,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Athena's Glory The Golden Era,athena-s-glory-the-golden-era,yes,yes,yes,yes,yes,name,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Atlas Unleashed,atlas-unleashed,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Aztec Spell,aztec-spell,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Bavarian Riches,bavarian-riches,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Bavarian Riches 2,bavarian-riches-2,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Blue Panther,blue-panther,yes,yes,yes,yes,yes,character,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Book Of Aphrodite The Love Spell,book-of-aphrodite-the-love-spell,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Book Of Demi Gods II Christmas Edition,book-of-demi-gods-ii-christmas-edition,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Celtic Coins Hold & Hit 3x3,celtic-coins-hold-hit-3x3,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Ded Moroz,ded-moroz,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Demi Gods III,demi-gods-iii,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Demi Gods III 15 Lines,demi-gods-iii-15-lines,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Demi Gods IV Thunderstorm,demi-gods-iv-thunderstorm,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Egyptian Marvel,egyptian-marvel,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,European Roulette Christmas Edition,european-roulette-christmas-edition,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Fruits Collection 40 Lines,fruits-collection-40-lines,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Goddess Of Lotus,goddess-of-lotus,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Joker Charms Valentine's,joker-charms-valentine-s,yes,yes,yes,yes,yes,"P1 - no logo at all AND no background. Card renders with neither artwork nor wordmark. Do not bake. | Assetroom filled: background16, originalLogo; white logo generated 28 Oct by gpt-image-2 - confirm it reads",,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Lucky Mr Patrick,lucky-mr-patrick,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Majestic King Ice Kingdom,majestic-king-ice-kingdom,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Majestic Odin,majestic-odin,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Mammoth Rampage,mammoth-rampage,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,parrots rock,parrots-rock,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Patrick's Collection 20 Lines,patrick-s-collection-20-lines,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Patrick's Collection 40 Lines,patrick-s-collection-40-lines,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Queen Of Fire Expanded Edition,queen-of-fire-expanded-edition,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Queen Of Fire Frozen Flames,queen-of-fire-frozen-flames,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Queen Of Ice,queen-of-ice,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Queen of Inferno,queen-of-inferno,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Queen Of The Amazon,queen-of-the-amazon,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Queen of the Amazon Nightcrawler,queen-of-the-amazon-nightcrawler,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Ra’s Solar Empire,ra-s-solar-empire,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Snegurochka & Ded Moroz,snegurochka-ded-moroz,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Story Of Vikings,story-of-vikings,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Tennis Champions,tennis-champion,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Titan's Rising Hold & Hit,titan-s-rising-hold-hit,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Wacky Monkey,wacky-monkey,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Zeus's Lightning Blaze,zeus-s-lightning-blaze,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Spinomenal,Zeus's Lightning Blaze Xmas,zeus-s-lightning-blaze-xmas,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,Arcader,arcader,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,Beat the Beast Griffin's Gold,beat-the-east-griffin-s-gold,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,Beat the Beast Quetzalcoatl's Trial,beat-the-beast-quetzalcoatl-s-trial,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,Grand Melee,grand-melee,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,Heads will Roll,heads-will-roll,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,Odin’s Gamble,odin-s-gamble,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,The Golden Pot & Pints,the-golden-pot-pints,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,The Wildos,the-wildos,yes,yes,yes,yes,yes,Assetroom filled: character,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,Triple Royal Gold,triple-royal-gold,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Thunderkick,Well of Wonders,well-of-wonders,yes,yes,yes,yes,yes,,,,,
+fix_flagged,Review the card and clear the flag,Wazdan,9 Coins Grand Diamond Edition,9-coins-grand-diamond-edition,yes,yes,yes,yes,yes,no-bg,,,,
+fix_flagged,Review the card and clear the flag,Wazdan,Great Book of Magic Deluxe,great-book-of-magic-deluxe,yes,yes,yes,yes,yes,no-bg,,,,
+add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Betsoft,Joker Poker,joker-poker,see the studio card,see the studio card,see the studio card,see the studio card,no,from Maxxed.io_Thumbnails_1.xlsx (3 studio cards share this name - pick one),N/A,N/A,N/A,[ i ]
+add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Betsoft,Super Joker,super-joker,see the studio card,see the studio card,see the studio card,see the studio card,no,from Maxxed.io_Thumbnails_1.xlsx,[ i ],N/A,N/A,[ i ]
+add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,GameArt,Roulette,roulette,see the studio card,see the studio card,see the studio card,see the studio card,no,from Maxxed.io_Thumbnails_1.xlsx (3 studio cards share this name - pick one),0.973,N/A,N/A,16.09.2021
+add_open_for_maxxed,Already in the studio - add it to the Maxxed branch,Spinomenal,1 Reel - Demi Gods VII,1-reel-demi-gods-vii,see the studio card,see the studio card,see the studio card,see the studio card,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,1spin4win,Hot Coins & Fruits 100,hot-coins-fruits-100,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.911,Med,x400.00,26.08.2022
+add_import_first,Not in the studio - import the game and supply artwork,Betsoft,Charms & Treasures,charms-treasures,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9403,High,x1414.00,27.04.2023
+add_import_first,Not in the studio - import the game and supply artwork,Betsoft,Coins of Halloween - Hold and Win,coins-of-halloween-hold-and-win,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9621,High,x3500.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Betsoft,Tutankhamun’s Tomb: Hold and Win,tutankhamun-s-tomb-hold-and-win,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9658,N/A,x2229.00,21.08.2025
+add_import_first,Not in the studio - import the game and supply artwork,BGaming,Fruit Million,fruit-million,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.971,Med-High,x3000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,BGaming,Oasis Poker,oasis-poker,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,N/A,N/A,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,BGaming,Space Knight Merge Up,space-knight-merge-up,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9725,Med,x5000.00,12.08.2024
+add_import_first,Not in the studio - import the game and supply artwork,Booming Games,"Booming Buffalo Hold and Win Extreme 25,000",booming-buffalo-hold-and-win-extreme-25-000,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Evolution,Classic Free Bet Blackjack,classic-free-bet-blackjack,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9845,N/A,N/A,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Evolution,Hindi Speed Baccarat A,hindi-speed-baccarat-a,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Hacksaw Gaming,Express 200,express-200,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.851,N/A,N/A,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Hacksaw Gaming,Haunted Circus,haunted-circus,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9483,High,x10000.00,31.05.2020
+add_import_first,Not in the studio - import the game and supply artwork,Nolimit City,Blood & Shadow,blood-shadow,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9403,High,x6666.00,07.03.2023
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,40 Mega Hotfire,40-mega-hotfire,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Book Hotfire Multichance Buy Bonus,book-hotfire-multichance-buy-bonus,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Book of Flames Buy Bonus,book-of-flames-buy-bonus,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Book of Flames Extra Hold & Win,book-of-flames-extra-hold-win,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Book of Flames: Hold and Win,book-of-flames-hold-and-win,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Dolphin's Pearl Deluxe Buy Bonus,dolphin-s-pearl-deluxe-buy-bonus,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Giza Fortunes Hold and Win,giza-fortunes-hold-and-win,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Jackass Gold Hold and Win Christmas,jackass-gold-hold-and-win-christmas,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x1000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Jackass Gold: Hold and Win,jackass-gold-hold-and-win,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,Med,x1346.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Novomatic,Twister Fortunes Hold & Win,twister-fortunes-hold-win,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9405,N/A,x1000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Octoplay,Pip & Pippa's Pots of Plenty,pip-pippa-s-pots-of-plenty,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.957,Low-Med,x5000.00,20.11.2024
+add_import_first,Not in the studio - import the game and supply artwork,Onlyplay,Hot and Spicy Jackpot,hot-and-spicy-jackpot,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9605,Med,x10000.00,09.11.2021
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,3 Blades and Blessings,3-blades-and-blessings,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med,x4000.00,12.02.2026
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Boat Bonanza Rider,boat-bonanza-rider,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.967,High,x5000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Gem Drop,gem-drop,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.97,Med,N/A,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Gift Shop,gift-shop,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9412,High,x2000.00,29.11.2012
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,House of Doom 2 The Crypt,house-of-doom-2-the-crypt,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9425,High,x6000.00,11.03.2021
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Miner Donkey Rider,miner-donkey-rider,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.967,High,x5000.00,25.03.2025
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Shimmering Woods,shimmering-woods,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.942,Med-High,x25000.00,25.03.2021
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Sparky and Shortz,sparky-and-shortz,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9424,High,x10000.00,14.10.2021
+add_import_first,Not in the studio - import the game and supply artwork,Play'n GO,Sparky and Shortz Hidden Joules,sparky-and-shortz-hidden-joules,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.962,Med-High,x6000.00,28.06.2023
+add_import_first,Not in the studio - import the game and supply artwork,Playtech,Epic Ape II,epic-ape-ii,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Popiplay,Gold And Glory Hold and Win,gold-and-glory-hold-and-win,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,4 Horsemen II,4-horsemen-ii,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Baba Yaga Tales,baba-yaga-tales,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9558,N/A,N/A,02.08.2022
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods II - The Golden Era,book-of-demi-gods-ii-the-golden-era,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9614,High,x5000.00,02.06.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods III,book-of-demi-gods-iii,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9614,N/A,x5000.00,25.05.2021
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods III - The Golden Era,book-of-demi-gods-iii-the-golden-era,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9,N/A,x5000.00,08.06.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods IV - The Golden Era,book-of-demi-gods-iv-the-golden-era,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9614,High,x5000.00,02.05.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods V,book-of-demi-gods-v,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9171,N/A,N/A,02.01.2024
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Demi Gods VI,book-of-demi-gods-vi,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Elves,book-of-elves,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9601,N/A,x10000.00,30.11.2022
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Fairytale Beauties,book-of-fairytale-beauties,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9601,N/A,N/A,13.08.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Irish Treasures,book-of-irish-treasures,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9601,High,x10000.00,01.03.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Rampage 2,book-of-rampage-2,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9396,N/A,x5000.00,28.12.2022
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Xmas 2,book-of-xmas-2,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9285,N/A,x10000.00,20.11.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Book Of Xmas 3,book-of-xmas-3,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x1000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Buffalo Rampage - Hold and Hit 3x3,buffalo-rampage-hold-and-hit-3x3,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x1000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Demi Gods II Christmas Edition,demi-gods-ii-christmas-edition,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.95,N/A,N/A,15.12.2018
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Demi Gods VI - Hold and Hit,demi-gods-vi-hold-and-hit,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Egyptian Rebirth II: Mummy's Return,egyptian-rebirth-ii-mummy-s-return,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fortuna De Los Muertos 3,fortuna-de-los-muertos-3,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9142,N/A,x1000.00,16.10.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fortuna De Los Muertos 4,fortuna-de-los-muertos-4,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x3000.00,15.10.2024
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fortuna de los Muertos II,fortuna-de-los-muertos-ii,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fruits Collection 20 Lines,fruits-collection-20-lines,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.963,Med-High,x3000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fruits Collection 30 Lines,fruits-collection-30-lines,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.963,Low-Med,x3000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fruits On Ice Collection - 30 Lines,fruits-on-ice-collection-30-lines,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9402,Low-Med,x3000.00,11.01.2022
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Fruits On Ice Collection 10 Lines,fruits-on-ice-collection-10-lines,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9402,High,x3000.00,11.01.2022
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Golden Piggy Bank,golden-piggy-bank,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9647,N/A,x900.00,27.01.2022
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Hawaiian Waves,hawaiian-waves,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9579,Med-High,x250.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Kupala II,kupala-ii,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,,,,
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Magical Leprechaun - Hold and Hit,magical-leprechaun-hold-and-hit,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Majestic Thor,majestic-thor,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Mega Zeus - Hold and Hit 3X3,mega-zeus-hold-and-hit-3x3,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x5000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,New Year's Eve Fortune,new-year-s-eve-fortune,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,N/A,10.12.2024
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Origins Of Lilith - Expanded Edition,origins-of-lilith-expanded-edition,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.963,N/A,x2000.00,02.06.2020
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Queen Of Ice Expanded Edition,queen-of-ice-expanded-edition,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9351,N/A,x3000.00,21.02.2022
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Savannah's Queen,savannah-s-queen,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9475,N/A,N/A,26.04.2022
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Snowing Gifts 2,snowing-gifts-2,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9142,N/A,x1000.00,08.12.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Snowing Gifts 3,snowing-gifts-3,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x3000.00,11.11.2024
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Story of Loki - Master of Illusions,story-of-loki-master-of-illusions,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9604,Med-High,x3000.00,12.07.2023
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,The Scarab Protector 2,the-scarab-protector-2,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9604,N/A,x3000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Valentine Collection 20 Lines,valentine-collection-20-lines,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9402,Med-High,x3000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Valentine Collection 30 Lines,valentine-collection-30-lines,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9402,Low-Med,x3000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Valentine Collection 40 Lines,valentine-collection-40-lines,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.9402,Low,x3000.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Victory Day,victory-day,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,N/A,N/A,x3000.00,22.04.2021
+add_import_first,Not in the studio - import the game and supply artwork,Spinomenal,Wild Santa 3,wild-santa-3,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.926,N/A,x3000.00,20.11.2023
+add_import_first,Not in the studio - import the game and supply artwork,Yggdrasil,Hades GigaBlox,hades-gigablox,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.96,Med,x11129.00,[ i ]
+add_import_first,Not in the studio - import the game and supply artwork,Yggdrasil,MexoMax 2,mexomax-2,MISSING,MISSING,MISSING,MISSING,no,from Maxxed.io_Thumbnails_1.xlsx,0.94,High,x10000.00,25.09.2025

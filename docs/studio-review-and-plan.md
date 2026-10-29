@@ -11,6 +11,48 @@ a phone. Those are called out where they matter.
 
 ---
 
+## Status (updated after your decisions)
+
+**Decisions recorded**
+
+| # | Question | Decision |
+|---|---|---|
+| 1 | Autosave per-game edits and layouts | No. Explicit Save. See the open point below. |
+| 2 | Template changes stay an explicit Publish | Yes. |
+| 3 | Undo | Keep it, and make it survive a reload. |
+| 4 | `ClientOnboarding.tsx`, `FrameBuilder.tsx` | Delete. Done (`58cdc4a`). |
+| 5 | Mobile studio | Keep it, and optimise it. Not started (see below). |
+
+**Done**
+
+- Refresh returns to the branch you were on (`58cdc4a`). The URL was rewritten
+  on the first render, dropping the branch parameter before the restore read
+  it.
+- Phase 0 (`e1516f6`): every single-card write checks its result; a refused
+  write reads the card back and shows a banner that stays until dismissed.
+  Delete waits for the database. Bulk Save skips games that never loaded.
+  Save and Reset name the layer they touch. Leaving with unsaved changes asks.
+- Undo survives a reload and skips a step when the card has changed since
+  (`b4e117c`).
+- Brand leak closed in three more paths: recolour (including auto colour), the
+  logotype buttons in the bulk bar, and the bulk edit helper (`b4e117c`).
+
+**Verified** by type-check, lint and build only. The banner, undo across a
+reload, the skip on a changed card and the brand writes need a manual check.
+
+**Not started**
+
+- Phase 1.1 is dropped by decision 1.
+- Phase 2 (one explicit editing target), Phase 3 (one view state), and Phase 4
+  (grid virtualisation and memoised tiles). Measure first.
+- Phase 5.1 (tests). Still the first thing to do before the structural work.
+- Phase 6 and decision 5 (mobile). Needs a session on a phone.
+
+**Open point from decision 1.** Brand per-game edits and placement already save
+as you make them. Under "no autosave" they should become explicit Save too.
+That is a real change to how brands behave. Keep them as they are, or move them
+to Save?
+
 ## 1. Summary
 
 The studio's main problem is not the visual design. It is that **you cannot

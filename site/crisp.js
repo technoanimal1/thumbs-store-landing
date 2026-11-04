@@ -29,3 +29,36 @@
   s.async = true
   document.head.appendChild(s)
 })()
+
+/**
+ * Google Ads conversion tracking (account 283-978-3968, tag AW-18335239782).
+ *
+ * It lives in this file because every marketing page already loads it, so one
+ * edit covers all forty-odd pages. It loads the Google tag (which keeps the ad
+ * click on a .thumbs.store cookie that app.thumbs.store can read too, so a
+ * sign-up in the app is credited to the ad) and counts a click on any "Book a
+ * demo" cal.com link as the "Demo booking click" conversion.
+ */
+;(function () {
+  var TAG_ID = 'AW-18335239782'
+  var DEMO_CLICK = 'AW-18335239782/k0yuCN3jorIdEOac9qZE'
+
+  if (!TAG_ID) return
+
+  window.dataLayer = window.dataLayer || []
+  if (typeof window.gtag !== 'function') {
+    window.gtag = function () { window.dataLayer.push(arguments) }
+    window.gtag('js', new Date())
+  }
+
+  var s = document.createElement('script')
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + TAG_ID
+  s.async = true
+  document.head.appendChild(s)
+  window.gtag('config', TAG_ID)
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href*="cal.com/"]')
+    if (a) window.gtag('event', 'conversion', { send_to: DEMO_CLICK })
+  }, true)
+})()

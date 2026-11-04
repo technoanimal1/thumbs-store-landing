@@ -1,0 +1,61 @@
+name: Regenerate sitemap
+
+# Keeps site/sitemap.xml in step with the pages on disk: real per-file
+# <lastmod> dates from git history, and any newly added page (provider
+# pages, blog posts, game pages) picked up automatically. Runs on every
+# push to main that touches the site's HTML, then commits the refreshed
+# sitemap back so the next Vercel deploy serves it.
+#
+# This runs in CI rather than in the Vercel build on purpose: the generator
+# reads git history for the lastmod dates, which a full-history checkout
+# here provides reliably and the Vercel build image does not. It is fully
+# decoupled from the deploy — if it ever fails it cannot break the site.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**/*.html'
+      - 'scripts/gen-sitemap.mjs'
+      - '.github/workflows/sitemap.yml'
+  workflow_dispatch: {}
+
+# Never run two of these at once; the newer push wins.
+concurrency:
+  group: sitemap-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out full history
+        uses: actions/checkout@v4
+        with:
+          # fetch-depth: 0 gives the generator the commit history it needs
+          # to stamp a real <lastmod> per file.
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Regenerate sitemap
+        run: node scripts/gen-sitemap.mjs
+
+      - name: Commit if the sitemap changed
+        run: |
+          if git diff --quiet -- site/sitemap.xml; then
+            echo "sitemap.xml unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/sitemap.xml
+          # [skip ci] is belt-and-braces; a GITHUB_TOKEN push does not
+          # retrigger workflows anyway, so this cannot loop.
+          git commit -m "chore: regenerate sitemap [skip ci]"
+          git push

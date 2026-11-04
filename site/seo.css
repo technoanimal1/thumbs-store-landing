@@ -93,3 +93,7 @@ h2{font-size:clamp(20px,2.6vw,26px);letter-spacing:-.01em;font-weight:700;margin
 .sf-cols b{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:3px}
 .sf-cols a{font-size:14px;color:var(--muted)}.sf-cols a:hover{color:#fff}
 .sf-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:34px;font-size:12.5px;color:var(--dim)}
+.ptiles-note{text-align:center;color:var(--dim);font-size:13.5px;margin:-22px 0 40px;line-height:1.6}
+.ptiles-note strong{color:#fff;font-weight:700}
+.ptiles-note a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.ptiles-note a:hover{color:#fff}

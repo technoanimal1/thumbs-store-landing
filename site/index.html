@@ -217,14 +217,20 @@
       .nav-cta .btn { padding: 9px 18px; font-size: 13px; }
 
       /* ---- hero ---- */
-      .hero { display: flex; flex-direction: column; align-items: center; gap: 44px; }
+      .hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); align-items: center; gap: clamp(32px, 5vw, 64px); }
       .hero-copy {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
         gap: 20px;
-        max-width: 880px;
+        max-width: 600px;
+      }
+      @media (max-width: 920px) {
+        .hero { grid-template-columns: 1fr; gap: 40px; }
+        .hero-copy { align-items: center; text-align: center; max-width: 640px; margin: 0 auto; }
+        .hero-cta { justify-content: center; }
+        .powered { align-self: center; }
       }
       .hero h1 {
         font-size: clamp(40px, 5.4vw, 72px);
@@ -234,39 +240,37 @@
         text-wrap: balance;
       }
       .hero-lede { color: var(--muted); font-size: 18px; max-width: 640px; }
-      .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 4px; }
+      .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-start; margin-top: 4px; }
       .hero-cta .btn { padding: 15px 30px; font-size: 15px; }
       .hero-micro { font-size: 13px; color: var(--dim); }
       .hero-micro b { color: var(--muted); font-weight: 600; }
-      .powered { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--dim); margin-top: 2px; }
-      .powered img { height: 19px; width: auto; display: block; }
+      .powered { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: var(--dim); margin-top: 4px; }
+      .powered img { height: 27px; width: auto; display: block; }
 
-      /* ---- hero render stage: one template, every game, four sizes ---- */
-      .render-stage { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 16px; }
-      .rs-card { position: relative; width: min(300px, 76vw); }
-      .rs-tag {
-        position: absolute; top: 10px; left: 10px; z-index: 3;
-        display: inline-flex; align-items: center; gap: 7px;
-        font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff;
-        background: rgb(0 0 0 / 0.42); border: 1px solid rgb(255 255 255 / 0.18); border-radius: 999px; padding: 4px 10px;
+      /* ---- hero wall: looping columns of real thumbnails (transform only) ---- */
+      .hero-wall {
+        position: relative; display: grid; grid-template-columns: repeat(3, 1fr);
+        gap: 14px; height: clamp(440px, 60vh, 580px); overflow: hidden;
+        -webkit-mask-image: linear-gradient(to bottom, transparent, #000 11%, #000 89%, transparent);
+                mask-image: linear-gradient(to bottom, transparent, #000 11%, #000 89%, transparent);
       }
-      .rs-tag i { width: 6px; height: 6px; border-radius: 999px; background: var(--green); box-shadow: 0 0 8px var(--green); animation: rsPulse 2.4s ease-in-out infinite; }
-      @keyframes rsPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-      .rs-frame {
-        position: relative; aspect-ratio: 3 / 4; border-radius: 16px; overflow: hidden;
-        background: #0a0c11; border: 1px solid var(--ring); box-shadow: 0 34px 70px -24px rgb(0 0 0 / 0.75);
+      .wall-col { min-width: 0; }
+      .wall-track { display: flex; flex-direction: column; will-change: transform; }
+      .wall-up   .wall-track { animation: wallUp   var(--sp, 32s) linear infinite; }
+      .wall-down .wall-track { animation: wallDown var(--sp, 32s) linear infinite; }
+      .wall-col:nth-child(1) .wall-track { --sp: 34s; }
+      .wall-col:nth-child(2) .wall-track { --sp: 27s; }
+      .wall-col:nth-child(3) .wall-track { --sp: 39s; }
+      @keyframes wallUp   { from { transform: translateY(0); }    to { transform: translateY(-50%); } }
+      @keyframes wallDown { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+      .wall-card {
+        margin: 0 0 14px; border-radius: 12px; overflow: hidden; aspect-ratio: 3 / 4;
+        border: 1px solid var(--ring); background: #0a0c11; box-shadow: 0 14px 30px -18px rgb(0 0 0 / 0.8);
       }
-      .rs-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease; -webkit-user-drag: none; user-select: none; }
-      .rs-img.show { opacity: 1; }
-      .rs-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; }
-      .rs-name { font-weight: 600; font-size: 15px; }
-      .rs-sizes { display: inline-flex; gap: 6px; }
-      .rs-sizes b, .rs-sizes i { font-style: normal; font-family: var(--mono); font-size: 11px; border: 1px solid var(--ring); border-radius: 6px; padding: 3px 7px; color: var(--dim); }
-      .rs-sizes b { color: #000; background: var(--yellow); border-color: var(--yellow); font-weight: 700; }
-      .rs-note { text-align: center; font-size: 13px; color: var(--dim); max-width: 420px; margin: 2px auto 0; line-height: 1.65; }
-      .rs-note b { color: var(--muted); font-weight: 600; }
-      .rs-note a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
-      .rs-note a:hover { color: #fff; }
+      .wall-card img { width: 100%; height: 100%; object-fit: cover; display: block; -webkit-user-drag: none; user-select: none; }
+      @media (max-width: 920px) { .hero-wall { height: 420px; max-width: 540px; margin: 0 auto; } }
+      @media (max-width: 520px) { .hero-wall { height: 360px; gap: 10px; } .wall-card { margin-bottom: 10px; } }
+      @media (prefers-reduced-motion: reduce) { .wall-track { animation: none !important; } }
 
       /* fanned real-template tiles */
       .fan {
@@ -859,21 +863,12 @@
             <a class="btn btn-o" href="/studio#editor">Try the studio</a>
           </div>
           <p class="hero-micro"><b>Full library from day one</b> · four sizes included · cancel monthly</p>
-          <p class="powered">Payments powered by <img src="/stripe.svg" alt="Stripe" width="42" height="19" /></p>
+          <p class="powered">Payments powered by <img src="/stripe.svg" alt="Stripe" width="59" height="27" /></p>
         </div>
-        <div class="render-stage" aria-label="One template rendering every game in four sizes">
-          <div class="rs-card">
-            <span class="rs-tag"><i></i> Rendering live</span>
-            <div class="rs-frame">
-              <img class="rs-img show" data-slot="a" src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/11cbbc64-f77a-49ba-8ddd-5cc71166b84d.webp" alt="A casino game thumbnail rendered by the thumbs.store template" loading="eager" decoding="async" draggable="false" />
-              <img class="rs-img" data-slot="b" alt="" aria-hidden="true" decoding="async" draggable="false" />
-            </div>
-            <div class="rs-meta">
-              <span class="rs-name">Big Bass Bonanza</span>
-              <span class="rs-sizes" aria-label="Four sizes, every game"><b>3:4</b><i>2:3</i><i>47:66</i><i>16:9</i></span>
-            </div>
-          </div>
-          <p class="rs-note">Your game art in, a brand-perfect lobby thumbnail out — for <b>every title</b>, in <b>four sizes</b>, drawn by one template. <a href="/studio#editor">Move the layers in the Studio →</a></p>
+        <div class="hero-wall" aria-label="A wall of casino game thumbnails rendered by one template">
+          <div class="wall-col wall-up"><div class="wall-track" aria-hidden="false"><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/11cbbc64-f77a-49ba-8ddd-5cc71166b84d.webp" alt="Big Bass Bonanza thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/b359f813-8809-49e8-b626-23887bc70c1b.webp" alt="Magic Portals thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/5b5bcf5e-d7bd-4323-9c11-202d4dfb6001.webp" alt="3 Magic Eggs thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/e7ea7858-6ad1-437b-ad0d-17b06130473b.webp" alt="Aztec Gems thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/fab22178-8266-4f4d-9052-2b62ed52c3c9.webp" alt="Gems Bonanza thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/1dfc350b-9b81-4648-96fe-1e9646625c9c.webp" alt="Chilli Heat Megaways thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/11cbbc64-f77a-49ba-8ddd-5cc71166b84d.webp" alt="Big Bass Bonanza thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/b359f813-8809-49e8-b626-23887bc70c1b.webp" alt="Magic Portals thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/5b5bcf5e-d7bd-4323-9c11-202d4dfb6001.webp" alt="3 Magic Eggs thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/e7ea7858-6ad1-437b-ad0d-17b06130473b.webp" alt="Aztec Gems thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/fab22178-8266-4f4d-9052-2b62ed52c3c9.webp" alt="Gems Bonanza thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/1dfc350b-9b81-4648-96fe-1e9646625c9c.webp" alt="Chilli Heat Megaways thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure></div></div>
+          <div class="wall-col wall-down"><div class="wall-track" aria-hidden="true"><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/15f719a3-69e8-43a1-9923-b83fc184e296.webp" alt="Sugar Rush thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/27bf72d9-2ad3-45d4-9022-3cbdd298f4d5.webp" alt="Fruit Party thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/348d8099-17a0-4c90-8899-e32378a23674.webp" alt="Buffalo King Untamed Megaways thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/31b7e85e-8f7b-4ce4-abdb-8ce17a557555.webp" alt="John Hunter and the Book of Tut thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/e5721379-7e5e-428f-8683-7dd26595aa98.webp" alt="Starlight Princess Super Scatter thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/15f719a3-69e8-43a1-9923-b83fc184e296.webp" alt="Sugar Rush thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/27bf72d9-2ad3-45d4-9022-3cbdd298f4d5.webp" alt="Fruit Party thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/348d8099-17a0-4c90-8899-e32378a23674.webp" alt="Buffalo King Untamed Megaways thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/31b7e85e-8f7b-4ce4-abdb-8ce17a557555.webp" alt="John Hunter and the Book of Tut thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/e5721379-7e5e-428f-8683-7dd26595aa98.webp" alt="Starlight Princess Super Scatter thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure></div></div>
+          <div class="wall-col wall-up"><div class="wall-track" aria-hidden="true"><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/13b22600-c0c0-4ee4-8795-26343e25472a.webp" alt="Wolf Gold thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/26191150-8f3e-42ef-bb4b-873b82994e40.webp" alt="The Dog House thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/40dd7cdc-dabc-4a8f-9fa2-12351bb93a39.webp" alt="Madame Destiny thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/898c0e0c-809b-4d3f-a87d-167f62cd7416.webp" alt="Pirate Gold Deluxe thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/d8920cd8-8ff1-40bc-9692-4906d70d3d53.webp" alt="777 Diamond Strike thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/13b22600-c0c0-4ee4-8795-26343e25472a.webp" alt="Wolf Gold thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/26191150-8f3e-42ef-bb4b-873b82994e40.webp" alt="The Dog House thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/40dd7cdc-dabc-4a8f-9fa2-12351bb93a39.webp" alt="Madame Destiny thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/898c0e0c-809b-4d3f-a87d-167f62cd7416.webp" alt="Pirate Gold Deluxe thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure><figure class="wall-card"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/d8920cd8-8ff1-40bc-9692-4906d70d3d53.webp" alt="777 Diamond Strike thumbnail rendered by thumbs.store" loading="lazy" decoding="async" draggable="false" /></figure></div></div>
         </div>
       </section>
 
@@ -1519,43 +1514,10 @@
           fill('.wl-tiles i', SHOWCASE.slice(0, 8).concat(SHOWCASE).slice(0, 8))
         }
 
-        // Hero render stage — one template, many real games, crossfaded (opacity
-        // only; no layout animation). Shows the product: a brand-perfect lobby
-        // thumbnail for every title. Games with populated previews only.
-        const HERO_GAMES = [
-          { id: '11cbbc64-f77a-49ba-8ddd-5cc71166b84d', n: 'Big Bass Bonanza' },
-          { id: '15f719a3-69e8-43a1-9923-b83fc184e296', n: 'Sugar Rush' },
-          { id: '13b22600-c0c0-4ee4-8795-26343e25472a', n: 'Wolf Gold' },
-          { id: 'b359f813-8809-49e8-b626-23887bc70c1b', n: 'Magic Portals' },
-          { id: '27bf72d9-2ad3-45d4-9022-3cbdd298f4d5', n: 'Fruit Party' },
-          { id: '26191150-8f3e-42ef-bb4b-873b82994e40', n: 'The Dog House' },
-        ]
-        function initRenderStage() {
-          const stage = document.querySelector('.render-stage')
-          if (!stage) return
-          const imgs = stage.querySelectorAll('.rs-img')
-          const nameEl = stage.querySelector('.rs-name')
-          if (imgs.length < 2) return
-          HERO_GAMES.forEach((g) => { const im = new Image(); im.src = prevUrl(g.id) }) // warm cache
-          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-          let cur = 0, front = 0
-          const show = (idx) => {
-            const g = HERO_GAMES[idx]
-            const next = 1 - front
-            const el = imgs[next]
-            const done = () => { el.onload = null; el.classList.add('show'); imgs[front].classList.remove('show'); front = next; if (nameEl) nameEl.textContent = g.n }
-            el.onload = done
-            el.src = prevUrl(g.id)
-            if (el.complete && el.naturalWidth) done()
-          }
-          setInterval(() => { cur = (cur + 1) % HERO_GAMES.length; show(cur) }, 3200)
-        }
-
         const boot = () => {
           document.querySelectorAll('.tile[data-composite]').forEach(paintComposite)
           applyMetrics()
           paintShowcase()
-          initRenderStage()
         }
         if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true })
         else boot()

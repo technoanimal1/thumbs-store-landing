@@ -238,6 +238,35 @@
       .hero-cta .btn { padding: 15px 30px; font-size: 15px; }
       .hero-micro { font-size: 13px; color: var(--dim); }
       .hero-micro b { color: var(--muted); font-weight: 600; }
+      .powered { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--dim); margin-top: 2px; }
+      .powered img { height: 19px; width: auto; display: block; }
+
+      /* ---- hero render stage: one template, every game, four sizes ---- */
+      .render-stage { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+      .rs-card { position: relative; width: min(300px, 76vw); }
+      .rs-tag {
+        position: absolute; top: 10px; left: 10px; z-index: 3;
+        display: inline-flex; align-items: center; gap: 7px;
+        font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff;
+        background: rgb(0 0 0 / 0.42); border: 1px solid rgb(255 255 255 / 0.18); border-radius: 999px; padding: 4px 10px;
+      }
+      .rs-tag i { width: 6px; height: 6px; border-radius: 999px; background: var(--green); box-shadow: 0 0 8px var(--green); animation: rsPulse 2.4s ease-in-out infinite; }
+      @keyframes rsPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+      .rs-frame {
+        position: relative; aspect-ratio: 3 / 4; border-radius: 16px; overflow: hidden;
+        background: #0a0c11; border: 1px solid var(--ring); box-shadow: 0 34px 70px -24px rgb(0 0 0 / 0.75);
+      }
+      .rs-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease; -webkit-user-drag: none; user-select: none; }
+      .rs-img.show { opacity: 1; }
+      .rs-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; }
+      .rs-name { font-weight: 600; font-size: 15px; }
+      .rs-sizes { display: inline-flex; gap: 6px; }
+      .rs-sizes b, .rs-sizes i { font-style: normal; font-family: var(--mono); font-size: 11px; border: 1px solid var(--ring); border-radius: 6px; padding: 3px 7px; color: var(--dim); }
+      .rs-sizes b { color: #000; background: var(--yellow); border-color: var(--yellow); font-weight: 700; }
+      .rs-note { text-align: center; font-size: 13px; color: var(--dim); max-width: 420px; margin: 2px auto 0; line-height: 1.65; }
+      .rs-note b { color: var(--muted); font-weight: 600; }
+      .rs-note a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+      .rs-note a:hover { color: #fff; }
 
       /* fanned real-template tiles */
       .fan {
@@ -830,49 +859,21 @@
             <a class="btn btn-o" href="/studio#editor">Try the studio</a>
           </div>
           <p class="hero-micro"><b>Full library from day one</b> · four sizes included · cancel monthly</p>
+          <p class="powered">Payments powered by <img src="/stripe.svg" alt="Stripe" width="42" height="19" /></p>
         </div>
-        <div>
-          <div class="fan tsx" aria-label="Real thumbnails rendered by the template">
-            <div class="tilebox" style="width: 150px; aspect-ratio: 2 / 3">
-              <div class="tile" data-composite data-id="47453318-634c-4833-aeb2-4598bd73d543" data-accent="#6C4FE8" data-size="2:3" data-treatment="color">
-                <img class="lay-bg" alt="" loading="eager" decoding="async" /><div class="t-band"></div><div class="t-glow"></div><div class="t-bloom"></div>
-                <img class="lay-kv" alt="" loading="eager" decoding="async" /><img class="lay-logo" alt="" loading="eager" decoding="async" />
-                <div class="t-prov">PRAGMATIC</div>
-              </div>
+        <div class="render-stage" aria-label="One template rendering every game in four sizes">
+          <div class="rs-card">
+            <span class="rs-tag"><i></i> Rendering live</span>
+            <div class="rs-frame">
+              <img class="rs-img show" data-slot="a" src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/11cbbc64-f77a-49ba-8ddd-5cc71166b84d.webp" alt="A casino game thumbnail rendered by the thumbs.store template" loading="eager" decoding="async" draggable="false" />
+              <img class="rs-img" data-slot="b" alt="" aria-hidden="true" decoding="async" draggable="false" />
             </div>
-            <div class="tilebox" style="width: 170px; aspect-ratio: 3 / 4">
-              <div class="tile" data-composite data-id="47453318-634c-4833-aeb2-4598bd73d543" data-accent="#E8A33D" data-size="3:4" data-treatment="css">
-                <img class="lay-bg" alt="" loading="eager" decoding="async" /><div class="t-band"></div><div class="t-glow"></div><div class="t-bloom"></div>
-                <img class="lay-kv" alt="" loading="eager" decoding="async" /><img class="lay-logo" alt="" loading="eager" decoding="async" />
-                <div class="t-prov">PRAGMATIC</div>
-                <canvas class="coins" aria-hidden="true"></canvas>
-              </div>
-            </div>
-            <div class="tilebox" style="width: 200px; aspect-ratio: 3 / 4">
-              <div class="tile" data-composite data-id="47453318-634c-4833-aeb2-4598bd73d543" data-accent="#FF4FA3" data-size="3:4" data-treatment="ai">
-                <img class="lay-bg" alt="Sweet Bonanza thumbnail rendered by the live template" loading="eager" decoding="async" /><div class="t-band"></div><div class="t-glow"></div><div class="t-bloom"></div>
-                <img class="lay-kv" alt="" loading="eager" decoding="async" /><img class="lay-logo" alt="" loading="eager" decoding="async" />
-                <div class="t-prov">PRAGMATIC</div>
-                <div class="scan"></div>
-                <i class="spark" style="left: 22%; top: 26%"></i><i class="spark" style="left: 70%; top: 38%; animation-delay: 0.4s"></i><i class="spark" style="left: 46%; top: 16%; animation-delay: 0.9s"></i>
-              </div>
-            </div>
-            <div class="tilebox" style="width: 170px; aspect-ratio: 47 / 66">
-              <div class="tile" data-composite data-id="47453318-634c-4833-aeb2-4598bd73d543" data-accent="#12C2C2" data-size="47:66" data-treatment="text">
-                <img class="lay-bg" alt="" loading="eager" decoding="async" /><div class="t-band"></div><div class="t-glow"></div><div class="t-bloom"></div>
-                <img class="lay-kv" alt="" loading="eager" decoding="async" />
-                <div class="t-prov">PRAGMATIC</div>
-                <div class="tlogo">Sweet<br>Bonanza</div>
-              </div>
-            </div>
-            <div class="tilebox" style="width: 210px; aspect-ratio: 16 / 9">
-              <div class="tile frameless" data-composite data-id="47453318-634c-4833-aeb2-4598bd73d543" data-accent="#7ED321" data-size="16:9" data-treatment="frameless">
-                <img class="lay-bg" alt="" loading="eager" decoding="async" />
-                <img class="lay-logo" alt="" loading="eager" decoding="async" />
-              </div>
+            <div class="rs-meta">
+              <span class="rs-name">Big Bass Bonanza</span>
+              <span class="rs-sizes" aria-label="Four sizes, every game"><b>3:4</b><i>2:3</i><i>47:66</i><i>16:9</i></span>
             </div>
           </div>
-          <p class="fan-note">Not mock-ups — five real treatments of one game: colour logo, CSS motion, AI motion, custom text, frameless. <a href="/studio#editor">Move the layers yourself in the Studio →</a></p>
+          <p class="rs-note">Your game art in, a brand-perfect lobby thumbnail out — for <b>every title</b>, in <b>four sizes</b>, drawn by one template. <a href="/studio#editor">Move the layers in the Studio →</a></p>
         </div>
       </section>
 
@@ -1518,10 +1519,43 @@
           fill('.wl-tiles i', SHOWCASE.slice(0, 8).concat(SHOWCASE).slice(0, 8))
         }
 
+        // Hero render stage — one template, many real games, crossfaded (opacity
+        // only; no layout animation). Shows the product: a brand-perfect lobby
+        // thumbnail for every title. Games with populated previews only.
+        const HERO_GAMES = [
+          { id: '11cbbc64-f77a-49ba-8ddd-5cc71166b84d', n: 'Big Bass Bonanza' },
+          { id: '15f719a3-69e8-43a1-9923-b83fc184e296', n: 'Sugar Rush' },
+          { id: '13b22600-c0c0-4ee4-8795-26343e25472a', n: 'Wolf Gold' },
+          { id: 'b359f813-8809-49e8-b626-23887bc70c1b', n: 'Magic Portals' },
+          { id: '27bf72d9-2ad3-45d4-9022-3cbdd298f4d5', n: 'Fruit Party' },
+          { id: '26191150-8f3e-42ef-bb4b-873b82994e40', n: 'The Dog House' },
+        ]
+        function initRenderStage() {
+          const stage = document.querySelector('.render-stage')
+          if (!stage) return
+          const imgs = stage.querySelectorAll('.rs-img')
+          const nameEl = stage.querySelector('.rs-name')
+          if (imgs.length < 2) return
+          HERO_GAMES.forEach((g) => { const im = new Image(); im.src = prevUrl(g.id) }) // warm cache
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+          let cur = 0, front = 0
+          const show = (idx) => {
+            const g = HERO_GAMES[idx]
+            const next = 1 - front
+            const el = imgs[next]
+            const done = () => { el.onload = null; el.classList.add('show'); imgs[front].classList.remove('show'); front = next; if (nameEl) nameEl.textContent = g.n }
+            el.onload = done
+            el.src = prevUrl(g.id)
+            if (el.complete && el.naturalWidth) done()
+          }
+          setInterval(() => { cur = (cur + 1) % HERO_GAMES.length; show(cur) }, 3200)
+        }
+
         const boot = () => {
           document.querySelectorAll('.tile[data-composite]').forEach(paintComposite)
           applyMetrics()
           paintShowcase()
+          initRenderStage()
         }
         if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true })
         else boot()

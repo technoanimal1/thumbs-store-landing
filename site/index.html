@@ -284,6 +284,16 @@
       .wall-card.wall-tile .tilebox { position: relative; width: 100%; aspect-ratio: 3 / 4; filter: drop-shadow(0 16px 32px rgb(0 0 0 / 0.55)); }
       @media (max-width: 920px) { .hero-wall { height: 420px; max-width: 540px; margin: 0 auto; } }
       @media (max-width: 520px) { .hero-wall { height: 360px; gap: 10px; } .wall-link { margin-bottom: 10px; } }
+      /* Mobile hero: animation first, then copy, then the Stripe badge, then one Sign-up button. */
+      @media (max-width: 560px) {
+        .hero-wall { order: -1; }
+        .hero-copy .hero-micro { order: 1; }
+        .hero-copy .powered { order: 2; }
+        .hero-copy .hero-cta { order: 3; }
+        .hero-cta { width: 100%; }
+        .hero-cta .btn-o { display: none; }
+        .hero-cta .btn-y { width: 100%; }
+      }
       @media (prefers-reduced-motion: reduce) { .wall-track { animation: none !important; } }
 
       /* fanned real-template tiles */

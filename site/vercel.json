@@ -9,6 +9,7 @@
     },
     { "source": "/apply", "destination": "https://app.thumbs.store/signup", "permanent": true },
     { "source": "/terms", "destination": "/license", "permanent": true },
+    { "source": "/blog/((?!why-hand-made-thumbnails-dont-scale|automatic-updates-and-the-api|one-flat-price-every-release-included|thumbs-store-vs-aggregator-thumbnails|inside-the-studio).*)", "destination": "/blog", "permanent": true },
     {
       "source": "/:path*",
       "has": [

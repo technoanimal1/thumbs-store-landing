@@ -170,32 +170,50 @@
       .lp-hero .lede { color: var(--muted); font-size: 18px; line-height: 1.6; max-width: 540px; margin: 18px 0 0; }
       .lp-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
       .lp-cta .btn { padding: 14px 26px; font-size: 15px; }
-      /* language demo */
-      .demo { border: 1px solid var(--ring); border-radius: 24px; background: var(--deep); padding: 18px; }
+      /* language-switching lobby wall */
+      .ldemo { border: 1px solid var(--ring); border-radius: 24px; background: var(--deep); padding: 18px; }
       .demo-bar { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
       .demo-barlabel { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); }
       .langs { display: flex; flex-wrap: wrap; gap: 7px; }
-      .lang { border: 1px solid rgb(255 255 255 / 0.16); background: rgb(255 255 255 / 0.04); color: var(--muted); border-radius: 999px; padding: 7px 13px; font: 600 13px var(--sans); cursor: pointer; transition: all 0.15s ease; }
+      .lang { border: 1px solid rgb(255 255 255 / 0.16); background: rgb(255 255 255 / 0.04); color: var(--muted); border-radius: 999px; padding: 7px 13px; font: 600 13px var(--sans); cursor: pointer; transition: color .15s ease, border-color .15s ease, background .15s ease; }
       .lang:hover { color: #fff; border-color: rgb(255 255 255 / 0.4); }
       .lang.on { background: var(--yellow); color: #000; border-color: var(--yellow); }
       .lang:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
-      .demo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
-      .dtile { position: relative; margin: 0; aspect-ratio: 3/4; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 14px 12px; isolation: isolate; border: 1px solid rgb(255 255 255 / 0.1); }
-      .dtile::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--g); }
-      .dtile::after { content: ""; position: absolute; left: 50%; bottom: -18%; transform: translateX(-50%); width: 92%; height: 44%; border-radius: 50%; background: var(--band); filter: blur(10px); z-index: -1; }
-      .dt-dragon { --g: radial-gradient(120% 90% at 50% 8%, #7a1420, #250608 78%); --band: rgb(214 60 60 / 0.6); }
-      .dt-temple { --g: radial-gradient(120% 90% at 50% 8%, #1f6d3e, #06130b 78%); --band: rgb(224 180 60 / 0.55); }
-      .dt-koi    { --g: radial-gradient(120% 90% at 50% 8%, #0f6f72, #04171a 78%); --band: rgb(240 130 60 / 0.55); }
-      .dt-prov { position: absolute; top: 10px; left: 0; right: 0; text-align: center; font-size: 8.5px; font-weight: 700; letter-spacing: 0.14em; color: rgb(255 255 255 / 0.62); }
-      .dt-art { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-58%); font-size: clamp(40px,6vw,60px); filter: drop-shadow(0 6px 14px rgb(0 0 0 / 0.5)); z-index: 0; }
-      .dt-title { position: relative; z-index: 1; text-align: center; font-weight: 800; letter-spacing: -0.01em; line-height: 1.05; color: #fff; font-size: clamp(15px,2.1vw,20px); text-shadow: 0 2px 10px rgb(0 0 0 / 0.6); }
-      .dt-title span { display: none; }
-      .demo[data-lang="en"] .dt-title [data-l="en"],
-      .demo[data-lang="zh"] .dt-title [data-l="zh"],
-      .demo[data-lang="ja"] .dt-title [data-l="ja"],
-      .demo[data-lang="ko"] .dt-title [data-l="ko"],
-      .demo[data-lang="th"] .dt-title [data-l="th"],
-      .demo[data-lang="vi"] .dt-title [data-l="vi"] { display: block; }
+      .lwall { position: relative; display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; height: 460px; overflow: hidden;
+        -webkit-mask-image: linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent);
+                mask-image: linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent); }
+      .lcol { min-width: 0; }
+      .ltrack { display: flex; flex-direction: column; gap: 10px; will-change: transform; }
+      .lup .ltrack { animation: lwUp var(--sp,30s) linear infinite; }
+      .ldown .ltrack { animation: lwDown var(--sp,30s) linear infinite; }
+      .lcol:nth-child(1) .ltrack { --sp: 36s; }
+      .lcol:nth-child(2) .ltrack { --sp: 29s; }
+      .lcol:nth-child(3) .ltrack { --sp: 41s; }
+      @keyframes lwUp { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+      @keyframes lwDown { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+      .lwall:hover .ltrack { animation-play-state: paused; }
+      .ltile { position: relative; margin: 0; aspect-ratio: 3/4; border-radius: 13px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 12px 10px 14px; isolation: isolate; border: 1px solid rgb(255 255 255 / 0.08); box-shadow: 0 12px 26px -16px rgb(0 0 0 / 0.8); }
+      .ltile::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--g); }
+      .ltile::after { content: ""; position: absolute; left: 50%; bottom: -16%; transform: translateX(-50%); width: 94%; height: 44%; border-radius: 50%; background: var(--band); filter: blur(12px); z-index: -1; }
+      .t-dragon  { --g: radial-gradient(120% 85% at 50% 6%, #7a1420, #230608 80%); --band: rgb(214 60 60 / 0.6); }
+      .t-temple  { --g: radial-gradient(120% 85% at 50% 6%, #1f6d3e, #06130b 80%); --band: rgb(224 180 60 / 0.5); }
+      .t-koi     { --g: radial-gradient(120% 85% at 50% 6%, #0f6f72, #04171a 80%); --band: rgb(240 130 60 / 0.5); }
+      .t-jade    { --g: radial-gradient(120% 85% at 50% 6%, #10774e, #05140d 80%); --band: rgb(47 200 140 / 0.5); }
+      .t-panda   { --g: radial-gradient(120% 85% at 50% 6%, #3f5f1c, #0a1405 80%); --band: rgb(150 200 70 / 0.5); }
+      .t-phoenix { --g: radial-gradient(120% 85% at 50% 6%, #8a2b10, #1f0a04 80%); --band: rgb(240 100 40 / 0.6); }
+      .t-tiger   { --g: radial-gradient(120% 85% at 50% 6%, #8a5410, #1f1304 80%); --band: rgb(230 150 50 / 0.55); }
+      .t-gold    { --g: radial-gradient(120% 85% at 50% 6%, #7a5a12, #1a1304 80%); --band: rgb(230 180 60 / 0.55); }
+      .t-mahjong { --g: radial-gradient(120% 85% at 50% 6%, #7a1a1a, #1f0707 80%); --band: rgb(220 70 70 / 0.55); }
+      .lt-prov { position: absolute; top: 9px; left: 0; right: 0; text-align: center; font-size: 7.5px; font-weight: 700; letter-spacing: 0.14em; color: rgb(255 255 255 / 0.6); }
+      .lt-art { position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%); font-size: clamp(30px,3.6vw,44px); filter: drop-shadow(0 6px 12px rgb(0 0 0 / 0.5)); z-index: 0; }
+      .lt-title { position: relative; z-index: 1; text-align: center; font-weight: 800; letter-spacing: -0.01em; line-height: 1.08; color: #fff; font-size: clamp(12px,1.55vw,15.5px); text-shadow: 0 2px 8px rgb(0 0 0 / 0.65); }
+      .lt-title span { display: none; }
+      .ldemo[data-lang="en"] .lt-title [data-l="en"],
+      .ldemo[data-lang="zh"] .lt-title [data-l="zh"],
+      .ldemo[data-lang="ja"] .lt-title [data-l="ja"],
+      .ldemo[data-lang="ko"] .lt-title [data-l="ko"],
+      .ldemo[data-lang="th"] .lt-title [data-l="th"],
+      .ldemo[data-lang="vi"] .lt-title [data-l="vi"] { display: block; }
       .demo-cap { margin: 14px 2px 0; font-size: 12px; color: var(--dim); text-align: center; }
       /* sections */
       .sec { margin-top: clamp(64px,9vw,110px); }
@@ -223,13 +241,14 @@
       @media (max-width: 900px) {
         .lp-hero { grid-template-columns: 1fr; gap: 36px; }
         .lp-hero .lede { max-width: none; }
-        .lp-cta { justify-content: flex-start; }
         .steps, .feat { grid-template-columns: 1fr; }
       }
       @media (max-width: 560px) {
-        .demo-grid { gap: 9px; }
+        .lwall { grid-template-columns: repeat(2,1fr); height: 420px; }
+        .lcol:nth-child(3) { display: none; }
         .lp-cta .btn { flex: 1; text-align: center; }
       }
+      @media (prefers-reduced-motion: reduce) { .ltrack { animation: none !important; } }
     </style>
     <link rel="canonical" href="https://www.thumbs.store/localized-thumbnails" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -291,7 +310,7 @@
             <a class="btn btn-o" href="https://cal.com/cubicle">Book a demo</a>
           </div>
         </div>
-        <div class="demo" data-lang="en" aria-label="Demo: the game title follows the lobby language">
+        <div class="ldemo" data-lang="en">
             <div class="demo-bar">
               <span class="demo-barlabel">Lobby language</span>
               <div class="langs" role="group" aria-label="Choose the lobby language">
@@ -303,21 +322,12 @@
                 <button type="button" class="lang" data-set="vi" lang="vi">Tiếng Việt</button>
               </div>
             </div>
-            <div class="demo-grid">
-              <figure class="dtile dt-dragon">
-                <span class="dt-prov">LUCKY STUDIO</span><span class="dt-art" aria-hidden="true">🐉</span>
-                <figcaption class="dt-title"><span data-l="en">Lucky Dragon</span><span data-l="zh" lang="zh">幸运龙</span><span data-l="ja" lang="ja">ラッキードラゴン</span><span data-l="ko" lang="ko">럭키 드래곤</span><span data-l="th" lang="th">มังกรนำโชค</span><span data-l="vi" lang="vi">Rồng May Mắn</span></figcaption>
-              </figure>
-              <figure class="dtile dt-temple">
-                <span class="dt-prov">LUCKY STUDIO</span><span class="dt-art" aria-hidden="true">🏯</span>
-                <figcaption class="dt-title"><span data-l="en">Golden Temple</span><span data-l="zh" lang="zh">黄金神庙</span><span data-l="ja" lang="ja">ゴールデンテンプル</span><span data-l="ko" lang="ko">황금 사원</span><span data-l="th" lang="th">วิหารทองคำ</span><span data-l="vi" lang="vi">Đền Vàng</span></figcaption>
-              </figure>
-              <figure class="dtile dt-koi">
-                <span class="dt-prov">LUCKY STUDIO</span><span class="dt-art" aria-hidden="true">🎏</span>
-                <figcaption class="dt-title"><span data-l="en">Fortune Koi</span><span data-l="zh" lang="zh">招财锦鲤</span><span data-l="ja" lang="ja">フォーチュンコイ</span><span data-l="ko" lang="ko">행운의 잉어</span><span data-l="th" lang="th">ปลาคาร์ปนำโชค</span><span data-l="vi" lang="vi">Cá Chép Tài Lộc</span></figcaption>
-              </figure>
+            <div class="lwall" aria-label="A casino lobby whose game titles follow the chosen language">
+              <div class="lcol lup"><div class="ltrack"><figure class="ltile t-dragon"><span class="lt-prov">DRAGON PLAY</span><span class="lt-art" aria-hidden="true">🐉</span><figcaption class="lt-title"><span data-l="en">Lucky Dragon</span><span data-l="zh" lang="zh">幸运龙</span><span data-l="ja" lang="ja">ラッキードラゴン</span><span data-l="ko" lang="ko">럭키 드래곤</span><span data-l="th" lang="th">มังกรนำโชค</span><span data-l="vi" lang="vi">Rồng May Mắn</span></figcaption></figure><figure class="ltile t-jade"><span class="lt-prov">JADE GAMING</span><span class="lt-art" aria-hidden="true">💎</span><figcaption class="lt-title"><span data-l="en">Jade Empire</span><span data-l="zh" lang="zh">翡翠帝国</span><span data-l="ja" lang="ja">ジェイドエンパイア</span><span data-l="ko" lang="ko">제이드 제국</span><span data-l="th" lang="th">อาณาจักรหยก</span><span data-l="vi" lang="vi">Đế Chế Ngọc Bích</span></figcaption></figure><figure class="ltile t-tiger"><span class="lt-prov">TIGER GAMES</span><span class="lt-art" aria-hidden="true">🐯</span><figcaption class="lt-title"><span data-l="en">Lucky Tiger</span><span data-l="zh" lang="zh">幸运虎</span><span data-l="ja" lang="ja">ラッキータイガー</span><span data-l="ko" lang="ko">럭키 타이거</span><span data-l="th" lang="th">เสือนำโชค</span><span data-l="vi" lang="vi">Hổ May Mắn</span></figcaption></figure><figure class="ltile t-dragon"><span class="lt-prov">DRAGON PLAY</span><span class="lt-art" aria-hidden="true">🐉</span><figcaption class="lt-title"><span data-l="en">Lucky Dragon</span><span data-l="zh" lang="zh">幸运龙</span><span data-l="ja" lang="ja">ラッキードラゴン</span><span data-l="ko" lang="ko">럭키 드래곤</span><span data-l="th" lang="th">มังกรนำโชค</span><span data-l="vi" lang="vi">Rồng May Mắn</span></figcaption></figure><figure class="ltile t-jade"><span class="lt-prov">JADE GAMING</span><span class="lt-art" aria-hidden="true">💎</span><figcaption class="lt-title"><span data-l="en">Jade Empire</span><span data-l="zh" lang="zh">翡翠帝国</span><span data-l="ja" lang="ja">ジェイドエンパイア</span><span data-l="ko" lang="ko">제이드 제국</span><span data-l="th" lang="th">อาณาจักรหยก</span><span data-l="vi" lang="vi">Đế Chế Ngọc Bích</span></figcaption></figure><figure class="ltile t-tiger"><span class="lt-prov">TIGER GAMES</span><span class="lt-art" aria-hidden="true">🐯</span><figcaption class="lt-title"><span data-l="en">Lucky Tiger</span><span data-l="zh" lang="zh">幸运虎</span><span data-l="ja" lang="ja">ラッキータイガー</span><span data-l="ko" lang="ko">럭키 타이거</span><span data-l="th" lang="th">เสือนำโชค</span><span data-l="vi" lang="vi">Hổ May Mắn</span></figcaption></figure></div></div>
+              <div class="lcol ldown"><div class="ltrack"><figure class="ltile t-temple"><span class="lt-prov">LOTUS SLOTS</span><span class="lt-art" aria-hidden="true">🏯</span><figcaption class="lt-title"><span data-l="en">Golden Temple</span><span data-l="zh" lang="zh">黄金神庙</span><span data-l="ja" lang="ja">ゴールデンテンプル</span><span data-l="ko" lang="ko">황금 사원</span><span data-l="th" lang="th">วิหารทองคำ</span><span data-l="vi" lang="vi">Đền Vàng</span></figcaption></figure><figure class="ltile t-panda"><span class="lt-prov">BAMBOO PLAY</span><span class="lt-art" aria-hidden="true">🐼</span><figcaption class="lt-title"><span data-l="en">Panda Riches</span><span data-l="zh" lang="zh">熊猫财富</span><span data-l="ja" lang="ja">パンダリッチ</span><span data-l="ko" lang="ko">판다 리치스</span><span data-l="th" lang="th">แพนด้าร่ำรวย</span><span data-l="vi" lang="vi">Gấu Trúc Phát Tài</span></figcaption></figure><figure class="ltile t-gold"><span class="lt-prov">IMPERIAL</span><span class="lt-art" aria-hidden="true">👑</span><figcaption class="lt-title"><span data-l="en">Imperial Gold</span><span data-l="zh" lang="zh">帝国黄金</span><span data-l="ja" lang="ja">インペリアルゴールド</span><span data-l="ko" lang="ko">임페리얼 골드</span><span data-l="th" lang="th">ทองคำจักรพรรดิ</span><span data-l="vi" lang="vi">Vàng Đế Quốc</span></figcaption></figure><figure class="ltile t-temple"><span class="lt-prov">LOTUS SLOTS</span><span class="lt-art" aria-hidden="true">🏯</span><figcaption class="lt-title"><span data-l="en">Golden Temple</span><span data-l="zh" lang="zh">黄金神庙</span><span data-l="ja" lang="ja">ゴールデンテンプル</span><span data-l="ko" lang="ko">황금 사원</span><span data-l="th" lang="th">วิหารทองคำ</span><span data-l="vi" lang="vi">Đền Vàng</span></figcaption></figure><figure class="ltile t-panda"><span class="lt-prov">BAMBOO PLAY</span><span class="lt-art" aria-hidden="true">🐼</span><figcaption class="lt-title"><span data-l="en">Panda Riches</span><span data-l="zh" lang="zh">熊猫财富</span><span data-l="ja" lang="ja">パンダリッチ</span><span data-l="ko" lang="ko">판다 리치스</span><span data-l="th" lang="th">แพนด้าร่ำรวย</span><span data-l="vi" lang="vi">Gấu Trúc Phát Tài</span></figcaption></figure><figure class="ltile t-gold"><span class="lt-prov">IMPERIAL</span><span class="lt-art" aria-hidden="true">👑</span><figcaption class="lt-title"><span data-l="en">Imperial Gold</span><span data-l="zh" lang="zh">帝国黄金</span><span data-l="ja" lang="ja">インペリアルゴールド</span><span data-l="ko" lang="ko">임페리얼 골드</span><span data-l="th" lang="th">ทองคำจักรพรรดิ</span><span data-l="vi" lang="vi">Vàng Đế Quốc</span></figcaption></figure></div></div>
+              <div class="lcol lup"><div class="ltrack"><figure class="ltile t-koi"><span class="lt-prov">GOLDEN KOI</span><span class="lt-art" aria-hidden="true">🎏</span><figcaption class="lt-title"><span data-l="en">Fortune Koi</span><span data-l="zh" lang="zh">招财锦鲤</span><span data-l="ja" lang="ja">フォーチュンコイ</span><span data-l="ko" lang="ko">행운의 잉어</span><span data-l="th" lang="th">ปลาคาร์ปนำโชค</span><span data-l="vi" lang="vi">Cá Chép Tài Lộc</span></figcaption></figure><figure class="ltile t-phoenix"><span class="lt-prov">RED LANTERN</span><span class="lt-art" aria-hidden="true">🔥</span><figcaption class="lt-title"><span data-l="en">Phoenix Flame</span><span data-l="zh" lang="zh">凤凰烈焰</span><span data-l="ja" lang="ja">フェニックスフレイム</span><span data-l="ko" lang="ko">피닉스 플레임</span><span data-l="th" lang="th">เปลวไฟฟีนิกซ์</span><span data-l="vi" lang="vi">Lửa Phượng Hoàng</span></figcaption></figure><figure class="ltile t-mahjong"><span class="lt-prov">888 GAMES</span><span class="lt-art" aria-hidden="true">🀄</span><figcaption class="lt-title"><span data-l="en">Mahjong Wins</span><span data-l="zh" lang="zh">麻将胜利</span><span data-l="ja" lang="ja">麻雀ウィン</span><span data-l="ko" lang="ko">마작 윈즈</span><span data-l="th" lang="th">ไพ่นกกระจอกชนะ</span><span data-l="vi" lang="vi">Mạt Chược Đại Thắng</span></figcaption></figure><figure class="ltile t-koi"><span class="lt-prov">GOLDEN KOI</span><span class="lt-art" aria-hidden="true">🎏</span><figcaption class="lt-title"><span data-l="en">Fortune Koi</span><span data-l="zh" lang="zh">招财锦鲤</span><span data-l="ja" lang="ja">フォーチュンコイ</span><span data-l="ko" lang="ko">행운의 잉어</span><span data-l="th" lang="th">ปลาคาร์ปนำโชค</span><span data-l="vi" lang="vi">Cá Chép Tài Lộc</span></figcaption></figure><figure class="ltile t-phoenix"><span class="lt-prov">RED LANTERN</span><span class="lt-art" aria-hidden="true">🔥</span><figcaption class="lt-title"><span data-l="en">Phoenix Flame</span><span data-l="zh" lang="zh">凤凰烈焰</span><span data-l="ja" lang="ja">フェニックスフレイム</span><span data-l="ko" lang="ko">피닉스 플레임</span><span data-l="th" lang="th">เปลวไฟฟีนิกซ์</span><span data-l="vi" lang="vi">Lửa Phượng Hoàng</span></figcaption></figure><figure class="ltile t-mahjong"><span class="lt-prov">888 GAMES</span><span class="lt-art" aria-hidden="true">🀄</span><figcaption class="lt-title"><span data-l="en">Mahjong Wins</span><span data-l="zh" lang="zh">麻将胜利</span><span data-l="ja" lang="ja">麻雀ウィン</span><span data-l="ko" lang="ko">마작 윈즈</span><span data-l="th" lang="th">ไพ่นกกระจอกชนะ</span><span data-l="vi" lang="vi">Mạt Chược Đại Thắng</span></figcaption></figure></div></div>
             </div>
-            <p class="demo-cap">Tap a language. Same art, same frame — only the title text changes. Illustrative.</p>
+            <p class="demo-cap">Tap a language — every title re-renders in that script. Same art, same frame. Illustrative studios.</p>
           </div>
       </section>
 
@@ -381,7 +391,7 @@
     </main>
     <script>
       (function () {
-        var demo = document.querySelector('.demo')
+        var demo = document.querySelector('.ldemo')
         if (!demo) return
         var btns = demo.querySelectorAll('.lang')
         btns.forEach(function (b) {

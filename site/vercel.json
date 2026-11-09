@@ -9,6 +9,11 @@
     },
     { "source": "/apply", "destination": "https://app.thumbs.store/signup", "permanent": true },
     { "source": "/terms", "destination": "/license", "permanent": true },
+    { "source": "/partners", "destination": "/providers", "permanent": true },
+    { "source": "/blog/casino-game-thumbnails-the-ultimate-guide-for-igaming-operators", "destination": "/providers", "permanent": true },
+    { "source": "/blog/how-setanta.bet-solved-website-thumbnail-problems-with-thumbs.store", "destination": "/blog/why-hand-made-thumbnails-dont-scale", "permanent": true },
+    { "source": "/blog/igaming-ui-assets-how-to-build-a-scalable-visual-system-for-your-platform", "destination": "/blog/inside-the-studio", "permanent": true },
+    { "source": "/blog/slot-game-graphics-for-operators-what-you-need-to-know", "destination": "/blog/thumbs-store-vs-aggregator-thumbnails", "permanent": true },
     { "source": "/blog/((?!why-hand-made-thumbnails-dont-scale|automatic-updates-and-the-api|one-flat-price-every-release-included|thumbs-store-vs-aggregator-thumbnails|inside-the-studio).*)", "destination": "/blog", "permanent": true },
     {
       "source": "/:path*",

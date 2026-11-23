@@ -97,3 +97,7 @@ h2{font-size:clamp(20px,2.6vw,26px);letter-spacing:-.01em;font-weight:700;margin
 .ptiles-note strong{color:#fff;font-weight:700}
 .ptiles-note a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
 .ptiles-note a:hover{color:#fff}
+/* preview failed to load → show the same obfuscated placeholder as locked tiles */
+.tile.noimg .tw{background:repeating-linear-gradient(135deg,rgb(255 255 255/.05) 0 8px,rgb(255 255 255/.02) 8px 16px),linear-gradient(160deg,#20232b,#0c0d11)}
+.tile.noimg .tw img{display:none}
+.tile.noimg figcaption{color:var(--dim)}

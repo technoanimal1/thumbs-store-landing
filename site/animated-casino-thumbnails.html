@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><!-- Google Tag Manager --><script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NM4N9BZD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());</script><!-- End Google Tag Manager -->
+<script>
+      /* Accessibility widget: apply saved preferences before first paint so
+         there's no flash of un-adjusted content on repeat visits. */
+      (function () {
+        try {
+          var root = document.documentElement
+          var z = localStorage.getItem('ts-a11y-zoom')
+          if (z && 'zoom' in root.style) root.style.zoom = z
+          var cls = []
+          if (localStorage.getItem('ts-a11y-contrast') === '1') cls.push('a11y-contrast')
+          if (localStorage.getItem('ts-a11y-motion') === '1') cls.push('a11y-motion-off')
+          if (localStorage.getItem('ts-a11y-underline') === '1') cls.push('a11y-underline')
+          if (cls.length) root.classList.add.apply(root.classList, cls)
+        } catch (e) {}
+      })()
+    </script>
+<style>
+      /* ---- accessibility widget ---- */
+      #a11y-toggle {
+        position: fixed; left: 20px; bottom: 20px; z-index: 2147483000;
+        width: 52px; height: 52px; border-radius: 999px; border: 0;
+        background: #fef150; color: #000;
+        display: grid; place-items: center; cursor: pointer;
+        box-shadow: 0 6px 20px rgb(0 0 0 / 0.45);
+        transition: transform 0.15s ease;
+      }
+      #a11y-toggle:hover { transform: translateY(-2px); }
+      #a11y-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+      #a11y-panel {
+        position: fixed; left: 20px; bottom: 84px; z-index: 2147483000;
+        width: 290px; max-width: calc(100vw - 40px);
+        background: #121212; border: 1px solid #262626; border-radius: 20px;
+        padding: 18px; box-shadow: 0 20px 50px rgb(0 0 0 / 0.55);
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; color: #fff;
+      }
+      #a11y-panel[hidden] { display: none; }
+      .a11y-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+      .a11y-head span { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+      #a11y-close { background: none; border: 0; color: rgb(255 255 255 / 0.5); cursor: pointer; padding: 4px; display: grid; place-items: center; border-radius: 999px; }
+      #a11y-close:hover { color: #fff; background: rgb(255 255 255 / 0.08); }
+      #a11y-close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      .a11y-row, .a11y-switchrow { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-top: 1px solid rgb(255 255 255 / 0.08); }
+      .a11y-panel-body > :first-child { border-top: 0; }
+      .a11y-label, .a11y-switchrow span { font-size: 13px; color: rgb(255 255 255 / 0.75); }
+      .a11y-stepper { display: flex; align-items: center; gap: 8px; }
+      .a11y-stepper button { width: 26px; height: 26px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.2); background: none; color: #fff; font-size: 12px; font-weight: 700; cursor: pointer; }
+      .a11y-stepper button:disabled { opacity: 0.3; cursor: default; }
+      .a11y-stepper button:hover:not(:disabled) { border-color: #fff; }
+      .a11y-stepper button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      .a11y-stepper output { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; color: #fff; min-width: 34px; text-align: center; }
+      .a11y-switch { position: relative; width: 40px; height: 22px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.2); background: rgb(255 255 255 / 0.06); cursor: pointer; padding: 0; flex: none; }
+      .a11y-switch i { position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 999px; background: #fff; transition: left 0.15s ease; }
+      .a11y-switch.on { background: #fef150; border-color: #fef150; }
+      .a11y-switch.on i { left: 20px; background: #000; }
+      .a11y-switch:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      #a11y-reset { margin-top: 14px; width: 100%; padding: 9px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.16); background: none; color: rgb(255 255 255 / 0.75); font-size: 12px; font-weight: 600; cursor: pointer; }
+      #a11y-reset:hover { color: #fff; border-color: rgb(255 255 255 / 0.34); }
+      #a11y-reset:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      html.a11y-contrast { filter: contrast(1.3) saturate(1.15); }
+      html.a11y-underline a:not(#a11y-panel a) { text-decoration: underline !important; text-underline-offset: 3px; }
+      html.a11y-motion-off, html.a11y-motion-off *, html.a11y-motion-off *::before, html.a11y-motion-off *::after {
+        animation: none !important; transition: none !important; scroll-behavior: auto !important;
+      }
+      @media (max-width: 480px) {
+        #a11y-toggle { left: 14px; bottom: 14px; width: 46px; height: 46px; }
+        #a11y-panel { left: 14px; bottom: 70px; width: calc(100vw - 28px); }
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Animated Casino Thumbnails: CSS Effects &amp; AI Motion | thumbs.store</title>
+    <meta name="description" content="Animated casino thumbnails in two kinds: CSS effects such as coins, glows and shine, and AI motion that loops a game’s key visual on a transparent background." />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://udvbjvwavgrjwsziqtxl.supabase.co" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --yellow: #fef150;
+        --page: #000; --panel: #121212; --deep: #0a0a0a; --ring: #222222;
+        --muted: rgb(255 255 255 / 0.62); --dim: rgb(255 255 255 / 0.4);
+        --sans: 'Inter', system-ui, sans-serif;
+        --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--page); color: #fff; font-family: var(--sans); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+      a { color: inherit; text-decoration: none; }
+      h1, h2, h3, p, ul, dl, dd { margin: 0; }
+      img { max-width: 100%; display: block; }
+      :focus-visible { outline: 2px solid #fff; outline-offset: 3px; border-radius: 8px; }
+      ::selection { background: var(--yellow); color: #050505; }
+      main { max-width: 1120px; margin: 0 auto; padding: 120px 24px 0; }
+
+      .navwrap { position: fixed; top: 0; left: 0; right: 0; z-index: 60; display: flex; justify-content: center; background: rgb(0 0 0 / 0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgb(255 255 255 / 0.07); }
+      nav { width: 100%; max-width: 1270px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; }
+      .brand { display: flex; align-items: center; gap: 10px; flex: none; font-weight: 600; font-size: 14px; }
+      .brand svg { width: 28px; height: 26px; }
+      .nav-links { display: flex; align-items: center; gap: 4px; margin-right: auto; margin-left: 28px; }
+      .nav-link { font-size: 13px; font-weight: 600; color: var(--muted); padding: 9px 12px; border-radius: 999px; }
+      .nav-link:hover { color: #fff; background: rgb(255 255 255 / 0.06); }
+      .btn { display: inline-flex; align-items: center; justify-content: center; padding: 9px 18px; border-radius: 999px; border: 0; font: 600 13px/1.2 var(--sans); cursor: pointer; white-space: nowrap; transition: background 0.2s ease; }
+      .btn-y { background: #fff; color: #000; }
+      .btn-y:hover { background: var(--yellow); }
+      .btn-o { color: #fff; background: rgb(255 255 255 / 0.06); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.16); }
+      .btn-o:hover { background: rgb(255 255 255 / 0.12); }
+      .nav-cta { display: flex; gap: 10px; }
+      .nav-tg { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid rgb(255 255 255 / 0.16); color: rgb(255 255 255 / 0.72); font-size: 13px; font-weight: 500; text-decoration: none; white-space: nowrap; transition: color 0.15s ease, border-color 0.15s ease; }
+      .nav-tg:hover { color: #fff; border-color: rgb(255 255 255 / 0.34); }
+      .nav-tg svg { width: 15px; height: 15px; flex: none; }
+
+      /* breadcrumb */
+      .crumb { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; color: var(--dim); margin-bottom: 28px; }
+      .crumb a { color: var(--muted); } .crumb a:hover { color: #fff; }
+
+      /* hero */
+      .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); align-items: center; gap: clamp(32px, 5vw, 64px); }
+      .hero.solo { grid-template-columns: 1fr; max-width: 800px; }
+      .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); }
+      h1 { font-size: clamp(34px, 4.6vw, 54px); font-weight: 600; letter-spacing: -0.04em; line-height: 1.06; text-wrap: balance; margin-top: 14px; }
+      .lede { color: var(--muted); font-size: 18px; line-height: 1.6; max-width: 600px; margin-top: 18px; }
+      .lede strong { color: #fff; font-weight: 600; }
+      .lp-cta { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 26px; }
+      .lp-cta .btn { padding: 14px 26px; font-size: 15px; }
+      .lp-cta small { font-size: 13px; color: var(--dim); }
+      .visual { border: 1px solid var(--ring); border-radius: 24px; background: var(--deep); padding: 18px; min-width: 0; }
+      .visual figcaption, .visual .cap { margin-top: 14px; font-size: 12px; color: var(--dim); text-align: center; }
+      figure { margin: 0; }
+      .tgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+      .tgrid.two { grid-template-columns: repeat(2, 1fr); max-width: 380px; margin: 0 auto; }
+      .tw { display: block; position: relative; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; background: #111; border: 1px solid var(--ring); }
+      .tw img { width: 100%; height: 100%; object-fit: cover; }
+      /* CSS shine effect — a style rule on a still image, no extra media */
+      .fx .tw::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 38%, rgb(255 255 255 / 0.26) 50%, transparent 62%); background-size: 260% 100%; animation: shinemove 4.5s ease-in-out infinite; }
+      .fx .tw:nth-child(2)::after { animation-delay: 0.5s; } .fx .tw:nth-child(3)::after { animation-delay: 1s; } .fx .tw:nth-child(4)::after { animation-delay: 1.5s; }
+      .fx .tw:nth-child(odd) img { animation: kvpulse 4.5s ease-in-out infinite; }
+      @keyframes shinemove { 0%, 55% { background-position: 130% 0; } 90%, 100% { background-position: -50% 0; } }
+      @keyframes kvpulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
+
+      /* code box */
+      .codebox { font-family: var(--mono); font-size: 13.5px; line-height: 1.75; color: rgb(255 255 255 / 0.6); background: #050505; border: 1px solid var(--ring); border-radius: 16px; padding: 20px; overflow-x: auto; white-space: pre; margin: 0; }
+      .codebox .y { color: var(--yellow); } .codebox .w { color: #fff; }
+
+      /* sections: heading left, content right */
+      .sec { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: clamp(24px, 5vw, 64px); padding: clamp(44px, 6vw, 68px) 0; border-top: 1px solid rgb(255 255 255 / 0.08); }
+      .sec:first-of-type { margin-top: clamp(56px, 8vw, 92px); }
+      .sec h2 span { scroll-margin-top: 90px; }
+      .sec h2 { font-size: clamp(24px, 2.6vw, 31px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.15; text-wrap: balance; }
+      .body { max-width: 700px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+      .body p, .body li { color: var(--muted); font-size: 16.5px; line-height: 1.65; }
+      .body strong { color: #fff; font-weight: 600; }
+      .body a:not(.btn) { color: #fff; text-decoration: underline; text-decoration-color: rgb(255 255 255 / 0.35); text-underline-offset: 3px; }
+      .body a:not(.btn):hover { text-decoration-color: var(--yellow); }
+      .body ul { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+      .body code { font-family: var(--mono); font-size: 0.9em; color: #fff; background: rgb(255 255 255 / 0.07); border-radius: 6px; padding: 1px 6px; }
+      .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .cards.three { grid-template-columns: repeat(3, 1fr); }
+      .card { border: 1px solid var(--ring); border-radius: 20px; background: var(--panel); padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+      .card h3 { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; color: #fff; }
+      .card p { font-size: 14.5px !important; line-height: 1.6; }
+      .card .tag { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--yellow); }
+
+      /* spec / price table */
+      .spec { width: 100%; border-collapse: collapse; font-size: 15px; }
+      .spec th, .spec td { text-align: left; padding: 12px 14px 12px 0; border-bottom: 1px solid rgb(255 255 255 / 0.08); vertical-align: top; }
+      .spec th { font-weight: 600; color: #fff; }
+      .spec thead th { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); }
+      .spec td { color: var(--muted); }
+      .spec td.num { color: #fff; font-weight: 600; white-space: nowrap; }
+
+      /* price cards */
+      .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: clamp(40px, 6vw, 60px); }
+      .plan { border: 1px solid var(--ring); border-radius: 24px; background: var(--panel); padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+      .plan.hl { border-color: rgb(254 241 80 / 0.55); }
+      .plan h2 { font-size: 15px; font-weight: 600; letter-spacing: 0.02em; color: var(--muted); }
+      .plan .price { font-size: 44px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; }
+      .plan .price small { font-size: 15px; font-weight: 500; letter-spacing: 0; color: var(--muted); }
+      .plan ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 9px; margin-top: 4px; }
+      .plan li { font-size: 14.5px; color: var(--muted); line-height: 1.5; padding-left: 20px; position: relative; }
+      .plan li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 7px; height: 7px; border-radius: 99px; background: var(--yellow); }
+      .plan .btn { margin-top: auto; padding: 13px 20px; font-size: 14px; }
+      .plan-note { margin-top: 16px; font-size: 13px; color: var(--dim); }
+
+      /* faq */
+      .faq { display: flex; flex-direction: column; }
+      .faq div { padding: 18px 0; border-bottom: 1px solid rgb(255 255 255 / 0.08); }
+      .faq div:first-child { padding-top: 0; }
+      .faq dt { font-size: 17px; font-weight: 600; color: #fff; letter-spacing: -0.01em; }
+      .faq dd { margin-top: 8px; color: var(--muted); font-size: 16px; line-height: 1.65; }
+
+      /* related links */
+      .rel { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .rel a { border: 1px solid var(--ring); border-radius: 16px; background: var(--panel); padding: 16px 18px; text-decoration: none !important; display: flex; flex-direction: column; gap: 3px; transition: border-color 0.2s ease; }
+      .rel a:hover { border-color: rgb(255 255 255 / 0.3); }
+      .rel b { font-size: 15px; font-weight: 600; color: #fff; }
+      .rel span { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+
+      .bigcta { margin-top: clamp(20px, 4vw, 40px); border: 1px solid var(--ring); border-radius: 30px; background: var(--deep); padding: clamp(36px, 5vw, 60px) 24px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+      .bigcta h2 { font-size: clamp(26px, 3.4vw, 40px); font-weight: 600; letter-spacing: -0.03em; text-wrap: balance; }
+      .bigcta p { color: var(--muted); font-size: 17px; max-width: 540px; }
+      .bigcta .btn { padding: 15px 30px; font-size: 15px; margin-top: 6px; }
+      .bigcta .contact { font-size: 14px; color: var(--dim); }
+      .bigcta .contact a { white-space: nowrap; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+      .bigcta .contact a:hover { color: #fff; }
+
+      footer { border-top: 1px solid rgb(255 255 255 / 0.08); margin-top: 80px; padding: 32px 0 52px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--dim); }
+      footer .links { display: flex; gap: 8px 20px; flex-wrap: wrap; }
+      footer a:hover { color: #fff; }
+
+      @media (max-width: 1199.98px) { .nav-links { display: none; } }
+      @media (max-width: 900px) {
+        .hero { grid-template-columns: 1fr; gap: 32px; }
+        .sec { grid-template-columns: 1fr; gap: 18px; }
+        .plans { grid-template-columns: 1fr; }
+        .cards.three { grid-template-columns: 1fr; }
+      }
+      @media (max-width: 809.98px) {
+        main { padding: 104px 20px 0; }
+        .nav-tg span { display: none; } .nav-tg { padding: 7px 9px; }
+        .nav-cta .btn-o { display: none; }
+      }
+      @media (max-width: 560px) {
+        .cards, .rel { grid-template-columns: 1fr; }
+        .tgrid { grid-template-columns: repeat(2, 1fr); }
+        .lp-cta .btn { flex: 1 1 100%; }
+        .lede { font-size: 17px; }
+        .spec { font-size: 14px; }
+        .codebox { font-size: 12px; padding: 16px; }
+      }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+    </style>
+    <link rel="canonical" href="https://www.thumbs.store/animated-casino-thumbnails" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:site_name" content="thumbs.store" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Animated Casino Thumbnails: CSS Effects &amp; AI Motion | thumbs.store" />
+    <meta property="og:description" content="Animated casino thumbnails in two kinds: CSS effects such as coins, glows and shine, and AI motion that loops a game’s key visual on a transparent background." />
+    <meta property="og:url" content="https://www.thumbs.store/animated-casino-thumbnails" />
+    <meta property="og:image" content="https://www.thumbs.store/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Animated Casino Thumbnails: CSS Effects &amp; AI Motion | thumbs.store" />
+    <meta name="twitter:description" content="Animated casino thumbnails in two kinds: CSS effects such as coins, glows and shine, and AI motion that loops a game’s key visual on a transparent background." />
+    <meta name="twitter:image" content="https://www.thumbs.store/og.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Animated casino thumbnails","description":"Animated casino thumbnails in two kinds: CSS effects such as coins, glows and shine, and AI motion that loops a game’s key visual on a transparent background.","url":"https://www.thumbs.store/animated-casino-thumbnails","isPartOf":{"@type":"WebSite","name":"thumbs.store","url":"https://www.thumbs.store/"},"publisher":{"@type":"Organization","name":"thumbs.store","url":"https://www.thumbs.store/"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.thumbs.store/"},{"@type":"ListItem","position":2,"name":"Animated casino thumbnails","item":"https://www.thumbs.store/animated-casino-thumbnails"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between CSS effects and AI motion?","acceptedAnswer":{"@type":"Answer","text":"CSS effects add movement on top of a still thumbnail, such as coins, a glow or a shine. AI motion animates the game's key visual itself, so the character moves, and plays as a seamless loop with a transparent background."}},{"@type":"Question","name":"Do animated casino thumbnails slow the lobby down?","acceptedAnswer":{"@type":"Answer","text":"CSS effects add no media files, so the tile loads as a normal image. AI motion is a video clip and weighs more than a still, which is why we suggest using it on a limited number of tiles."}},{"@type":"Question","name":"What does an animated thumbnail cost?","acceptedAnswer":{"@type":"Answer","text":"An AI animation costs 5 credits, and one credit is one dollar, so $5 per game, excluding VAT. CSS effects carry no extra charge."}},{"@type":"Question","name":"Will the animation fit our brand frame?","acceptedAnswer":{"@type":"Answer","text":"Yes. AI motion is delivered with a transparent background, so it sits inside the same frame, colours and badge as your still thumbnails."}},{"@type":"Question","name":"Should we animate every game in the lobby?","acceptedAnswer":{"@type":"Answer","text":"We would not. A lobby where everything moves is harder to scan. Animation works best on a small set of tiles you want players to notice, such as a featured row or new releases."}}]}</script>
+  </head>
+  <body><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM4N9BZD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="navwrap">
+      <nav>
+        <a class="brand" href="/" aria-label="thumbs.store — home">
+          <svg viewBox="0 0 47 43" fill="none" aria-hidden="true">
+            <path d="M41.7042 4.77305V0H20.9914C17.7229 0 15.6381 1.04435 13.4141 2.98993L2.98993 13.2748C1.04435 15.4989 0 17.5837 0 20.8521V38.227H5.14824V43H25.8572C29.1257 43 31.2105 41.9557 33.4346 40.0101L43.8587 29.7252C45.8043 27.5011 46.8486 25.4124 46.8486 22.1479V4.77305H41.7042ZM38.5093 30.3479C38.5093 33.129 36.146 35.3531 33.3649 35.3531H8.34317V12.6521C8.34317 9.87101 10.7026 7.64694 13.4837 7.64694H38.5093V30.3479Z" fill="#FFF050"/>
+          </svg>
+          thumbs.store
+        </a>
+        <div class="nav-links">
+          <a class="nav-link" href="/providers">Providers</a>
+          <a class="nav-link" href="/studio">Studio</a>
+          <a class="nav-link" href="/localized-thumbnails">Localized</a>
+          <a class="nav-link" href="/blog">Blog</a>
+          <a class="nav-link" href="/roadmap">Roadmap</a>
+        </div>
+        <div class="nav-cta">
+          <a class="nav-tg" href="https://t.me/cubicledesign" target="_blank" rel="noopener" aria-label="Telegram @cubicledesign">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19.2c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.33-4.78 8.7-7.86c.38-.34-.08-.53-.59-.19l-10.75 6.77-4.63-1.45c-1-.32-1.03-1 .21-1.49l18.1-6.98c.84-.3 1.57.2 1.28 1.41Z"/></svg>
+            <span>@cubicledesign</span>
+          </a>
+          <a class="btn btn-o" href="https://app.thumbs.store/login">Log in</a>
+          <a class="btn btn-y" href="https://app.thumbs.store/signup">Sign up</a>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <div class="crumb" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Animated casino thumbnails</span></div>
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Motion for casino lobbies</p>
+          <h1>Animated casino thumbnails, in two kinds.</h1>
+          <p class="lede">thumbs.store makes <strong>animated casino thumbnails</strong> in two ways: light CSS effects that sit on top of a still image, and AI motion that brings a game&rsquo;s key visual to life as a seamless loop. Both use the same brand template as your still thumbnails.</p>
+          <div class="lp-cta">
+            <a class="btn btn-y" href="https://app.thumbs.store/signup">Get the free pack</a>
+            <small>Free pack of 20 games &middot; no card needed</small>
+          </div>
+        </div>
+        <figure class="visual fx">
+          <div class="tgrid two"><span class="tw"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/11cbbc64-f77a-49ba-8ddd-5cc71166b84d.webp" width="480" height="640" loading="eager" decoding="async" alt="Big Bass Bonanza thumbnail, rendered by thumbs.store" /></span><span class="tw"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/0c6d044a-7310-4043-b6d0-184e42dda8cc.webp" width="480" height="640" loading="eager" decoding="async" alt="Sugar Rush thumbnail, rendered by thumbs.store" /></span><span class="tw"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/b359f813-8809-49e8-b626-23887bc70c1b.webp" width="480" height="640" loading="eager" decoding="async" alt="Magic Portals thumbnail, rendered by thumbs.store" /></span><span class="tw"><img src="https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/0551fbac-8422-4068-8245-41886ebd0bcf.webp" width="480" height="640" loading="eager" decoding="async" alt="Wolf Gold thumbnail, rendered by thumbs.store" /></span></div>
+          <figcaption>A CSS shine and pulse running on still thumbnails. No video is loaded.</figcaption>
+        </figure>
+      </div>
+
+      <section class="sec">
+        <h2>The two kinds</h2>
+        <div class="body">
+          <div class="cards">
+            <div class="card"><span class="tag">CSS effects</span><h3>Movement on top of a still</h3><p>Coins, glows and shine, plus simple float and pulse presets. They run as CSS in the browser, on the thumbnail image you already serve.</p></div>
+            <div class="card"><span class="tag">AI motion</span><h3>The key visual itself moves</h3><p>The game&rsquo;s character breathes, blinks and sways. The clip loops with no visible restart and has a transparent background.</p></div>
+          </div>
+          <p>They suit different jobs. CSS effects are cheap enough to use widely. AI motion draws more attention and is made per game, so it belongs on the tiles that matter most.</p>
+        </div>
+      </section>
+      <section class="sec">
+        <h2>CSS effects: coins, glows and shine</h2>
+        <div class="body">
+          <p>A CSS effect is a set of style rules, not a file. The thumbnail stays the same PNG, WebP or AVIF, and the browser draws the movement over it: falling coins, a glow or a shine across the tile.</p>
+          <p>Because there is no video, there is nothing extra for the player to download. The example at the top of this page is a CSS shine and pulse on ordinary still thumbnails.</p>
+        </div>
+      </section>
+      <section class="sec">
+        <h2>AI motion: a seamless, transparent loop</h2>
+        <div class="body">
+          <p>AI motion starts from the game&rsquo;s own key visual and animates it. The camera stays locked and the artwork is preserved, so the game still looks like itself. The loop is built so that the restart is not visible.</p>
+          <p>The clip has a transparent background. It is placed over your frame, light band and provider badge in the same way as the still key visual, so an animated tile and a still tile sit side by side without looking like two different products.</p>
+        </div>
+      </section>
+      <section class="sec">
+        <h2>How they load in a lobby</h2>
+        <div class="body">
+          <p>CSS effects load with the page styles. The tile itself is a normal image request, the same one you make for a still thumbnail from the <a href="/casino-game-thumbnails-api">casino game thumbnails API</a> or from your own hosting.</p>
+          <p>AI motion is served as a transparent video clip, so it is heavier than a still. A practical pattern is to show the still thumbnail first and play the clip only for tiles that are on screen. Players who have asked their device to reduce motion should get the still.</p>
+        </div>
+      </section>
+      <section class="sec">
+        <h2>When to use them sparingly</h2>
+        <div class="body">
+          <p>A thumbnail has one job: to let a player recognise a game quickly. When every tile in a grid moves, nothing stands out and the lobby is harder to scan, especially on a phone.</p>
+          <ul>
+            <li>Use AI motion on a featured row, a handful of new releases or a current promotion.</li>
+            <li>Use CSS effects for a lighter touch across a category, and keep the timing slow.</li>
+            <li>Leave the long tail of the lobby still.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="sec">
+        <h2>What they cost</h2>
+        <div class="body">
+          <table class="spec">
+            <tbody>
+              <tr><th scope="row">CSS effects</th><td>Included with your thumbnails</td><td class="num">No extra charge</td></tr>
+              <tr><th scope="row">AI animation</th><td>Per game, made on demand</td><td class="num">5 credits ($5)</td></tr>
+            </tbody>
+          </table>
+          <p>One credit is one dollar. The Pro plan is $200 a month with 200 credits and includes animation along with every other feature. Prices exclude VAT; the full list is on the <a href="/pricing">pricing page</a>.</p>
+          <p>You can preview motion on a real template in <a href="/studio">the studio</a>, and check which games are covered on the <a href="/providers">providers page</a>. Platforms that resell thumbnails can offer animation too: see <a href="/white-label-casino-thumbnails">white label casino thumbnails</a>.</p>
+        </div>
+      </section>
+      <section class="sec">
+        <h2>Questions buyers ask</h2>
+        <div class="body">
+          <dl class="faq">
+            <div><dt>What is the difference between CSS effects and AI motion?</dt><dd>CSS effects add movement on top of a still thumbnail, such as coins, a glow or a shine. AI motion animates the game's key visual itself, so the character moves, and plays as a seamless loop with a transparent background.</dd></div>
+            <div><dt>Do animated casino thumbnails slow the lobby down?</dt><dd>CSS effects add no media files, so the tile loads as a normal image. AI motion is a video clip and weighs more than a still, which is why we suggest using it on a limited number of tiles.</dd></div>
+            <div><dt>What does an animated thumbnail cost?</dt><dd>An AI animation costs 5 credits, and one credit is one dollar, so $5 per game, excluding VAT. CSS effects carry no extra charge.</dd></div>
+            <div><dt>Will the animation fit our brand frame?</dt><dd>Yes. AI motion is delivered with a transparent background, so it sits inside the same frame, colours and badge as your still thumbnails.</dd></div>
+            <div><dt>Should we animate every game in the lobby?</dt><dd>We would not. A lobby where everything moves is harder to scan. Animation works best on a small set of tiles you want players to notice, such as a featured row or new releases.</dd></div>
+          </dl>
+        </div>
+      </section>
+      <section class="sec">
+        <h2>Related pages</h2>
+        <div class="body">
+          <div class="rel">
+            <a href="/casino-game-thumbnails-api"><b>Casino game thumbnails API</b><span>What one call returns, formats, sizes and a sample request.</span></a>
+            <a href="/white-label-casino-thumbnails"><b>White label casino thumbnails</b><span>For platforms, aggregators and agencies selling under their own name.</span></a>
+            <a href="/pricing"><b>Pricing</b><span>The public price list: free pack, $1 per thumbnail, Pro.</span></a>
+            <a href="/studio"><b>The studio</b><span>The editor and the brand template behind every thumbnail.</span></a>
+            <a href="/providers"><b>Providers</b><span>Browse the catalogue by game provider.</span></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="bigcta">
+        <h2>See your games before you animate them.</h2>
+        <p>Sign up and take the free pack of 20 games. Add motion once you know which tiles deserve it.</p>
+        <a class="btn btn-y" href="https://app.thumbs.store/signup">Get the free pack</a>
+        <p class="contact">Questions first? Email <a href="mailto:hey@cubicle.design">hey@cubicle.design</a> or message us on <a href="https://t.me/cubicledesign" target="_blank" rel="noopener">Telegram @cubicledesign</a>.</p>
+      </div>
+
+      <footer>
+        <span>© <span id="year">2026</span> thumbs.store · By <a href="https://www.cubicle.design" target="_blank" rel="noopener">Cubicle</a></span>
+        <div class="links">
+          <a href="/">Home</a>
+          <a href="/providers">Providers</a>
+          <a href="/studio">Studio</a>
+          <a href="/casino-game-thumbnails-api">Thumbnails API</a>
+          <a href="/animated-casino-thumbnails">Animated</a>
+          <a href="/white-label-casino-thumbnails">White label</a>
+          <a href="/pricing">Pricing</a>
+          <a href="/blog">Blog</a>
+          <a href="/license">API license</a>
+        </div>
+      </footer>
+    </main>
+    <script>document.getElementById('year').textContent = String(new Date().getFullYear())</script>
+    <!-- ---- accessibility widget ---- -->
+    <button type="button" id="a11y-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="a11y-panel" aria-label="Accessibility options">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="7.2" r="1.6" fill="currentColor" stroke="none" />
+        <line x1="7.5" y1="10.2" x2="16.5" y2="10.2" />
+        <line x1="12" y1="10.2" x2="12" y2="14.4" />
+        <line x1="12" y1="14.4" x2="8.6" y2="18.4" />
+        <line x1="12" y1="14.4" x2="15.4" y2="18.4" />
+      </svg>
+    </button>
+    <div id="a11y-panel" role="dialog" aria-label="Accessibility settings" aria-hidden="true" hidden>
+      <div class="a11y-head">
+        <span>Accessibility</span>
+        <button type="button" id="a11y-close" aria-label="Close accessibility panel">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="4" x2="20" y2="20" /><line x1="20" y1="4" x2="4" y2="20" /></svg>
+        </button>
+      </div>
+      <div class="a11y-panel-body">
+        <div class="a11y-row">
+          <span class="a11y-label" id="a11y-size-label">Text size</span>
+          <div class="a11y-stepper" role="group" aria-labelledby="a11y-size-label">
+            <button type="button" id="a11y-dec" aria-label="Decrease text size">A−</button>
+            <output id="a11y-size-out" for="a11y-dec a11y-inc">100%</output>
+            <button type="button" id="a11y-inc" aria-label="Increase text size">A+</button>
+          </div>
+        </div>
+        <div class="a11y-switchrow">
+          <span id="a11y-contrast-label">High contrast</span>
+          <button type="button" class="a11y-switch" id="a11y-contrast-sw" role="switch" aria-checked="false" aria-labelledby="a11y-contrast-label"><i></i></button>
+        </div>
+        <div class="a11y-switchrow">
+          <span id="a11y-motion-label">Reduce motion</span>
+          <button type="button" class="a11y-switch" id="a11y-motion-sw" role="switch" aria-checked="false" aria-labelledby="a11y-motion-label"><i></i></button>
+        </div>
+        <div class="a11y-switchrow">
+          <span id="a11y-underline-label">Underline links</span>
+          <button type="button" class="a11y-switch" id="a11y-underline-sw" role="switch" aria-checked="false" aria-labelledby="a11y-underline-label"><i></i></button>
+        </div>
+      </div>
+      <button type="button" id="a11y-reset">Reset all</button>
+    </div>
+    <script>
+      ;(function () {
+        var root = document.documentElement
+        var KEY = { zoom: 'ts-a11y-zoom', contrast: 'ts-a11y-contrast', motion: 'ts-a11y-motion', underline: 'ts-a11y-underline' }
+        var STEPS = [0.875, 1, 1.125, 1.25, 1.375, 1.5]
+        var supportsZoom = 'zoom' in root.style
+
+        var saved = parseFloat(localStorage.getItem(KEY.zoom))
+        var zoomIndex = STEPS.indexOf(saved)
+        if (zoomIndex === -1) zoomIndex = STEPS.indexOf(1)
+
+        var toggle = document.getElementById('a11y-toggle')
+        var panel = document.getElementById('a11y-panel')
+        var closeBtn = document.getElementById('a11y-close')
+        var dec = document.getElementById('a11y-dec')
+        var inc = document.getElementById('a11y-inc')
+        var sizeOut = document.getElementById('a11y-size-out')
+        var contrastSw = document.getElementById('a11y-contrast-sw')
+        var motionSw = document.getElementById('a11y-motion-sw')
+        var underlineSw = document.getElementById('a11y-underline-sw')
+        var resetBtn = document.getElementById('a11y-reset')
+
+        function applyZoom() {
+          var v = STEPS[zoomIndex]
+          if (supportsZoom) {
+            root.style.zoom = v
+          } else {
+            // Browsers without CSS zoom (older Firefox): scale the page and
+            // compensate width so the layout doesn't grow a horizontal
+            // scrollbar or clip the right edge.
+            document.body.style.transformOrigin = 'top left'
+            document.body.style.transform = 'scale(' + v + ')'
+            document.body.style.width = 100 / v + '%'
+          }
+          localStorage.setItem(KEY.zoom, String(v))
+          sizeOut.textContent = Math.round(v * 100) + '%'
+          dec.disabled = zoomIndex === 0
+          inc.disabled = zoomIndex === STEPS.length - 1
+        }
+
+        function setSwitch(btn, on) {
+          btn.setAttribute('aria-checked', String(on))
+          btn.classList.toggle('on', on)
+        }
+        function syncSwitches() {
+          setSwitch(contrastSw, root.classList.contains('a11y-contrast'))
+          setSwitch(motionSw, root.classList.contains('a11y-motion-off'))
+          setSwitch(underlineSw, root.classList.contains('a11y-underline'))
+        }
+
+        function onKeydown(e) {
+          if (e.key === 'Escape') closePanel()
+        }
+        function onOutside(e) {
+          if (!panel.contains(e.target) && e.target !== toggle) closePanel(false)
+        }
+        function openPanel() {
+          panel.hidden = false
+          panel.setAttribute('aria-hidden', 'false')
+          toggle.setAttribute('aria-expanded', 'true')
+          closeBtn.focus()
+          document.addEventListener('keydown', onKeydown)
+          document.addEventListener('click', onOutside, true)
+        }
+        function closePanel(returnFocus) {
+          panel.hidden = true
+          panel.setAttribute('aria-hidden', 'true')
+          toggle.setAttribute('aria-expanded', 'false')
+          document.removeEventListener('keydown', onKeydown)
+          document.removeEventListener('click', onOutside, true)
+          if (returnFocus !== false) toggle.focus()
+        }
+        toggle.addEventListener('click', function () {
+          if (panel.hidden) openPanel()
+          else closePanel()
+        })
+        closeBtn.addEventListener('click', function () {
+          closePanel()
+        })
+
+        dec.addEventListener('click', function () {
+          if (zoomIndex > 0) {
+            zoomIndex--
+            applyZoom()
+          }
+        })
+        inc.addEventListener('click', function () {
+          if (zoomIndex < STEPS.length - 1) {
+            zoomIndex++
+            applyZoom()
+          }
+        })
+
+        function bindSwitch(btn, cls, key) {
+          btn.addEventListener('click', function () {
+            var on = !root.classList.contains(cls)
+            root.classList.toggle(cls, on)
+            localStorage.setItem(key, on ? '1' : '0')
+            setSwitch(btn, on)
+          })
+        }
+        bindSwitch(contrastSw, 'a11y-contrast', KEY.contrast)
+        bindSwitch(motionSw, 'a11y-motion-off', KEY.motion)
+        bindSwitch(underlineSw, 'a11y-underline', KEY.underline)
+
+        resetBtn.addEventListener('click', function () {
+          zoomIndex = STEPS.indexOf(1)
+          root.classList.remove('a11y-contrast', 'a11y-motion-off', 'a11y-underline')
+          if (!supportsZoom) {
+            document.body.style.transform = ''
+            document.body.style.width = ''
+          }
+          localStorage.removeItem(KEY.contrast)
+          localStorage.removeItem(KEY.motion)
+          localStorage.removeItem(KEY.underline)
+          applyZoom()
+          syncSwitches()
+        })
+
+        syncSwitches()
+        applyZoom()
+      })()
+    </script>
+    <script defer src="/crisp.js"></script>
+
+  </body>
+</html>

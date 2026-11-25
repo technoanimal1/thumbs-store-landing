@@ -5,13 +5,17 @@
  * Scans every .html under site/, drops anything that shouldn't be indexed
  * (404, noindex pages, the private /preprod, /offer and coverage pages), maps
  * each file to its clean URL, and stamps a real <lastmod> from the file's last
- * git commit date (today for files not yet committed). New pages — provider
- * pages, blog posts, game pages — are picked up automatically the next time
- * this runs; nothing to hand-edit.
+ * meaningful git commit date (today for files that are new or have uncommitted
+ * changes). New pages — provider pages, blog posts, game pages — are picked up
+ * automatically the next time this runs; nothing to hand-edit.
+ *
+ * Only <loc> and <lastmod> are written. Google ignores <changefreq> and
+ * <priority>, and only trusts <lastmod> when it is consistently accurate —
+ * hence LASTMOD_IGNORE_COMMITS below.
  *
  *   node scripts/gen-sitemap.mjs
  */
-import { execSync } from 'node:child_process'
+import { execFileSync } from 'node:child_process'
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
@@ -21,7 +25,7 @@ const BASE = 'https://www.thumbs.store'
 const TODAY = new Date().toISOString().slice(0, 10)
 
 // Paths (clean, no leading slash) never put in the sitemap.
-const SKIP_EXACT = new Set(['404', 'pricing', 'order-form-beat-gg'])
+const SKIP_EXACT = new Set(['404', 'order-form-beat-gg'])
 const SKIP_PREFIX = ['preprod/', 'offer/', 'coverage-private']
 
 function walk(dir) {
@@ -43,25 +47,31 @@ function cleanPath(file) {
   return rel
 }
 
+// Commits that touched many pages without changing their content (a favicon
+// link, a tracking snippet, a footer credit). They are skipped when dating a
+// file, so a site-wide trivial edit doesn't mark every page as modified.
+// Add the short or full hash of any such commit here.
+const LASTMOD_IGNORE_COMMITS = [
+  'e2488e9', // 2026-11-25 — new favicon links on 43 pages
+  'af3b569', // 2026-11-25 — 'By Cubicle' footer credit linked across the site
+]
+
+// Date (YYYY-MM-DD) of the latest commit that touched `file` and is not in
+// LASTMOD_IGNORE_COMMITS. Falls back to today when the file is untracked, has
+// uncommitted changes, or git isn't available; and to the newest commit of all
+// if every commit touching the file is ignored.
 function gitDate(file) {
   try {
-    const d = execSync(`git log -1 --format=%cs -- "${file}"`, { cwd: ROOT }).toString().trim()
+    const git = (args) => execFileSync('git', args, { cwd: ROOT }).toString().trim()
+    if (git(['status', '--porcelain', '--', file])) return TODAY
+    const log = git(['log', '--format=%H %cs', '--', file]).split('\n').filter(Boolean)
+    if (!log.length) return TODAY
+    const kept = log.find((line) => !LASTMOD_IGNORE_COMMITS.some((h) => line.startsWith(h)))
+    const d = (kept || log[0]).split(' ')[1]
     return /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : TODAY
   } catch {
     return TODAY
   }
-}
-
-// priority / changefreq by URL shape
-function meta(path) {
-  if (path === '') return ['1.0', 'weekly']
-  if (path === 'studio' || path === 'providers') return ['0.9', 'weekly']
-  if (path.startsWith('providers/')) return ['0.7', 'weekly']
-  if (path === 'blog') return ['0.6', 'weekly']
-  if (path.startsWith('blog/')) return ['0.7', 'monthly']
-  if (path.startsWith('thumbnails/')) return ['0.6', 'monthly'] // game pages, if ever added
-  if (path === 'license') return ['0.3', 'yearly']
-  return ['0.5', 'weekly']
 }
 
 const urls = []
@@ -71,8 +81,7 @@ for (const file of walk(SITE)) {
   if (SKIP_PREFIX.some((p) => path.startsWith(p))) continue
   const html = readFileSync(file, 'utf8')
   if (/name=["']robots["'][^>]*noindex/i.test(html)) continue
-  const [priority, changefreq] = meta(path)
-  urls.push({ loc: `${BASE}/${path}`.replace(/\/$/, '') || `${BASE}/`, lastmod: gitDate(file), changefreq, priority })
+  urls.push({ loc: `${BASE}/${path}`.replace(/\/$/, '') || `${BASE}/`, lastmod: gitDate(file) })
 }
 
 // stable, readable order: home, studio, providers, provider pages, blog, posts, rest
@@ -89,7 +98,7 @@ const rank = (u) => {
 urls.sort((a, b) => rank(a) - rank(b) || a.loc.localeCompare(b.loc))
 
 const body = urls
-  .map((u) => `  <url><loc>${u.loc === BASE ? BASE + '/' : u.loc}</loc><lastmod>${u.lastmod}</lastmod><changefreq>${u.changefreq}</changefreq><priority>${u.priority}</priority></url>`)
+  .map((u) => `  <url><loc>${u.loc === BASE ? BASE + '/' : u.loc}</loc><lastmod>${u.lastmod}</lastmod></url>`)
   .join('\n')
 writeFileSync(join(SITE, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`)
 console.log(`sitemap.xml: ${urls.length} urls`)

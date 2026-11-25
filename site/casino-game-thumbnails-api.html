@@ -178,6 +178,8 @@
       .plan h2 { font-size: 15px; font-weight: 600; letter-spacing: 0.02em; color: var(--muted); }
       .plan .price { font-size: 44px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; }
       .plan .price small { font-size: 15px; font-weight: 500; letter-spacing: 0; color: var(--muted); }
+      .plan .price.sm { font-size: 27px; letter-spacing: -0.03em; line-height: 1.15; }
+      .bigcta .btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
       .plan ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 9px; margin-top: 4px; }
       .plan li { font-size: 14.5px; color: var(--muted); line-height: 1.5; padding-left: 20px; position: relative; }
       .plan li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 7px; height: 7px; border-radius: 99px; background: var(--yellow); }
@@ -382,7 +384,7 @@ x-api-key: <span class="w">YOUR_API_KEY</span></pre>
         <h2>How your branding is applied before delivery</h2>
         <div class="body">
           <p>Every thumbnail is drawn from a brand template: your frame, colours, corner radius, light band and provider badge, set up once. Each game inherits it, using the game&rsquo;s original key art and logotype.</p>
-          <p>So the image behind each <code>thumbnail_url</code> is already your branded tile, not generic provider art that you still have to frame. You can adjust the template in the studio, or have us design it: a custom brand design is a one-time $500 (see <a href="/pricing">pricing</a>).</p>
+          <p>So the image behind each <code>thumbnail_url</code> is already your branded tile, not generic provider art that you still have to frame. You can adjust the template in the studio, or have us design it as a one-time add-on (see <a href="/pricing">pricing</a>).</p>
         </div>
       </section>
       <section class="sec">
@@ -394,7 +396,7 @@ x-api-key: <span class="w">YOUR_API_KEY</span></pre>
             <li><strong>Aggregators and platforms</strong> that want to offer thumbnails to their own operators. See <a href="/white-label-casino-thumbnails">white label casino thumbnails</a>.</li>
           </ul>
           <p>If you want movement in the lobby as well, see <a href="/animated-casino-thumbnails">animated casino thumbnails</a>. If you would rather not integrate anything, you can download the files instead of calling the API.</p>
-          <p>The full catalogue costs $1 per thumbnail, less at volume, and you can try a free pack of 20 games first.</p>
+          <p>The catalogue is priced per thumbnail, with volume pricing, and you can try a free pack of 20 games first. See <a href="/pricing">how pricing works</a>.</p>
         </div>
       </section>
       <section class="sec">
@@ -415,7 +417,7 @@ x-api-key: <span class="w">YOUR_API_KEY</span></pre>
           <div class="rel">
             <a href="/animated-casino-thumbnails"><b>Animated casino thumbnails</b><span>CSS effects and AI motion, and when to use each.</span></a>
             <a href="/white-label-casino-thumbnails"><b>White label casino thumbnails</b><span>For platforms, aggregators and agencies selling under their own name.</span></a>
-            <a href="/pricing"><b>Pricing</b><span>The public price list: free pack, $1 per thumbnail, Pro.</span></a>
+            <a href="/pricing"><b>Pricing</b><span>How pricing works: free pack, per thumbnail, or a monthly Pro plan.</span></a>
             <a href="/studio"><b>The studio</b><span>The editor and the brand template behind every thumbnail.</span></a>
             <a href="/providers"><b>Providers</b><span>Browse the catalogue by game provider.</span></a>
           </div>
@@ -425,7 +427,7 @@ x-api-key: <span class="w">YOUR_API_KEY</span></pre>
       <div class="bigcta">
         <h2>Try it on 20 of your games.</h2>
         <p>Sign up, take the free pack of 20 games and see the thumbnails in your own lobby before you pay for anything.</p>
-        <a class="btn btn-y" href="https://app.thumbs.store/signup">Get the free pack</a>
+        <div class="btns"><a class="btn btn-y" href="https://app.thumbs.store/signup">Get the free pack</a></div>
         <p class="contact">Questions first? Email <a href="mailto:hey@cubicle.design">hey@cubicle.design</a> or message us on <a href="https://t.me/cubicledesign" target="_blank" rel="noopener">Telegram @cubicledesign</a>.</p>
       </div>
 

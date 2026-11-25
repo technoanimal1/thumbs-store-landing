@@ -2695,13 +2695,15 @@
         el.tile.style.setProperty('--bg-scale', String(BG_SCALE))
 
         if (el.bg.dataset.game !== g.id) {
-          el.bg.src = base + '/bg.jpg'
-          el.kv.src = base + '/kv.png'
+          // Composite layer assets (/assets/{id}/bg.jpg,kv.png,logo) are not baked
+          // publicly, so drive the canvas from the flat preview and hide the
+          // broken key-visual/logo layers.
+          el.bg.src = SB + '/previews/' + g.id + '.webp'
           el.bg.dataset.game = g.id
-          el.kv.alt = g.name + ' key visual on the editor canvas'
+          el.bg.alt = g.name + ' thumbnail on the editor canvas'
+          if (el.kv) el.kv.style.display = 'none'
+          if (el.logo) el.logo.style.display = 'none'
         }
-        const logoSrc = base + (state.white ? '/logoWhite.png' : '/logoColor.png')
-        if (el.logo.getAttribute('src') !== logoSrc) el.logo.src = logoSrc
 
         place(el.kv, boxOf('kv'), 'center center')
         place(el.logo, boxOf('logo'), 'center center')

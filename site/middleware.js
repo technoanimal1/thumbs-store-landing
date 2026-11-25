@@ -1,5 +1,10 @@
 // Edge Middleware: exact 301 redirects and 410 Gone responses.
 // vercel.json redirects can only emit 308 and cannot emit 410, so these live here.
+//
+// IMPORTANT: the apex -> www 301 below works ONLY while the apex domain
+// (thumbs.store) has NO domain-level redirect in Vercel (Settings -> Domains).
+// If a domain-level redirect is re-added there, it runs first (as a 308) and
+// this 301 never fires. Keep apex attached with no redirect.
 
 export const config = { matcher: '/:path*' }
 

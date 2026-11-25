@@ -404,7 +404,7 @@
     <script>
       ;(function () {
         var SB = 'https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public'
-        var BG_SCALE = 1.2
+        var BG_SCALE = 1.05
         var SIZES = [{ key: '3:4', w: 900, h: 1200 }]
         var TEMPLATE = { '3:4': { kvAlign: 'mc', kvScale: 1.22, kvDX: 0, kvDY: 0.05 } }
         var GRAD = { default: { dir: 'bottom', s1: 30, s2: 53, bottom: 100, band: 50 } }
@@ -427,7 +427,7 @@
         }
         function paintChrome(band, glow, hex) {
           var g = GRAD.default
-          if (band) { band.style.cssText = ''; band.style.position = 'absolute'; band.style.left = '0'; band.style.right = '0'; band.style.bottom = '0'; band.style.height = g.band + '%'; band.style.zIndex = '1'; band.style.background = bandCss(hex, g) }
+          if (band) { band.style.cssText = ''; band.style.position = 'absolute'; band.style.left = '0'; band.style.right = '0'; band.style.bottom = '0'; band.style.height = '100%'; band.style.zIndex = '1'; band.style.background = 'linear-gradient(to top, #090b10 0%, #090b10 48%, rgba(9,11,16,0.72) 60%, rgba(9,11,16,0) 85%)' }
           if (glow) { glow.style.background = 'radial-gradient(closest-side, ' + rgbaOf(hex, 0.85) + ', ' + rgbaOf(hex, 0) + ' 72%)' }
         }
         function place(node, box) { node.style.left = pct(box.x); node.style.top = pct(box.y); node.style.width = pct(box.w); node.style.height = pct(box.h); node.style.bottom = 'auto'; node.style.right = 'auto'; node.style.objectPosition = 'center center' }
@@ -460,8 +460,8 @@
             applyMetrics()
           }
           if (kv) kv.addEventListener('load', put)
-          bg.src = base + '/bg.jpg'
-          if (kv) kv.src = base + '/kv.png'
+          bg.src = SB + '/previews/' + tile.dataset.id + '.webp'
+          if (kv) kv.style.display = 'none'
           put()
         }
         function boot() {

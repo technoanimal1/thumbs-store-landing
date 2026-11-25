@@ -1325,9 +1325,12 @@
           '47:66': { kvAlign: 'mc', kvScale: 0.98, kvDX: 0, kvDY: -0.09, logoAlign: 'bc', logoScale: 0.34, logoDX: 0, logoDY: 0.04 },
           '16:9': { kvAlign: 'ml', kvScale: 1.06, kvDX: -0.13, kvDY: 0, logoAlign: 'mr', logoScale: 0.28, logoDX: -0.04, logoDY: 0 },
         }
+        // Opaque-early bands: the background is now the flat baked preview
+        // (which already carries its own title), so the band must fully cover
+        // the lower region where that baked title sits, not just tint it.
         const GRAD = {
-          default: { dir: 'bottom', s1: 30, s2: 53, bottom: 100, band: 50 },
-          '16:9': { dir: 'right', s1: 34, s2: 69, bottom: 100, band: 63.7 },
+          default: { dir: 'bottom', s1: 6, s2: 18, bottom: 100, band: 56 },
+          '16:9': { dir: 'right', s1: 12, s2: 40, bottom: 100, band: 60 },
         }
 
         const pct = (n) => (n * 100).toFixed(2) + '%'
@@ -1407,7 +1410,7 @@
           const kv = q('.lay-kv')
           const logo = q('.lay-logo')
           tile.style.setProperty('--accent', hex)
-          tile.style.setProperty('--bg-scale', String(BG_SCALE))
+          tile.style.setProperty('--bg-scale', '1.02')
           const fit = (img, k) => {
             const nw = img.naturalWidth || 1000
             const nh = img.naturalHeight || 1000
@@ -1430,11 +1433,18 @@
             if (q('.t-band')) paintChrome({ band: q('.t-band'), glow: q('.t-glow') }, sizeKey, hex)
             applyMetrics()
           }
-          if (kv) kv.addEventListener('load', put)
-          if (logo) logo.addEventListener('load', put)
-          bg.src = base + '/bg.jpg'
-          if (kv) kv.src = base + '/kv.png'
-          if (logo) logo.src = base + (treat === 'color' || treat === 'frameless' ? '/logoColor.png' : '/logoWhite.png')
+          // Composite /assets/ layers (bg.jpg + kv.png) are not baked publicly,
+          // so drive the background from the flat baked preview and hide the
+          // broken key-visual / logo layers. The accent band + reflowed title
+          // still demonstrate the per-size layout.
+          if (kv) kv.style.display = 'none'
+          if (logo) logo.style.display = 'none'
+          // Landscape crops the portrait preview to its upper band so the
+          // baked title (bottom of the preview) falls outside the frame; the
+          // portrait sizes keep it low, under the opaque band.
+          bg.style.objectPosition = sizeKey === '16:9' ? '50% 16%' : '50% 38%'
+          bg.addEventListener('load', put)
+          bg.src = SB + '/previews/' + id + '.webp'
           put()
         }
         // ---- coins effect (ported from the product: fxParticles 'coins' +

@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Deal calculator · thumbs.store</title>
+    <meta name="description" content="Internal deal calculator for thumbs.store — price Offer 1 (catalogue on demand) and the white-label partner model, then generate a shareable client offer." />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+        --anton: 'Anton', system-ui, sans-serif;
+        --bg: #07080c;
+        --panel: #0f1117;
+        --panel2: #141722;
+        --line: rgb(255 255 255 / 0.1);
+        --line2: rgb(255 255 255 / 0.16);
+        --ink: #f5f6f8;
+        --mut: rgb(245 246 248 / 0.62);
+        --mut2: rgb(245 246 248 / 0.4);
+        --yellow: #fef150;
+        --green: #3ddc84;
+        --radius: 16px;
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: var(--sans);
+        font-size: 15px;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; }
+      .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+      /* header */
+      header.sh {
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 16px 20px; border-bottom: 1px solid var(--line); gap: 16px;
+        position: sticky; top: 0; z-index: 20;
+        background: rgb(7 8 12 / 0.82); backdrop-filter: blur(12px);
+      }
+      .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -0.01em; text-decoration: none; }
+      .brand svg { display: block; }
+      .tag { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #06070a;
+        background: var(--yellow); padding: 4px 9px; border-radius: 999px; }
+      .sh-right { display: flex; align-items: center; gap: 14px; font-size: 13px; color: var(--mut); }
+      .sh-right a { text-decoration: none; }
+      .sh-right a:hover { color: #fff; }
+      @media (max-width: 560px) { .sh-right { display: none; } }
+
+      /* marquee */
+      .marquee { overflow: hidden; border-bottom: 1px solid var(--line); background: #05060a; padding: 12px 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+      .track { display: flex; gap: 12px; width: max-content; animation: slide 46s linear infinite; }
+      .marquee:hover .track { animation-play-state: paused; }
+      .chip { width: 74px; aspect-ratio: 3/4; border-radius: 10px; overflow: hidden; flex: none; border: 1px solid var(--line); background: #11131b; position: relative; }
+      .chip img { width: 100%; height: 100%; object-fit: cover; display: block; animation: breathe 7s ease-in-out infinite; }
+      .chip::after { content: ''; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.1) 48%, transparent 66%); transform: translateX(-120%); animation: sheen 5.5s ease-in-out infinite; }
+      @keyframes slide { to { transform: translateX(-50%); } }
+      @keyframes breathe { 0%, 100% { transform: scale(1.02); } 50% { transform: scale(1.09); } }
+      @keyframes sheen { 0% { transform: translateX(-120%); } 55%, 100% { transform: translateX(160%); } }
+
+      /* hero */
+      .hero { padding: 40px 0 10px; }
+      .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mut2); }
+      h1 { font-family: var(--anton); font-weight: 400; font-size: clamp(34px, 6vw, 60px); line-height: 0.98; letter-spacing: -0.01em; margin: 10px 0 8px; }
+      .hero p { color: var(--mut); max-width: 56ch; margin: 0; }
+
+      /* tabs */
+      .tabs { display: inline-flex; gap: 4px; margin: 26px 0 0; padding: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; }
+      .tab { appearance: none; border: 0; background: none; color: var(--mut); font: inherit; font-weight: 600; font-size: 14px; padding: 9px 16px; border-radius: 999px; cursor: pointer; white-space: nowrap; }
+      .tab[aria-selected='true'] { background: var(--yellow); color: #06070a; }
+      @media (max-width: 560px) {
+        .tabs { display: flex; flex-wrap: wrap; width: 100%; border-radius: 14px; }
+        .tab { flex: 1 1 100%; text-align: center; }
+      }
+
+      /* layout */
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 22px 0 60px; align-items: start; }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } }
+      .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+      .card h2 { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mut); margin: 0 0 18px; }
+
+      /* controls */
+      .field { margin: 0 0 20px; }
+      .field:last-child { margin-bottom: 0; }
+      .flabel { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 9px; }
+      .flabel span { font-weight: 600; font-size: 14px; }
+      .flabel b { font-family: var(--mono); font-size: 14px; color: var(--yellow); font-weight: 600; }
+      input[type='text'] { width: 100%; background: var(--panel2); border: 1px solid var(--line2); color: #fff; font: inherit; padding: 11px 13px; border-radius: 11px; }
+      input[type='text']:focus { outline: none; border-color: var(--yellow); }
+      input[type='range'] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 999px; background: linear-gradient(90deg, var(--yellow) var(--fill, 30%), rgb(255 255 255 / 0.12) var(--fill, 30%)); outline: none; }
+      input[type='range']::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #fff; border: 3px solid var(--yellow); cursor: pointer; box-shadow: 0 2px 8px rgb(0 0 0 / 0.5); }
+      input[type='range']::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: #fff; border: 3px solid var(--yellow); cursor: pointer; }
+      .seg { display: inline-flex; gap: 4px; background: var(--panel2); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+      .seg button { appearance: none; border: 0; background: none; color: var(--mut); font: inherit; font-weight: 600; font-size: 13px; padding: 7px 13px; border-radius: 999px; cursor: pointer; }
+      .seg button[aria-pressed='true'] { background: #fff; color: #06070a; }
+      .switchrow { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+      .sw { position: relative; width: 44px; height: 24px; border-radius: 999px; border: 1px solid var(--line2); background: rgb(255 255 255 / 0.06); cursor: pointer; padding: 0; flex: none; transition: background 0.15s; }
+      .sw::after { content: ''; position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform 0.15s; }
+      .sw[aria-checked='true'] { background: var(--yellow); }
+      .sw[aria-checked='true']::after { transform: translateX(20px); }
+      .hint { color: var(--mut2); font-size: 12px; margin-top: 7px; }
+
+      /* results */
+      .results .big { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+      .results .big .num { font-family: var(--anton); font-weight: 400; font-size: clamp(40px, 7vw, 64px); line-height: 1; letter-spacing: -0.01em; }
+      .results .big .unit { color: var(--mut); font-size: 14px; }
+      .yel { color: var(--yellow); }
+      .rrow { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 13px 0; border-top: 1px solid var(--line); }
+      .rrow:first-of-type { border-top: 0; }
+      .rrow .k { color: var(--mut); font-size: 13.5px; }
+      .rrow .k small { display: block; color: var(--mut2); font-size: 11.5px; margin-top: 2px; }
+      .rrow .v { font-family: var(--mono); font-size: 14px; text-align: right; white-space: nowrap; }
+      .rrow .v b { color: var(--yellow); font-weight: 600; }
+      .pill { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; background: rgb(254 241 80 / 0.14); color: var(--yellow); }
+      .note { margin-top: 16px; padding: 12px 14px; border-radius: 11px; background: var(--panel2); border: 1px solid var(--line); color: var(--mut); font-size: 12.5px; }
+      .note code { font-family: var(--mono); color: #fff; }
+
+      /* generate */
+      .gen { margin: 0 0 70px; background: linear-gradient(180deg, var(--panel), #0c0e15); border: 1px solid var(--line2); border-radius: var(--radius); padding: 22px; }
+      .gen h2 { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mut); margin: 0 0 6px; }
+      .gen p { color: var(--mut); margin: 0 0 16px; font-size: 13.5px; }
+      .btnrow { display: flex; gap: 10px; flex-wrap: wrap; }
+      .btn { appearance: none; border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 999px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+      .btn-y { background: var(--yellow); color: #06070a; }
+      .btn-y:hover { filter: brightness(1.05); }
+      .btn-o { background: none; border: 1px solid var(--line2); color: #fff; }
+      .btn-o:hover { border-color: #fff; }
+      .linkbox { margin-top: 14px; display: flex; gap: 8px; align-items: stretch; }
+      .linkbox input { flex: 1; background: #05060a; border: 1px solid var(--line); color: var(--mut); font-family: var(--mono); font-size: 12.5px; padding: 11px 13px; border-radius: 11px; }
+      .copied { color: var(--green); font-size: 12.5px; margin-top: 8px; min-height: 16px; font-weight: 600; }
+      footer { border-top: 1px solid var(--line); padding: 24px 0 50px; color: var(--mut2); font-size: 12.5px; }
+      .hidden { display: none !important; }
+      @media (prefers-reduced-motion: reduce) { .track, .chip img, .chip::after { animation: none !important; } }
+    </style>
+  </head>
+  <body>
+    <header class="sh">
+      <a class="brand" href="/">
+        <svg viewBox="0 0 47 43" width="24" height="22" fill="none" aria-hidden="true"><path d="M41.7042 4.77305V0H20.9914C17.7229 0 15.6381 1.04435 13.4141 2.98993L2.98993 13.2748C1.04435 15.4989 0 17.5837 0 20.8521V38.227H5.14824V43H25.8572C29.1257 43 31.2105 41.9557 33.4346 40.0101L43.8587 29.7252C45.8043 27.5011 46.8486 25.4124 46.8486 22.1479V4.77305H41.7042ZM38.5093 30.3479C38.5093 33.129 36.146 35.3531 33.3649 35.3531H8.34317V12.6521C8.34317 9.87101 10.7026 7.64694 13.4837 7.64694H38.5093V30.3479Z" fill="#FEF150"/></svg>
+        <span>thumbs.store</span>
+        <span class="tag">Deal calculator</span>
+      </a>
+      <nav class="sh-right">
+        <a href="/pricing">Pricing</a>
+        <a href="/license">License</a>
+        <a href="https://cal.com/cubicle" target="_blank" rel="noopener">Book a demo</a>
+      </nav>
+    </header>
+
+    <div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+    <main class="wrap">
+      <section class="hero">
+        <div class="eyebrow">Internal · prices exclude VAT</div>
+        <h1>Build a deal<br />in 30 seconds.</h1>
+        <p>Price either model from the partner deck, see your year-one numbers and margin, then generate a branded offer link to send the client. Nothing here is public — it's a sales tool.</p>
+        <div class="tabs" role="tablist">
+          <button class="tab" id="tab-o1" role="tab" aria-selected="true" aria-controls="panel-o1">Offer 1 · Catalogue on demand</button>
+          <button class="tab" id="tab-wl" role="tab" aria-selected="false" aria-controls="panel-wl">Offer 2 · White-label</button>
+        </div>
+      </section>
+
+      <!-- shared client name -->
+      <section class="card" style="margin-bottom:20px">
+        <div class="field" style="margin:0">
+          <div class="flabel"><span>Client / prospect name</span></div>
+          <input type="text" id="client" placeholder="e.g. Upgaming" autocomplete="off" />
+        </div>
+      </section>
+
+      <!-- OFFER 1 -->
+      <div id="panel-o1" role="tabpanel" aria-labelledby="tab-o1">
+        <div class="grid">
+          <section class="card">
+            <h2>The lobby</h2>
+            <div class="field">
+              <div class="flabel"><span>Catalogue size</span><b id="l-cat">2,000 games</b></div>
+              <input type="range" id="c-cat" min="100" max="15000" step="100" value="2000" />
+            </div>
+            <div class="field">
+              <div class="flabel"><span>Sizes per game</span></div>
+              <div class="seg" id="c-sz">
+                <button data-v="1">1</button><button data-v="2">2</button><button data-v="3">3</button><button data-v="4" aria-pressed="true">4</button><button data-v="5">5</button>
+              </div>
+              <div class="hint">3:4 · 2:3 · 47:66 · 1:1 · 16:9 — one credit per size.</div>
+            </div>
+            <div class="field">
+              <div class="flabel"><span>New releases / month</span><b id="l-nr">40 games</b></div>
+              <input type="range" id="c-nr" min="0" max="500" step="5" value="40" />
+            </div>
+            <div class="field">
+              <div class="flabel"><span>AI animations / month</span><b id="l-ai">0 games</b></div>
+              <input type="range" id="c-ai" min="0" max="200" step="5" value="0" />
+              <div class="hint">1 credit each — a perfectly looped, alpha-matted thumbnail.</div>
+            </div>
+            <div class="field">
+              <div class="flabel"><span>Keep current</span></div>
+              <div class="seg" id="c-keep">
+                <button data-v="A" aria-pressed="true">Monthly plan</button><button data-v="B">On-demand licence</button>
+              </div>
+              <div class="hint" id="keep-hint">Plan sized to new releases; top-up credits roll over 3 months.</div>
+            </div>
+            <div class="field">
+              <div class="flabel"><span>Catalogue payment</span></div>
+              <div class="seg" id="c-pay">
+                <button data-v="up" aria-pressed="true">Upfront</button><button data-v="12">12 instalments</button>
+              </div>
+            </div>
+            <div class="field" style="margin-bottom:0">
+              <div class="switchrow">
+                <span style="font-weight:600;font-size:14px">Premium custom work <span class="hint" style="display:inline">· $1,000 one-time</span></span>
+                <button class="sw" id="c-cw" role="switch" aria-checked="false" aria-label="Premium custom work"></button>
+              </div>
+            </div>
+          </section>
+
+          <section class="card results">
+            <h2>What the client pays</h2>
+            <div class="big"><span class="num yel" id="r1-year">$0</span><span class="unit">year one, all-in</span></div>
+            <div style="margin:4px 0 16px"><span class="pill" id="r1-eff">$0.00 / thumbnail</span></div>
+            <div class="rrow"><span class="k">Catalogue render <small id="r1-catsub">— credits</small></span><span class="v" id="r1-cat">$0</span></div>
+            <div class="rrow"><span class="k" id="r1-keepk">Keep current <small id="r1-keepsub">—</small></span><span class="v" id="r1-keep">$0</span></div>
+            <div class="rrow" id="r1-cwrow"><span class="k">Premium custom work</span><span class="v">$1,000</span></div>
+            <div class="rrow"><span class="k">Catalogue, how it's paid</span><span class="v" id="r1-payv">—</span></div>
+            <div class="note" id="r1-note"></div>
+          </section>
+        </div>
+      </div>
+
+      <!-- WHITE LABEL -->
+      <div id="panel-wl" role="tabpanel" aria-labelledby="tab-wl" class="hidden">
+        <div class="grid">
+          <section class="card">
+            <h2>Your platform</h2>
+            <div class="field">
+              <div class="flabel"><span>Brands on the platform</span><b id="l-br">8 brands</b></div>
+              <input type="range" id="w-br" min="3" max="50" step="1" value="8" />
+              <div class="hint">Min. 3 brands from month 3. Wholesale per credit falls with brand count.</div>
+            </div>
+            <div class="field">
+              <div class="flabel"><span>Per-brand plan you resell</span></div>
+              <div class="seg" id="w-plan">
+                <button data-v="basic" aria-pressed="true">Basic · 100cr</button><button data-v="pro">Pro · 200cr + AI</button>
+              </div>
+              <div class="hint" id="w-planhint">You pay $60 wholesale, resell at $100 — keep $40/brand/mo.</div>
+            </div>
+            <div class="field">
+              <div class="flabel"><span>Your resale price / brand / mo</span><b id="l-resell">$100</b></div>
+              <input type="range" id="w-resell" min="60" max="400" step="5" value="100" />
+            </div>
+            <div class="field">
+              <div class="flabel"><span>Avg games per new operator lobby</span><b id="l-og">3,000 games</b></div>
+              <input type="range" id="w-og" min="500" max="12000" step="100" value="3000" />
+              <div class="hint">You pay wholesale per thumbnail on onboarding and charge the operator — the margin is the money.</div>
+            </div>
+            <div class="field">
+              <div class="flabel"><span>Price you charge operators / thumbnail</span><b id="l-oc">$1.00</b></div>
+              <input type="range" id="w-oc" min="0.5" max="2" step="0.05" value="1.00" />
+            </div>
+            <div class="field" style="margin-bottom:0">
+              <div class="flabel"><span>Custom looks you resell / year</span><b id="l-cl">4</b></div>
+              <input type="range" id="w-cl" min="0" max="30" step="1" value="4" />
+              <div class="hint">You pay $1,000, sell as a premium service (deck example: $2,000).</div>
+            </div>
+          </section>
+
+          <section class="card results">
+            <h2>Your partner economics</h2>
+            <div class="big"><span class="num yel" id="rw-margin">$0</span><span class="unit">your year-one margin</span></div>
+            <div style="margin:4px 0 16px"><span class="pill" id="rw-wholesale">$0.60 / credit wholesale</span></div>
+            <div class="rrow"><span class="k">Setup <small>one time · your platform on your domain</small></span><span class="v" id="rw-setup">$1,000</span></div>
+            <div class="rrow"><span class="k">Recurring margin <small id="rw-recsub">— brands × spread</small></span><span class="v" id="rw-rec">$0<small>/mo</small></span></div>
+            <div class="rrow"><span class="k">Onboarding margin / operator <small id="rw-onsub">lobby × spread</small></span><span class="v" id="rw-on">$0</span></div>
+            <div class="rrow"><span class="k">Custom-look margin <small id="rw-clsub">—</small></span><span class="v" id="rw-cl">$0</span></div>
+            <div class="note" id="rw-note"></div>
+          </section>
+        </div>
+      </div>
+
+      <!-- GENERATE -->
+      <section class="gen">
+        <h2>Generate the client offer</h2>
+        <p>Builds a branded, shareable offer page with these exact numbers baked in. Send the link — no login, nothing public, each prospect gets their own.</p>
+        <div class="btnrow">
+          <button class="btn btn-y" id="gen">Generate offer link</button>
+          <a class="btn btn-o" id="open" href="#" target="_blank" rel="noopener">Open preview ↗</a>
+        </div>
+        <div class="linkbox">
+          <input type="text" id="offerlink" readonly placeholder="Your offer link will appear here…" />
+          <button class="btn btn-o" id="copy">Copy</button>
+        </div>
+        <div class="copied" id="copied"></div>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      thumbs.store · by Cubicle · internal deal tool · draft pricing from the partner deck, excludes VAT. 1 credit = 1 new game, or 1 edit (animation, custom size, any feature).
+    </footer>
+
+    <script>
+      ;(() => {
+        const SB = 'https://udvbjvwavgrjwsziqtxl.supabase.co/storage/v1/object/public/previews/'
+        // Verified public thumbnails (same ids the live homepage renders).
+        const POOL = ['0551fbac-8422-4068-8245-41886ebd0bcf','0c6d044a-7310-4043-b6d0-184e42dda8cc','11cbbc64-f77a-49ba-8ddd-5cc71166b84d','26b6f0c9-db0f-4130-a5d2-88f935045ae3','27bf72d9-2ad3-45d4-9022-3cbdd298f4d5','348d8099-17a0-4c90-8899-e32378a23674','40dd7cdc-dabc-4a8f-9fa2-12351bb93a39','436939fb-d301-4d62-ac7b-da67d8ca4f38','5b5bcf5e-d7bd-4323-9c11-202d4dfb6001','75bdb241-8446-4ae5-a02d-07bdcc9901ba','898c0e0c-809b-4d3f-a87d-167f62cd7416','98d377b3-ea6f-478e-9eda-0810a7d6e122','b359f813-8809-49e8-b626-23887bc70c1b','b9a4d15c-d9a1-4e82-906f-99fae42c857d','1bd16039-b2ee-4ecf-8a98-bb8d9731499b','d153f018-2570-4a16-88c5-d02ff624c1a6','e7ea7858-6ad1-437b-ad0d-17b06130473b','890d9ebe-f3f4-4e4e-bd33-91b0af6b590a','2dab66a8-8c7d-4917-8ad2-2f35e6956c6a','31b7e85e-8f7b-4ce4-abdb-8ce17a557555']
+        const track = document.getElementById('track')
+        function chip(id) {
+          const d = document.createElement('div'); d.className = 'chip'
+          const im = document.createElement('img'); im.loading = 'lazy'; im.alt = ''; im.src = SB + id + '.webp'
+          im.onerror = () => { d.remove() }
+          d.appendChild(im); return d
+        }
+        ;[...POOL, ...POOL].forEach((id) => track.appendChild(chip(id)))
+
+        const $ = (id) => document.getElementById(id)
+        const fmt = (n) => '$' + Math.round(n).toLocaleString('en-US')
+        const fnum = (n) => Math.round(n).toLocaleString('en-US')
+
+        /* ---------- pricing config — from the partner deck ---------- */
+        const CFG = {
+          // Offer 1: buy-once $/thumbnail by catalogue size
+          catRate: (g) => (g < 2000 ? 1.0 : g < 6000 ? 0.92 : g < 10000 ? 0.83 : 0.75),
+          plans: [ { mo: 50, cr: 100 }, { mo: 100, cr: 150 }, { mo: 150, cr: 250 } ],
+          topup: 1.0, // $/credit, top up from $1
+          licence: 0.1, // $/yr per thumbnail held (12,000 -> $1,200)
+          custom: 1000,
+          // White-label
+          wlSetup: 1000,
+          wlWholesale: (b) => (b <= 9 ? 0.6 : b <= 24 ? 0.55 : 0.5), // per credit by brand count
+          wlPlan: { basic: { cr: 100, cost: 60, resell: 100 }, pro: { cr: 200, cost: 120, resell: 200 } },
+          wlCustomCost: 1000,
+        }
+
+        /* ---------- state ---------- */
+        const s1 = { cat: 2000, sz: 4, nr: 40, ai: 0, keep: 'A', pay: 'up', cw: false }
+        const sw = { br: 8, plan: 'basic', resell: 100, og: 3000, oc: 1.0, cl: 4 }
+
+        function fill(el) {
+          const v = +el.value, lo = +el.min, hi = +el.max
+          el.style.setProperty('--fill', ((v - lo) / (hi - lo)) * 100 + '%')
+        }
+
+        /* ---------- Offer 1 math ---------- */
+        function calc1() {
+          const onceCr = s1.cat * s1.sz
+          const rate = CFG.catRate(s1.cat)
+          const once = onceCr * rate
+          const moCr = s1.nr * s1.sz + s1.ai
+          let keepCost = 0, keepLabel = '', keepSub = ''
+          if (s1.keep === 'A') {
+            const plan = CFG.plans.find((p) => p.cr >= moCr) || CFG.plans[CFG.plans.length - 1]
+            const top = Math.max(0, moCr - plan.cr)
+            const topCost = top * CFG.topup
+            keepCost = (plan.mo + topCost) * 12
+            keepLabel = 'Monthly plan · ' + fmt(plan.mo) + '/mo (' + plan.cr + ' cr)'
+            keepSub = fnum(moCr) + ' cr/mo' + (top ? ' · +' + fnum(top) + ' cr top-up ' + fmt(topCost) + '/mo' : ' · fits plan')
+          } else {
+            const hold = s1.cat * s1.sz
+            keepCost = hold * CFG.licence
+            keepLabel = 'On-demand licence · $0.10/thumb/yr'
+            keepSub = fnum(hold) + ' thumbnails held'
+          }
+          const custom = s1.cw ? CFG.custom : 0
+          const year1 = once + keepCost + custom
+          const totalThumbs = onceCr + moCr * 12
+          const eff = totalThumbs > 0 ? year1 / totalThumbs : 0
+          return { onceCr, rate, once, moCr, keepCost, keepLabel, keepSub, custom, year1, totalThumbs, eff }
+        }
+
+        function render1() {
+          $('l-cat').textContent = fnum(s1.cat) + ' games'
+          $('l-nr').textContent = fnum(s1.nr) + ' games'
+          $('l-ai').textContent = fnum(s1.ai) + ' games'
+          const r = calc1()
+          $('r1-year').textContent = fmt(r.year1)
+          $('r1-eff').textContent = '$' + r.eff.toFixed(2) + ' / thumbnail · effective'
+          $('r1-cat').textContent = fmt(r.once)
+          $('r1-catsub').textContent = fnum(r.onceCr) + ' cr × $' + r.rate.toFixed(2)
+          $('r1-keepk').firstChild.textContent = 'Keep current '
+          $('r1-keep').textContent = fmt(r.keepCost) + (s1.keep === 'A' ? '/yr' : '/yr')
+          $('r1-keepsub').textContent = r.keepLabel + ' · ' + r.keepSub
+          $('r1-cwrow').classList.toggle('hidden', !s1.cw)
+          if (s1.pay === 'up') $('r1-payv').textContent = fmt(r.once) + ' upfront'
+          else $('r1-payv').textContent = '12 × ' + fmt(r.once / 12)
+          $('r1-note').innerHTML =
+            '<b style="color:#fff">How this is built.</b> Catalogue is a one-time render of ' + fnum(r.onceCr) + ' credits (' + fnum(s1.cat) + ' games × ' + s1.sz + ' sizes) at the <code>$' + r.rate.toFixed(2) + '</code> tier. ' +
+            (s1.keep === 'A'
+              ? 'New releases are covered by the monthly plan; credits roll over 3 months.'
+              : 'Instead of a plan, a holding licence keeps every thumbnail live at $0.10 each per year.') +
+            ' Effective price spreads year-one spend across every thumbnail rendered.'
+        }
+
+        /* ---------- White-label math ---------- */
+        function calcW() {
+          const wholesale = CFG.wlWholesale(sw.br)
+          const plan = CFG.wlPlan[sw.plan]
+          const spread = Math.max(0, sw.resell - plan.cost)
+          const recMo = spread * sw.br
+          const onSpread = Math.max(0, sw.oc - wholesale)
+          const onMargin = sw.og * onSpread
+          const clMargin = sw.cl * 1000 // sell $2,000 - pay $1,000 = $1,000 each
+          // year one: setup is a cost to them but here we show margin they earn; onboarding counts once per brand in year 1
+          const year1 = recMo * 12 + onMargin * sw.br + clMargin
+          return { wholesale, plan, spread, recMo, onSpread, onMargin, clMargin, year1 }
+        }
+
+        function renderW() {
+          $('l-br').textContent = fnum(sw.br) + ' brands'
+          $('l-resell').textContent = '$' + sw.resell
+          $('l-og').textContent = fnum(sw.og) + ' games'
+          $('l-oc').textContent = '$' + sw.oc.toFixed(2)
+          $('l-cl').textContent = fnum(sw.cl)
+          const r = calcW()
+          $('rw-margin').textContent = fmt(r.year1)
+          $('rw-wholesale').textContent = '$' + r.wholesale.toFixed(2) + ' / credit wholesale · ' + sw.br + ' brands'
+          $('rw-rec').innerHTML = fmt(r.recMo) + '<small>/mo</small>'
+          $('rw-recsub').textContent = fnum(sw.br) + ' brands × $' + r.spread + ' spread (' + sw.plan + ')'
+          $('rw-on').textContent = fmt(r.onMargin)
+          $('rw-onsub').textContent = fnum(sw.og) + ' thumbs × $' + r.onSpread.toFixed(2) + ' (charge $' + sw.oc.toFixed(2) + ' − wholesale $' + r.wholesale.toFixed(2) + ')'
+          $('rw-cl').textContent = fmt(r.clMargin)
+          $('rw-clsub').textContent = fnum(sw.cl) + ' × $1,000 margin'
+          $('rw-note').innerHTML =
+            '<b style="color:#fff">The money is in onboarding, not the monthly fee.</b> You pay a one-time <code>$1,000</code> setup, then wholesale at <code>$' + r.wholesale.toFixed(2) + '</code>/credit. Each new operator lobby earns <code>' + fmt(r.onMargin) + '</code> on onboarding; brands recur at ' + fmt(r.recMo) + '/mo. Custom looks add $1,000 each. Leave any time — $0.10/thumb/yr keeps them live.'
+        }
+
+        /* ---------- tabs ---------- */
+        let mode = 'o1'
+        function setTab(m) {
+          mode = m
+          $('tab-o1').setAttribute('aria-selected', String(m === 'o1'))
+          $('tab-wl').setAttribute('aria-selected', String(m === 'wl'))
+          $('panel-o1').classList.toggle('hidden', m !== 'o1')
+          $('panel-wl').classList.toggle('hidden', m !== 'wl')
+        }
+        $('tab-o1').onclick = () => setTab('o1')
+        $('tab-wl').onclick = () => setTab('wl')
+
+        /* ---------- wire Offer 1 ---------- */
+        ;[['c-cat', 'cat'], ['c-nr', 'nr'], ['c-ai', 'ai']].forEach(([id, key]) => {
+          const el = $(id); fill(el)
+          el.addEventListener('input', () => { s1[key] = +el.value; fill(el); render1() })
+        })
+        $('c-sz').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+          s1.sz = +b.dataset.v
+          $('c-sz').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+          render1()
+        }))
+        $('c-keep').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+          s1.keep = b.dataset.v
+          $('c-keep').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+          $('keep-hint').textContent = s1.keep === 'A' ? 'Plan sized to new releases; top-up credits roll over 3 months.' : 'A holding licence at $0.10/thumbnail/year instead of a monthly plan.'
+          render1()
+        }))
+        $('c-pay').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+          s1.pay = b.dataset.v
+          $('c-pay').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+          render1()
+        }))
+        $('c-cw').addEventListener('click', () => {
+          s1.cw = !s1.cw; $('c-cw').setAttribute('aria-checked', String(s1.cw)); render1()
+        })
+
+        /* ---------- wire White-label ---------- */
+        ;[['w-br', 'br', (v) => +v], ['w-resell', 'resell', (v) => +v], ['w-og', 'og', (v) => +v], ['w-oc', 'oc', (v) => +v], ['w-cl', 'cl', (v) => +v]].forEach(([id, key, f]) => {
+          const el = $(id); fill(el)
+          el.addEventListener('input', () => { sw[key] = f(el.value); fill(el); renderW() })
+        })
+        $('w-plan').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+          sw.plan = b.dataset.v
+          $('w-plan').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+          const p = CFG.wlPlan[sw.plan]
+          $('w-planhint').textContent = 'You pay $' + p.cost + ' wholesale, resell at $' + p.resell + ' — keep $' + (p.resell - p.cost) + '/brand/mo.'
+          if (+$('w-resell').value < p.cost) { $('w-resell').value = p.resell; sw.resell = p.resell; fill($('w-resell')); $('l-resell').textContent = '$' + sw.resell }
+          renderW()
+        }))
+
+        /* ---------- generate offer link ---------- */
+        function buildURL() {
+          const client = ($('client').value || '').trim()
+          const p = new URLSearchParams()
+          if (client) p.set('c', client)
+          p.set('o', mode === 'o1' ? '1' : 'wl')
+          if (mode === 'o1') {
+            p.set('cat', s1.cat); p.set('sz', s1.sz); p.set('nr', s1.nr); p.set('ai', s1.ai)
+            p.set('km', s1.keep); p.set('pay', s1.pay); if (s1.cw) p.set('cw', '1')
+          } else {
+            p.set('br', sw.br); p.set('pl', sw.plan); p.set('rs', sw.resell)
+            p.set('og', sw.og); p.set('oc', sw.oc); p.set('cl', sw.cl)
+          }
+          return location.origin + '/offer/?' + p.toString()
+        }
+        function refreshLink() {
+          const url = buildURL()
+          $('offerlink').value = url
+          $('open').href = url
+          return url
+        }
+        $('gen').addEventListener('click', () => { refreshLink(); $('copied').textContent = 'Offer link ready — copy it or open the preview.' })
+        $('copy').addEventListener('click', async () => {
+          const url = $('offerlink').value || refreshLink()
+          try { await navigator.clipboard.writeText(url); $('copied').textContent = 'Copied to clipboard ✓' }
+          catch { $('offerlink').select(); document.execCommand('copy'); $('copied').textContent = 'Copied ✓' }
+        })
+        $('open').addEventListener('click', (e) => { if (!$('offerlink').value) { e.preventDefault(); location.href = refreshLink() } })
+
+        render1(); renderW()
+      })()
+    </script>
+  </body>
+</html>
